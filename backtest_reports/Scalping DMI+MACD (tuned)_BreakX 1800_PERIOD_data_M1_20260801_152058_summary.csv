@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Scalping DMI+MACD (tuned),BreakX 1800_PERIOD_data,M1,1673,49.37238493723849,1.082007498587662,8.067932857126287,0.12887210826703396,-0.116151627593204,1.1095161638059925,-38.38923177633408,0.30827880500554183,80.67932857126311,20260801_152058

@@ -1,0 +1,18 @@
+# Core data processing
+numpy>=1.24.0
+pandas>=2.0.0
+scipy>=1.10.0
+
+# MT5 integration (Windows only)
+MetaTrader5>=5.0.45
+
+# Dashboard & visualization
+streamlit>=1.28.0
+plotly>=5.14.0
+streamlit-autorefresh>=1.0.1  # Optional, for auto‑refreshing the dashboard
+
+# Progress bars
+tqdm>=4.65.0
+
+# (Optional, if you want to use the genetic optimizer's advanced mutation logic)
+# scikit-learn is NOT required — we removed it.

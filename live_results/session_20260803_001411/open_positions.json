@@ -1,0 +1,26 @@
+{
+  "Scalping DMI+MACD (default)_FX Vol 40": {
+    "strategy": "Scalping DMI+MACD (default)",
+    "symbol": "FX Vol 40",
+    "entry_price": 191053.47,
+    "sl": 190363.81464285715,
+    "tp": 191788.43714285715,
+    "lot": 0.01,
+    "entry_time": "2026-08-03 00:32:00.000937",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 452888277
+  },
+  "Scalping DMI+MACD (tuned)_BreakX 600": {
+    "strategy": "Scalping DMI+MACD (tuned)",
+    "symbol": "BreakX 600",
+    "entry_price": 97642.99,
+    "sl": 97605.01228571429,
+    "tp": 97687.28157142857,
+    "lot": 0.1,
+    "entry_time": "2026-08-03 00:57:50.184327",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 452908938
+  }
+}

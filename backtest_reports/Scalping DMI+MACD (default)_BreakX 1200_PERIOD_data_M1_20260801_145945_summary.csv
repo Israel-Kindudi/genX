@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Scalping DMI+MACD (default),BreakX 1200_PERIOD_data,M1,2013,60.804769001490314,1.3541431142740639,128.07228928534983,0.40009167833772935,-0.45835224968318244,0.8728912721913695,-32.05181538399987,1.20146436259834,1280.7228928534992,20260801_145945

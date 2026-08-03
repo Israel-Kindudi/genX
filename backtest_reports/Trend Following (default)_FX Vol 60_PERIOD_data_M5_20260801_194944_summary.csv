@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Trend Following (default),FX Vol 60_PERIOD_data,M5,4773,35.38654934003771,0.9347396647103727,-216.62024285714162,1.8370067833883108,-1.0763050259403366,1.7067715369844818,-497.04752488038986,-0.15497955351762835,-2166.2024285714133,20260801_194944

@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Trend PMax+NSM (tuned),PainX 600_PERIOD_data,M5,227,35.68281938325991,1.1956272123499199,6.0676971428564865,0.45783121693121764,-0.21244268101761746,2.1550811481862753,-29.565540698378744,0.748543193843664,60.67697142856488,20260801_221057

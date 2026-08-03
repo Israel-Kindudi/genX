@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Scalping VWAP+StochRSI (default),FX Vol 40_PERIOD_data,M5,865,49.36416184971098,1.1202628172286435,136.30121428571655,2.973448343927737,-2.5875827136333953,1.1491220467122853,-219.85025409276636,-0.04991235867072457,1363.012142857165,20260801_194643

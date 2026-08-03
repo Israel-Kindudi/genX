@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Trend PMax+NSM (tuned),Fx Vol 20_PERIOD_data,M1,304,30.92105263157895,0.793486269268759,-15.344951428571946,0.6272319148936197,-0.35383214965986765,1.7726820909195682,-142.22358899818514,0.6351152976395605,-153.4495142857196,20260801_192837

@@ -1,0 +1,2 @@
+strategy,symbol,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Scalping RSI+VWMA (tuned),BreakX 1200_PERIOD_M1_data,2117,75.10628247520076,4.281819321187301,832469610.3155162,683101.02034377,-481330.19360735867,1.419194202682835,-5.682434937589909,8.086634855141506,8324696103.155157,20260801_101439

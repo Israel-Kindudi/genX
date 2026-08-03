@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Scalping (default),BreakX 1800_PERIOD_data,M1,35523,5.168482391689891,0.42375625448943394,-127.96121791798329,0.05125256260231959,-0.00659188775657797,7.775096375264467,-1285.1660331343448,-0.048280703405257266,-1279.6121791801022,20260801_110938

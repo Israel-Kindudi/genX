@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Trend Following ADX (default),Fx Vol 40_PERIOD_data,M1,821,37.51522533495737,0.9316607741381386,-66.35943214285784,2.937241801948049,-1.8928458228905596,1.551759666015796,-464.4598868919296,-0.09672336617389807,-663.5943214285782,20260801_193709

@@ -1,0 +1,51 @@
+================================================================================
+STRATEGY AFFINITY VS PERFORMANCE VALIDATION REPORT
+================================================================================
+
+1. DATA OVERVIEW
+----------------------------------------
+Total backtest rows: 98
+Merged rows (with affinity): 98
+Rows with >=5 trades: 92
+
+2. CORRELATIONS BETWEEN AFFINITY AND PERFORMANCE
+----------------------------------------
+Win Rate %:
+  Pearson r: 0.1678 (p=0.1098)
+  Spearman r: 0.2894 (p=0.0051)
+Profit Factor:
+  Pearson r: 0.0718 (p=0.4967)
+  Spearman r: 0.1701 (p=0.1050)
+Total PnL:
+  Pearson r: 0.1787 (p=0.0883)
+  Spearman r: 0.1885 (p=0.0719)
+Return %:
+  Pearson r: 0.1787 (p=0.0883)
+  Spearman r: 0.1885 (p=0.0719)
+Sharpe:
+  Pearson r: 0.1387 (p=0.1872)
+  Spearman r: 0.2824 (p=0.0064)
+
+3. INTERPRETATION
+----------------------------------------
+  Win Rate %: Weak positive correlation (r=0.168)
+  Profit Factor: Negligible correlation (r=0.072)
+  Total PnL: Weak positive correlation (r=0.179)
+  Return %: Weak positive correlation (r=0.179)
+  Sharpe: Weak positive correlation (r=0.139)
+
+4. TOP DNA METRICS CORRELATED WITH SHARPE
+----------------------------------------
+  hurst                vs Sharpe      : 0.6377
+  trend_length         vs Sharpe      : 0.5783
+  entropy              vs Sharpe      : -0.5746
+  predictability       vs Sharpe      : 0.5746
+  jump_intensity       vs Sharpe      : 0.5721
+  volatility           vs Sharpe      : -0.3942
+  overall_dna_score    vs Sharpe      : 0.3217
+
+5. CONCLUSION
+----------------------------------------
+Average correlation: 0.147
+The correlation is weak. DNA affinity alone may not be sufficient to predict performance.
+Consider incorporating other factors (e.g., market regime, parameter tuning).

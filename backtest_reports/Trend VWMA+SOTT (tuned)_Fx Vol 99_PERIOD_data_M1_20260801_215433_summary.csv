@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Trend VWMA+SOTT (tuned),Fx Vol 99_PERIOD_data,M1,0,0,0,0,0,0,0,0,0,0,20260801_215433

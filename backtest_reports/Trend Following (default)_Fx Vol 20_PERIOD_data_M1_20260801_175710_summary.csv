@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Trend Following (default),Fx Vol 20_PERIOD_data,M1,965,42.38341968911917,1.122034515463399,39.68607857142982,0.8921511002444994,-0.5848987795477886,1.5253085344685817,-106.73515802976445,0.3059974712970235,396.86078571429823,20260801_175710
