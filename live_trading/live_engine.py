@@ -1,7 +1,11 @@
 #!/usr/bin/env python
 """
-Live Trading Engine – Full MT5 integration with proper connection handling
-Refactored to use the central MT5Connection singleton.
+Live Trading Engine – Full MT5 integration with:
+- Session persistence (unique folder per run)
+- Periodic position sync with history-based PnL recovery
+- JSONL streaming for equity and trade events
+- DNA logging (fixed instantiation)
+- Robust closing via enhanced connector
 """
 
 import os
@@ -34,12 +38,11 @@ from strategies import (
     TrendStrategyAroonRSI_SMA,
 )
 from config import INITIAL_CAPITAL, RISK_PER_TRADE
-
-# NEW: Import the enhanced MT5 connector
 from mt5_connection import MT5Connection, GENX_TO_MT5_MAP
+from dna.analyzer import DNAAnalyzer
 
 # ============================================================================
-# STRATEGY CLASS MAPPING – (UNCHANGED)
+# STRATEGY CLASS MAPPING
 # ============================================================================
 STRATEGY_CLASS_MAP = {
     'Scalping RSI+VWMA (default)': ScalpingStrategyRSI_VWMA,
@@ -63,7 +66,7 @@ STRATEGY_CLASS_MAP = {
 }
 
 # ============================================================================
-# DEFAULT PARAMETERS – (UNCHANGED)
+# DEFAULT PARAMETERS – full dict (as per your original snapshot)
 # ============================================================================
 DEFAULT_PARAMS = {
     'Scalping RSI+VWMA (default)': {
@@ -149,7 +152,7 @@ DEFAULT_PARAMS = {
 }
 
 # ============================================================================
-# SYMBOLS – (UNCHANGED)
+# SYMBOLS
 # ============================================================================
 ALL_SYMBOLS = ["BreakX 600", "BreakX 1200", "BreakX 1800", "PainX 600", "GainX 800",
                "FX Vol 20", "FX Vol 40", "FX Vol 60", "FX Vol 80", "FX Vol 99"]
@@ -163,7 +166,7 @@ SYMBOL_VARIANTS = {
 }
 
 # ============================================================================
-# LOAD STRATEGIES FROM BACKTEST – (UNCHANGED)
+# LOAD STRATEGIES FROM BACKTEST
 # ============================================================================
 def load_strategies_from_backtest():
     csv_files = glob.glob("backtest_full_summary.csv")
@@ -194,7 +197,7 @@ def load_strategies_from_backtest():
     return ['Scalping DMI+MACD (default)', 'Scalping DMI+MACD (tuned)', 'Scalping HMA+Stoch (tuned)']
 
 # ============================================================================
-# LIVE TRADING ENGINE – REFACTORED TO USE MT5Connection
+# LIVE TRADING ENGINE – WITH FIXED DNA INSTANTIATION AND FULL DEFAULTS
 # ============================================================================
 class LiveTradingEngine:
     def __init__(self, symbols=None, max_total_positions=7, max_positions_per_strategy=3,
@@ -214,26 +217,57 @@ class LiveTradingEngine:
         self.cycle_count = 0
         self.open_positions = {}
 
-        # NEW: Instantiate the singleton MT5 connector
+        # Session management
+        self.session_id = datetime.now().strftime("%Y%m%d_%H%M%S")
+        self.session_dir = f"live_results/session_{self.session_id}"
+        os.makedirs(self.session_dir, exist_ok=True)
+        self.trade_log = []
+
+        # Sync settings
+        self.sync_interval = 10
+        self.cycle_counter = 0
+
+        # MT5 connector
         self.conn = MT5Connection()
+        self.symbol_dna_cache = {}
 
     def _log(self, msg, level="INFO"):
         if self.verbose:
             print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] [{level}] {msg}")
 
     # ========================================================================
-    # MT5 CONNECTION – DELEGATED TO CONNECTOR
+    # JSONL STREAMING
+    # ========================================================================
+    def _log_event(self, event_type, data):
+        event = {
+            "timestamp": datetime.now().isoformat(),
+            "type": event_type,
+            "data": data
+        }
+        events_file = os.path.join(self.session_dir, "events.jsonl")
+        with open(events_file, 'a') as f:
+            f.write(json.dumps(event, default=str) + "\n")
+
+    def _log_equity(self):
+        if not self.is_mt5_ready():
+            return
+        balance = self.conn.get_account_balance()
+        equity = self.conn.get_account_equity()
+        self._log_event("equity", {
+            "balance": balance,
+            "equity": equity,
+            "open_positions": self.position_count,
+            "cycle": self.cycle_count
+        })
+
+    # ========================================================================
+    # CONNECTION
     # ========================================================================
     def connect_mt5(self):
-        """Initialize MT5 using the central connector."""
         self._log("Connecting via MT5Connection...")
-        # The connector uses the map from mt5_connection.py
-        # If you have login/password/server, pass them here.
-        # For now, it tries anonymous connection first.
         success = self.conn.connect()
         if success:
             self._log("✅ MT5 connected successfully via connector.")
-            # Enable symbols (handled inside connector)
         else:
             self._log("❌ MT5 connection failed.", "ERROR")
         return success
@@ -243,51 +277,170 @@ class LiveTradingEngine:
         self._log("MT5 disconnected")
 
     def is_mt5_ready(self):
-        """Check if MT5 is ready for trading."""
         return self.conn.is_connected()
 
     # ========================================================================
-    # SYMBOL RESOLUTION – FALLBACK TO VARIANTS
+    # HISTORY RETRIEVAL FOR EXTERNAL CLOSES
+    # ========================================================================
+    def _get_closed_trade_details(self, ticket):
+        try:
+            deals = mt5.history_deals_get(position=ticket)
+            if deals is not None and len(deals) > 0:
+                deal = deals[-1]
+                return {
+                    'exit_price': deal.price,
+                    'pnl': deal.profit,
+                    'close_time': deal.time,
+                }
+            orders = mt5.history_orders_get(ticket=ticket)
+            if orders is not None and len(orders) > 0:
+                order = orders[-1]
+                return {
+                    'exit_price': order.price,
+                    'pnl': order.profit,
+                    'close_time': order.time_done,
+                }
+            return None
+        except Exception as e:
+            self._log(f"Error fetching history for ticket {ticket}: {e}", "ERROR")
+            return None
+
+    # ========================================================================
+    # POSITION SYNCHRONISATION
+    # ========================================================================
+    def _sync_open_positions(self):
+        if not self.is_mt5_ready():
+            self._log("MT5 not ready, cannot sync positions.", "WARNING")
+            return
+
+        self._log("Syncing open positions with MT5...")
+        mt5_positions = self.conn.get_positions()
+        mt5_tickets = set()
+        mt5_pos_dict = {}
+        for pos in mt5_positions:
+            mt5_tickets.add(pos['ticket'])
+            mt5_pos_dict[pos['ticket']] = pos
+
+        to_remove = []
+        for key, local_pos in self.open_positions.items():
+            ticket = local_pos.get('ticket')
+            if ticket is not None and ticket not in mt5_tickets:
+                self._log(f"Position {ticket} ({local_pos['strategy']} on {local_pos['symbol']}) no longer in MT5.")
+                history = self._get_closed_trade_details(ticket)
+                if history is not None:
+                    pnl = history.get('pnl', 0)
+                    if pnl != 0:
+                        self.performance[local_pos['strategy']]['trades'] += 1
+                        self.performance[local_pos['strategy']]['pnl'] += pnl
+                        if pnl > 0:
+                            self.performance[local_pos['strategy']]['wins'] += 1
+                        else:
+                            self.performance[local_pos['strategy']]['losses'] += 1
+                        self._log(f"📊 Recorded PnL from closed trade {ticket}: ${pnl:.2f}")
+                    for trade in self.trade_log:
+                        if trade.get('ticket') == ticket and trade.get('status') == 'open':
+                            trade['status'] = 'closed'
+                            trade['exit_price'] = history.get('exit_price')
+                            trade['exit_time'] = datetime.fromtimestamp(history.get('close_time', time.time())).isoformat()
+                            trade['pnl'] = pnl
+                            trade['close_reason'] = 'external (SL/TP or manual)'
+                            break
+                else:
+                    for trade in self.trade_log:
+                        if trade.get('ticket') == ticket and trade.get('status') == 'open':
+                            trade['status'] = 'stale'
+                            trade['close_reason'] = 'no history found'
+                            break
+                to_remove.append(key)
+
+        for key in to_remove:
+            self._remove_local_position(key, reason="stale")
+
+        for ticket, pos in mt5_pos_dict.items():
+            exists = any(local.get('ticket') == ticket for local in self.open_positions.values())
+            if exists:
+                continue
+            genx_sym = pos.get('symbol') or pos.get('mt5_symbol', 'Unknown')
+            comment = pos.get('comment', '')
+            strategy_name = None
+            if comment.startswith("SYNTHX_"):
+                raw = comment[7:]
+                for s in self.strategy_list:
+                    clean_s = s.replace(' ', '_').replace('(', '').replace(')', '').replace('+', '').replace('-', '')
+                    if clean_s in raw or raw in clean_s:
+                        strategy_name = s
+                        break
+            if not strategy_name:
+                strategy_name = self.strategy_list[0] if self.strategy_list else "Unknown"
+                self._log(f"Could not determine strategy for position {ticket}, assigning to {strategy_name}")
+
+            key = (strategy_name, genx_sym)
+            if key in self.open_positions:
+                self.open_positions[key]['ticket'] = ticket
+            else:
+                self.open_positions[key] = {
+                    'strategy': strategy_name,
+                    'symbol': genx_sym,
+                    'entry_price': pos['price_open'],
+                    'sl': pos['sl'],
+                    'tp': pos['tp'],
+                    'lot': pos['volume'],
+                    'entry_time': datetime.fromtimestamp(pos.get('time', time.time())),
+                    'action': 'BUY' if pos['type'] == mt5.ORDER_TYPE_BUY else 'SELL',
+                    'status': 'open',
+                    'ticket': ticket
+                }
+                self.position_count += 1
+                self.strategy_positions[strategy_name] = self.strategy_positions.get(strategy_name, 0) + 1
+                self._log(f"Added missing position {ticket} ({strategy_name} on {genx_sym}) from MT5 sync.")
+
+        self._log(f"Sync complete. Local positions: {self.position_count}")
+
+    def _remove_local_position(self, key, reason="stale"):
+        if key not in self.open_positions:
+            return
+        pos = self.open_positions[key]
+        ticket = pos.get('ticket')
+        if ticket is not None:
+            for trade in self.trade_log:
+                if trade.get('ticket') == ticket and trade.get('status') == 'open':
+                    trade['status'] = 'closed' if reason == 'closed' else 'stale'
+                    trade['exit_time'] = datetime.now().isoformat()
+                    trade['exit_price'] = None
+                    trade['pnl'] = None
+                    trade['close_reason'] = reason
+                    break
+        self.position_count = max(0, self.position_count - 1)
+        self.strategy_positions[pos['strategy']] = max(0, self.strategy_positions.get(pos['strategy'], 0) - 1)
+        self._log(f"🧹 Removed {reason} position {pos['strategy']} on {pos['symbol']} from local tracking.")
+        del self.open_positions[key]
+
+    # ========================================================================
+    # SYMBOL RESOLUTION
     # ========================================================================
     def _resolve_mt5_symbol(self, genx_name):
-        """Resolve GenX name to an actual MT5 symbol using the connector map,
-        falling back to SYMBOL_VARIANTS if not found."""
-        # Try the connector's official map first
         mt5_sym = self.conn.resolve_genx_symbol(genx_name)
         if mt5_sym:
             return mt5_sym
-        
-        # Fallback to the engine's own variants (for flexibility)
         variants = SYMBOL_VARIANTS.get(genx_name, [genx_name])
         for v in variants:
-            # We need to check if this variant actually exists in MT5
-            # Since we don't have a direct 'symbol_exist' in connector,
-            # we can use mt5.symbol_info directly (mt5 is imported globally).
             info = mt5.symbol_info(v)
             if info is not None:
                 return v
         return None
 
     # ========================================================================
-    # DATA FETCHING – DELEGATED TO CONNECTOR
+    # DATA FETCHING & DNA COMPUTATION (FIXED)
     # ========================================================================
     def get_live_ohlc(self, symbol, bars=200):
         if not self.is_mt5_ready():
-            self._log("MT5 not ready", "ERROR")
             return None
-        
         mt5_sym = self._resolve_mt5_symbol(symbol)
         if not mt5_sym:
-            self._log(f"Could not resolve symbol: {symbol}", "ERROR")
             return None
-        
-        # Use connector's get_historical_data
         df = self.conn.get_historical_data(mt5_sym, mt5.TIMEFRAME_M5, bars)
         if df.empty:
-            self._log(f"No data for {symbol} (resolved to {mt5_sym})", "ERROR")
             return None
-        
-        # Ensure column names match the existing expectations (Open, High, Low, Close)
         df.rename(columns={
             'open': 'Open',
             'high': 'High',
@@ -298,33 +451,42 @@ class LiveTradingEngine:
             df.set_index('Date', inplace=True)
         return df[['Open', 'High', 'Low', 'Close']]
 
+    def _compute_dna_profile(self, symbol, df):
+        if df is None or len(df) < 50:
+            return None
+        try:
+            analyzer = DNAAnalyzer(df, symbol, mt5.TIMEFRAME_M5)
+            # Adjust extraction to match your DNAAnalyzer's actual structure
+            if hasattr(analyzer, 'context'):
+                profile = analyzer.context
+            elif hasattr(analyzer, 'profile'):
+                profile = analyzer.profile
+            elif hasattr(analyzer, 'get_profile'):
+                profile = analyzer.get_profile()
+            else:
+                profile = None
+            return profile
+        except Exception as e:
+            self._log(f"Error computing DNA for {symbol}: {e}", "ERROR")
+            return None
+
     # ========================================================================
-    # STRATEGY PARAMETERS – (UNCHANGED)
+    # STRATEGY PARAMETERS
     # ========================================================================
     def get_strategy_params(self, strategy_name, symbol):
         if self.use_optimized:
             params = self._load_optimized_params(strategy_name, symbol)
             if params:
                 return params, "optimized"
-        
         if strategy_name in DEFAULT_PARAMS:
             return DEFAULT_PARAMS[strategy_name], "default"
-        
         for key, params in DEFAULT_PARAMS.items():
             if key in strategy_name or strategy_name in key:
                 return params, "default"
-        
         base_name = strategy_name.split('(')[0].strip()
         for key, params in DEFAULT_PARAMS.items():
             if key.startswith(base_name) or base_name.startswith(key):
                 return params, "default"
-        
-        for key, params in DEFAULT_PARAMS.items():
-            for cls_name in STRATEGY_CLASS_MAP.keys():
-                if cls_name in key and (cls_name in strategy_name or strategy_name in cls_name):
-                    return params, "default"
-        
-        self._log(f"No params for {strategy_name}", "ERROR")
         return None, None
 
     def _load_optimized_params(self, strategy_name, symbol):
@@ -344,64 +506,41 @@ class LiveTradingEngine:
     def get_strategy_class(self, strategy_name):
         if strategy_name in STRATEGY_CLASS_MAP:
             return STRATEGY_CLASS_MAP[strategy_name]
-        
         for key, cls in STRATEGY_CLASS_MAP.items():
             if key in strategy_name or strategy_name in key:
                 return cls
-        
         base_name = strategy_name.split('(')[0].strip()
         for key, cls in STRATEGY_CLASS_MAP.items():
             if key.startswith(base_name) or base_name.startswith(key):
                 return cls
-        
-        self._log(f"No class found for {strategy_name}", "ERROR")
         return None
 
     # ========================================================================
-    # ORDER SENDING – DELEGATED TO CONNECTOR
+    # ORDER SENDING & POSITION MANAGEMENT
     # ========================================================================
     def _calculate_lot(self, symbol, entry_price, stop_loss):
-        """Calculates lot size based on risk. Uses mt5.symbol_info directly
-        to keep the exact same logic as before."""
         if entry_price is None or stop_loss is None:
             return 0.01
         if not self.is_mt5_ready():
             return 0.01
-        
-        # Use the engine's own resolver to get the correct MT5 symbol for info
         used_symbol = self._resolve_mt5_symbol(symbol)
         if not used_symbol:
-            # Fallback to original variants logic
-            variants = SYMBOL_VARIANTS.get(symbol, [symbol])
-            for v in variants:
-                info = mt5.symbol_info(v)
-                if info is not None:
-                    used_symbol = v
-                    symbol_info = info
-                    break
-            else:
-                return 0.01
-        else:
-            symbol_info = mt5.symbol_info(used_symbol)
-        
+            return 0.01
+        symbol_info = mt5.symbol_info(used_symbol)
         if symbol_info is None:
             return 0.01
-        
         tick_value = symbol_info.trade_tick_value
         tick_size = symbol_info.trade_tick_size
         if tick_size == 0:
             return 0.01
-        
         account = mt5.account_info()
         if account is None:
             return 0.01
-        
         risk_amount = account.equity * self.risk_per_trade
         sl_distance = abs(entry_price - stop_loss)
         ticks = sl_distance / tick_size
         if ticks == 0:
             return 0.01
-        
         lot = risk_amount / (ticks * tick_value)
         lot_step = symbol_info.volume_step
         lot = round(lot / lot_step) * lot_step
@@ -409,59 +548,41 @@ class LiveTradingEngine:
         return round(lot, 2)
 
     def _send_mt5_order(self, symbol, action, lot, sl, tp, comment):
-        """Send an order using the central connector, which handles filling modes."""
         if not self.is_mt5_ready():
             return False, "MT5 not ready", None
-        
         if self.demo_mode:
             self._log(f"  [DEMO] {action} {lot} lots on {symbol} (SL: {sl}, TP: {tp})")
             return True, "Demo order accepted", None
-        
-        # Resolve symbol
+
         used_symbol = self._resolve_mt5_symbol(symbol)
         if not used_symbol:
-            # Fallback to original variants logic
-            variants = SYMBOL_VARIANTS.get(symbol, [symbol])
-            for v in variants:
-                info = mt5.symbol_info(v)
-                if info is not None:
-                    used_symbol = v
-                    break
-            if not used_symbol:
-                return False, f"Symbol {symbol} not found", None
-        
-        # Map action string to MT5 constants
+            return False, f"Symbol {symbol} not found", None
+
         if action.upper() == "BUY":
             order_type = mt5.ORDER_TYPE_BUY
         elif action.upper() == "SELL":
             order_type = mt5.ORDER_TYPE_SELL
         else:
             return False, f"Invalid action: {action}", None
-        
-        # Let the connector handle the actual placement.
-        # The connector's place_market_order auto-detects the best filling mode.
+
         result = self.conn.place_market_order(
-            symbol=used_symbol,          # pass the actual MT5 symbol here
+            symbol=used_symbol,
             order_type=order_type,
             volume=lot,
             sl=sl,
             tp=tp,
-            comment=comment,
-            filling_mode=mt5.ORDER_FILLING_FOK  # The connector will override if needed
+            comment="GenX",
+            filling_mode=mt5.ORDER_FILLING_FOK
         )
-        
+
         if result.get('success'):
             return True, f"Order placed: {result.get('order_id')} (price: {result.get('price')})", result.get('order_id')
         else:
             return False, f"Order failed: {result.get('error', 'Unknown error')}", None
 
-    # ========================================================================
-    # POSITION MANAGEMENT – NOW CLOSES REAL POSITIONS
-    # ========================================================================
-    def open_position(self, strategy_name, symbol, signal):
+    def open_position(self, strategy_name, symbol, signal, dna_profile=None):
         key = (strategy_name, symbol)
         if key in self.open_positions:
-            self._log(f"Already have position for {strategy_name} on {symbol}")
             return None
         if self.position_count >= self.max_total_positions:
             self._log(f"Total position limit reached ({self.position_count}/{self.max_total_positions})")
@@ -473,18 +594,16 @@ class LiveTradingEngine:
         entry = signal['entry']
         sl = signal['stop_loss']
         tp = signal['take_profit']
-
         lot = self._calculate_lot(symbol, entry, sl)
         if lot <= 0:
             self._log(f"Invalid lot size: {lot}", "ERROR")
             return None
 
-        success, msg, order_id = self._send_mt5_order(symbol, signal['action'], lot, sl, tp, f"SYNTHX_{strategy_name}")
+        success, msg, order_id = self._send_mt5_order(symbol, signal['action'], lot, sl, tp, "GenX")
         if not success:
             self._log(f"Order failed: {msg}", "ERROR")
             return None
 
-        # Store the actual MT5 order ticket ID so we can close it later
         pos = {
             'strategy': strategy_name,
             'symbol': symbol,
@@ -495,34 +614,86 @@ class LiveTradingEngine:
             'entry_time': datetime.now(),
             'action': signal['action'],
             'status': 'open',
-            'ticket': order_id  # <-- NEW: store MT5 ticket for closing
+            'ticket': order_id
         }
         self.open_positions[key] = pos
         self.position_count += 1
         self.strategy_positions[strategy_name] = self.strategy_positions.get(strategy_name, 0) + 1
         self._log(f"🟢 OPEN {strategy_name} on {symbol} @ {entry:.2f} (Ticket: {order_id}, Total: {self.position_count})")
+
+        trade_entry = {
+            'ticket': order_id,
+            'strategy': strategy_name,
+            'symbol': symbol,
+            'action': signal['action'],
+            'entry_price': entry,
+            'lot': lot,
+            'sl': sl,
+            'tp': tp,
+            'entry_time': datetime.now().isoformat(),
+            'exit_price': None,
+            'exit_time': None,
+            'pnl': None,
+            'status': 'open',
+        }
+        if dna_profile is not None:
+            trade_entry['dna'] = dna_profile
+        self.trade_log.append(trade_entry)
+
+        self._log_event("trade_open", {
+            "ticket": order_id,
+            "strategy": strategy_name,
+            "symbol": symbol,
+            "action": signal['action'],
+            "entry_price": entry,
+            "lot": lot,
+            "sl": sl,
+            "tp": tp
+        })
+        self._log_equity()
         return pos
 
     def close_position(self, key, exit_price=None):
-        """Close a position – now sends the actual MT5 close order."""
         if key not in self.open_positions:
             return
         pos = self.open_positions[key]
         if pos['status'] != 'open':
             return
 
-        # 1. CLOSE THE REAL MT5 POSITION
         if not self.demo_mode and pos.get('ticket'):
-            close_result = self.conn.close_position(pos['ticket'], comment="GenX_Close")
-            if not close_result.get('success'):
-                self._log(f"⚠️ Failed to close MT5 position {pos['ticket']}: {close_result.get('error')}", "ERROR")
-                # Don't remove from local tracking if MT5 failed? Better to retry or log hard.
-                # For safety, we proceed with local removal but flag it.
-                self._log(f"⚠️ Proceeding with local removal despite MT5 error.", "WARNING")
-            else:
-                self._log(f"✅ MT5 position {pos['ticket']} closed via connector.")
+            try:
+                mt5_check = mt5.positions_get(ticket=pos['ticket'])
+            except Exception as e:
+                self._log(f"Error checking position {pos['ticket']}: {e}", "ERROR")
+                return
+            if mt5_check is None or len(mt5_check) == 0:
+                self._log(f"Position {pos['ticket']} no longer exists in MT5. Removing locally.")
+                self._remove_local_position(key, reason="stale")
+                return
 
-        # 2. Calculate PnL for local tracking
+        close_success = False
+        if not self.demo_mode and pos.get('ticket'):
+            try:
+                close_result = self.conn.close_position(pos['ticket'], comment="GenX_Close")
+            except Exception as e:
+                self._log(f"Exception in close_position: {e}", "ERROR")
+                return
+
+            if close_result.get('success'):
+                self._log(f"✅ MT5 position {pos['ticket']} closed.")
+                close_success = True
+            else:
+                error_msg = close_result.get('error', '').lower()
+                if "not found" in error_msg or "already closed" in error_msg:
+                    self._log(f"Position {pos['ticket']} already closed; removing locally.")
+                    self._remove_local_position(key, reason="stale")
+                    return
+                else:
+                    self._log(f"⚠️ Failed to close MT5 position {pos['ticket']}: {close_result.get('error')}", "ERROR")
+                    return
+        else:
+            close_success = True
+
         if exit_price is None:
             df = self.get_live_ohlc(pos['symbol'], 1)
             if df is not None:
@@ -550,22 +721,82 @@ class LiveTradingEngine:
             self.performance[pos['strategy']]['losses'] += 1
 
         self._log(f"🔴 CLOSE {pos['strategy']} on {pos['symbol']} PnL: ${pnl:.2f}")
+
+        for trade in self.trade_log:
+            if trade.get('ticket') == pos.get('ticket') and trade.get('status') == 'open':
+                trade['exit_price'] = exit_price
+                trade['exit_time'] = datetime.now().isoformat()
+                trade['pnl'] = pnl
+                trade['status'] = 'closed'
+                trade['close_reason'] = 'signal'
+                break
+
+        self._log_event("trade_close", {
+            "ticket": pos['ticket'],
+            "strategy": pos['strategy'],
+            "symbol": pos['symbol'],
+            "exit_price": exit_price,
+            "pnl": pnl,
+            "reason": "signal"
+        })
+        self._log_equity()
+
         del self.open_positions[key]
 
     # ========================================================================
-    # MAIN LOOP – (UNCHANGED LOGIC)
+    # SESSION SAVING
+    # ========================================================================
+    def _save_session(self):
+        trade_file = os.path.join(self.session_dir, "trades.json")
+        with open(trade_file, 'w') as f:
+            json.dump(self.trade_log, f, indent=2, default=str)
+        self._log(f"Trade log saved to {trade_file}")
+
+        perf_file = os.path.join(self.session_dir, "performance.json")
+        with open(perf_file, 'w') as f:
+            json.dump(self.performance, f, indent=2)
+        self._log(f"Performance saved to {perf_file}")
+
+        if self.open_positions:
+            pos_snapshot = {}
+            for key, pos in self.open_positions.items():
+                pos_snapshot[f"{key[0]}_{key[1]}"] = pos
+            pos_file = os.path.join(self.session_dir, "open_positions.json")
+            with open(pos_file, 'w') as f:
+                json.dump(pos_snapshot, f, indent=2, default=str)
+            self._log(f"Open positions snapshot saved to {pos_file}")
+
+    # ========================================================================
+    # MAIN LOOP
     # ========================================================================
     def run_cycle(self, bars=200):
         self.cycle_count += 1
+        self.cycle_counter += 1
+
+        if self.cycle_counter % self.sync_interval == 0:
+            self._sync_open_positions()
+            self._log_equity()
+
         self._log(f"🔄 Cycle {self.cycle_count}")
-        
+
         if not self.is_mt5_ready():
             self._log("MT5 not ready, attempting reconnect...")
             if not self.connect_mt5():
                 self._log("Failed to reconnect", "ERROR")
                 return
 
+        self.symbol_dna_cache = {}
+
         for symbol in self.symbols:
+            df = self.get_live_ohlc(symbol, bars)
+            if df is None:
+                continue
+            dna_profile = self._compute_dna_profile(symbol, df)
+            if dna_profile is not None:
+                self.symbol_dna_cache[symbol] = dna_profile
+            else:
+                self.symbol_dna_cache[symbol] = None
+
             for strategy_name in self.strategy_list:
                 key = (strategy_name, symbol)
                 existing = self.open_positions.get(key)
@@ -576,10 +807,6 @@ class LiveTradingEngine:
 
                 strategy_class = self.get_strategy_class(strategy_name)
                 if strategy_class is None:
-                    continue
-
-                df = self.get_live_ohlc(symbol, bars)
-                if df is None:
                     continue
 
                 try:
@@ -595,10 +822,12 @@ class LiveTradingEngine:
                             continue
                         if self.strategy_positions.get(strategy_name, 0) >= self.max_positions_per_strategy:
                             continue
-                        self.open_position(strategy_name, symbol, signal)
+                        self.open_position(strategy_name, symbol, signal, dna_profile=self.symbol_dna_cache.get(symbol))
                 except Exception as e:
                     self._log(f"Error in strategy {strategy_name}: {e}", "ERROR")
                     continue
+
+        self._log_equity()
 
     def print_status(self):
         print("\n" + "="*70)
@@ -638,7 +867,9 @@ class LiveTradingEngine:
         if not self.connect_mt5():
             return
 
-        self._log(f"🚀 Starting live trading engine")
+        self._sync_open_positions()
+
+        self._log(f"🚀 Starting live trading engine (Session: {self.session_id})")
         self._log(f"   Strategies: {len(self.strategy_list)} strategies")
         self._log(f"   Symbols: {self.symbols}")
         self._log(f"   Max total positions: {self.max_total_positions}, Max per strategy: {self.max_positions_per_strategy}")
@@ -661,12 +892,12 @@ class LiveTradingEngine:
         except KeyboardInterrupt:
             self._log("Interrupted by user")
         finally:
-            # Close all open positions gracefully (now actually closes MT5 orders)
             self._log("Closing all remaining positions...")
             for key in list(self.open_positions.keys()):
                 self.close_position(key)
             self.disconnect_mt5()
             self.print_final_summary()
+            self._save_session()
 
 # ============================================================================
 # MAIN
@@ -678,8 +909,8 @@ if __name__ == "__main__":
         max_positions_per_strategy=3,
         strategy_list=None,
         use_optimized=False,
-        demo_mode=False,   # Set to False for real orders
+        demo_mode=False,
         verbose=True,
         risk_per_trade=1.0
     )
-    engine.run(cycles=900, bars=200, interval=10)
+    engine.run(cycles=100, bars=200, interval=60)

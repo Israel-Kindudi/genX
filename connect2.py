@@ -1,7 +1,10 @@
 #!/usr/bin/env python
 """
 mt5_connection.py - Centralized MT5 connector for GenX (SYNTHX)
-With strict comment sanitisation and numeric error code handling.
+- Strict comment sanitisation
+- Automatic filling-mode fallback (with exhaustive trial)
+- Increased deviation for closing
+- Singleton pattern
 """
 
 import time
@@ -31,7 +34,7 @@ MT5_TO_GENX_MAP = {v: k for k, v in GENX_TO_MT5_MAP.items()}
 logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO)
 
-# Numeric error code for unsupported filling mode (some MT5 versions lack the constant)
+# Numeric constant for unsupported filling mode (some MT5 versions lack the constant)
 TRADE_RETCODE_UNSUPPORTED_FILLING_MODE = 10030
 
 class MT5Connection:
@@ -133,22 +136,11 @@ class MT5Connection:
         return MT5_TO_GENX_MAP.get(mt5_symbol)
 
     # ------------------------------------------------------------------
-    # COMMENT SANITISATION (FIXES "Invalid 'comment' argument")
+    # COMMENT SANITISATION
     # ------------------------------------------------------------------
     def _sanitize_comment(self, comment: str) -> str:
-        """
-        MT5 comments: max 31 characters, only alphanumeric, underscore, hyphen.
-        """
-        if not comment:
-            return "GenX"
-        # Keep only alphanumeric, underscore, hyphen
-        sanitized = re.sub(r'[^a-zA-Z0-9_-]', '', comment)
-        # Truncate to 31 chars
-        sanitized = sanitized[:31]
-        if not sanitized:
-            sanitized = "GenX"
-        logger.debug(f"Sanitised comment: '{sanitized}' (len={len(sanitized)})")
-        return sanitized
+        # Force a fixed, very short comment to avoid any "Invalid comment" error
+        return "GenX"
 
     # ------------------------------------------------------------------
     # DATA FETCHING
@@ -188,7 +180,7 @@ class MT5Connection:
         }
 
     # ------------------------------------------------------------------
-    # FILLING MODE
+    # ORDER PLACEMENT (with fallback)
     # ------------------------------------------------------------------
     def _get_best_filling_mode(self, mt5_symbol: str, preferred_mode: int = mt5.ORDER_FILLING_FOK) -> int:
         info = mt5.symbol_info(mt5_symbol)
@@ -208,9 +200,6 @@ class MT5Connection:
         logger.warning(f"No filling mode supported for {mt5_symbol}, using FOK.")
         return mt5.ORDER_FILLING_FOK
 
-    # ------------------------------------------------------------------
-    # ORDER PLACEMENT (with sanitised comment)
-    # ------------------------------------------------------------------
     def place_market_order(self, symbol: str, order_type: int, volume: float,
                             sl: float = 0.0, tp: float = 0.0,
                             comment: str = "GenX",
@@ -241,10 +230,7 @@ class MT5Connection:
         if filling_mode is None:
             filling_mode = self._get_best_filling_mode(mt5_sym, preferred_mode=mt5.ORDER_FILLING_FOK)
 
-        # Sanitise and use a fixed short comment to avoid any issues
         safe_comment = self._sanitize_comment(comment)
-        # Force a fixed comment for maximum compatibility
-        safe_comment = "GenX"  # Override to use a universal, short, valid comment
         logger.info(f"Using comment: '{safe_comment}' (original: '{comment}')")
 
         request = {
@@ -286,7 +272,6 @@ class MT5Connection:
                 "comment": result.comment
             }
         else:
-            # Use numeric constant to avoid AttributeError
             if result.retcode == TRADE_RETCODE_UNSUPPORTED_FILLING_MODE:
                 logger.warning(f"Filling mode {filling_mode} not supported for {mt5_sym}. Trying fallback.")
                 supported = info.filling_mode
@@ -310,13 +295,18 @@ class MT5Connection:
             }
 
     # ------------------------------------------------------------------
-    # CLOSE POSITION (with sanitised comment and filling mode fallback)
+    # CLOSE POSITION – ROBUST (exhaustive mode trial)
     # ------------------------------------------------------------------
     def close_position(self, position_id: int, comment: str = "GenX_Close") -> Dict[str, Any]:
         if not self.is_connected():
             return {"success": False, "error": "Not connected"}
 
-        positions = mt5.positions_get(ticket=position_id)
+        # 1. Get the position
+        try:
+            positions = mt5.positions_get(ticket=position_id)
+        except Exception as e:
+            return {"success": False, "error": f"Exception in positions_get: {e}"}
+
         if not positions or len(positions) == 0:
             return {"success": False, "error": f"Position {position_id} not found"}
 
@@ -326,21 +316,30 @@ class MT5Connection:
         if info is None:
             return {"success": False, "error": f"Symbol {symbol} not found"}
 
+        tick = mt5.symbol_info_tick(symbol)
+        if tick is None:
+            return {"success": False, "error": f"No tick for {symbol}"}
+
         if pos.type == mt5.ORDER_TYPE_BUY:
             order_type = mt5.ORDER_TYPE_SELL
-            price = mt5.symbol_info_tick(symbol).bid
+            price = tick.bid
         else:
             order_type = mt5.ORDER_TYPE_BUY
-            price = mt5.symbol_info_tick(symbol).ask
+            price = tick.ask
 
+        # 2. Determine supported filling modes with logging
         supported = info.filling_mode
-        modes_to_try = [mt5.ORDER_FILLING_FOK, mt5.ORDER_FILLING_IOC, mt5.ORDER_FILLING_RETURN]
-        modes_to_try = [m for m in modes_to_try if m & supported]
-        if not modes_to_try:
-            modes_to_try = [mt5.ORDER_FILLING_FOK]
+        logger.info(f"Symbol {symbol} filling_mode bitmask: {supported}")
 
-        # Use a fixed short comment for closing too
-        safe_comment = "GenX"
+        # Build list of modes to try (preference order)
+        all_modes = [mt5.ORDER_FILLING_FOK, mt5.ORDER_FILLING_IOC, mt5.ORDER_FILLING_RETURN]
+        modes_to_try = [m for m in all_modes if (m & supported)]
+        if not modes_to_try:
+            # If none reported, try all anyway
+            modes_to_try = all_modes
+            logger.warning(f"No filling mode reported for {symbol}; will attempt all.")
+
+        safe_comment = self._sanitize_comment(comment)
         last_result = None
 
         for filling_mode in modes_to_try:
@@ -351,26 +350,36 @@ class MT5Connection:
                 "type": order_type,
                 "position": pos.ticket,
                 "price": price,
-                "deviation": 20,
+                "deviation": 50,          # increased for liquidity
                 "magic": 123456,
                 "comment": safe_comment,
                 "type_time": mt5.ORDER_TIME_GTC,
                 "type_filling": filling_mode,
             }
 
-            result = mt5.order_send(request)
-            if result is None:
+            try:
+                result = mt5.order_send(request)
+            except Exception as e:
+                logger.error(f"Exception sending close order: {e}")
                 continue
+
+            if result is None:
+                logger.warning(f"order_send returned None for mode {filling_mode}")
+                continue
+
             last_result = result
             if result.retcode == mt5.TRADE_RETCODE_DONE:
-                logger.info(f"Position {position_id} closed with filling mode {filling_mode}. Order: {result.order}")
+                logger.info(f"Position {position_id} closed with mode {filling_mode}. Order: {result.order}")
                 return {"success": True, "order_id": result.order, "price": result.price}
-            elif result.retcode == TRADE_RETCODE_UNSUPPORTED_FILLING_MODE:
-                logger.warning(f"Filling mode {filling_mode} not supported for closing {symbol}, trying next.")
-                continue
-            else:
-                return {"success": False, "error": f"{result.comment} (code {result.retcode})"}
 
+            if result.retcode == TRADE_RETCODE_UNSUPPORTED_FILLING_MODE:
+                logger.warning(f"Mode {filling_mode} unsupported for {symbol}, trying next.")
+                continue
+
+            # Any other error – abort and return error
+            return {"success": False, "error": f"{result.comment} (code {result.retcode})"}
+
+        # All modes failed
         return {"success": False, "error": f"All filling modes failed. Last: {last_result.comment if last_result else 'No result'}"}
 
     # ------------------------------------------------------------------
@@ -386,10 +395,13 @@ class MT5Connection:
             if mt5_sym is None:
                 mt5_sym = symbol
 
-        if mt5_sym:
-            positions = mt5.positions_get(symbol=mt5_sym)
-        else:
-            positions = mt5.positions_get()
+        try:
+            if mt5_sym:
+                positions = mt5.positions_get(symbol=mt5_sym)
+            else:
+                positions = mt5.positions_get()
+        except:
+            return []
 
         if positions is None:
             return []
