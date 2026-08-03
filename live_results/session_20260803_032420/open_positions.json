@@ -1,0 +1,86 @@
+{
+  "Scalping BB+MACD+TM (default)_FX Vol 60": {
+    "strategy": "Scalping BB+MACD+TM (default)",
+    "symbol": "FX Vol 60",
+    "entry_price": 26795.46,
+    "sl": 26582.4,
+    "tp": 26952.24,
+    "lot": 0.01,
+    "entry_time": "2026-08-03 03:24:21.594639",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 452983491
+  },
+  "Scalping HMA+Stoch (tuned)_GainX 800": {
+    "strategy": "Scalping HMA+Stoch (tuned)",
+    "symbol": "GainX 800",
+    "entry_price": 98170.24,
+    "sl": 98128.63714285714,
+    "tp": 98189.5192857143,
+    "lot": 0.1,
+    "entry_time": "2026-08-03 03:29:35.359960",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 453051128
+  },
+  "Scalping DMI+MACD (default)_BreakX 1200": {
+    "strategy": "Scalping DMI+MACD (default)",
+    "symbol": "BreakX 1200",
+    "entry_price": 103775.49,
+    "sl": 103755.95142857142,
+    "tp": 103796.74142857143,
+    "lot": 0.1,
+    "entry_time": "2026-08-03 03:43:01.298812",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 453060278
+  },
+  "Scalping HMA+Stoch (tuned)_FX Vol 20": {
+    "strategy": "Scalping HMA+Stoch (tuned)",
+    "symbol": "FX Vol 20",
+    "entry_price": 120768.33,
+    "sl": 120556.22685714287,
+    "tp": 120957.22971428571,
+    "lot": 0.01,
+    "entry_time": "2026-08-03 03:47:20.842372",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 453062593
+  },
+  "Scalping VWAP+StochRSI (default)_BreakX 1200": {
+    "strategy": "Scalping VWAP+StochRSI (default)",
+    "symbol": "BreakX 1200",
+    "entry_price": 103781.97,
+    "sl": 103790.498,
+    "tp": 103771.31,
+    "lot": 0.1,
+    "entry_time": "2026-08-03 03:48:25.018953",
+    "action": "SELL",
+    "status": "open",
+    "ticket": 453063050
+  },
+  "Scalping VWAP+StochRSI (default)_BreakX 1800": {
+    "strategy": "Scalping VWAP+StochRSI (default)",
+    "symbol": "BreakX 1800",
+    "entry_price": 98805.0,
+    "sl": 98808.11714285714,
+    "tp": 98800.05975,
+    "lot": 0.13,
+    "entry_time": "2026-08-03 03:48:25.671861",
+    "action": "SELL",
+    "status": "open",
+    "ticket": 453063056
+  },
+  "Scalping VWAP+StochRSI (default)_PainX 600": {
+    "strategy": "Scalping VWAP+StochRSI (default)",
+    "symbol": "PainX 600",
+    "entry_price": 101872.95,
+    "sl": 101885.85571428572,
+    "tp": 101856.81785714286,
+    "lot": 0.1,
+    "entry_time": "2026-08-03 03:51:05.298072",
+    "action": "SELL",
+    "status": "open",
+    "ticket": 453065646
+  }
+}

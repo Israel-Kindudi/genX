@@ -1,0 +1,86 @@
+{
+  "Scalping BB+MACD+TM (default)_FX Vol 60": {
+    "strategy": "Scalping BB+MACD+TM (default)",
+    "symbol": "FX Vol 60",
+    "entry_price": 26795.46,
+    "sl": 26582.4,
+    "tp": 26952.24,
+    "lot": 0.01,
+    "entry_time": "2026-08-03 02:50:08.259269",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 452983491
+  },
+  "Scalping BB+MACD+TM (default)_FX Vol 80": {
+    "strategy": "Scalping BB+MACD+TM (default)",
+    "symbol": "FX Vol 80",
+    "entry_price": 48201.03,
+    "sl": 47750.72,
+    "tp": 48547.1,
+    "lot": 0.01,
+    "entry_time": "2026-08-03 02:50:08.260261",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 452998423
+  },
+  "Scalping BB+MACD+TM (default)_BreakX 1800": {
+    "strategy": "Scalping BB+MACD+TM (default)",
+    "symbol": "BreakX 1800",
+    "entry_price": 98780.43,
+    "sl": 98769.13,
+    "tp": 98791.1,
+    "lot": 0.1,
+    "entry_time": "2026-08-03 02:50:08.260261",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 453002510
+  },
+  "Scalping VWAP+StochRSI (default)_BreakX 600": {
+    "strategy": "Scalping VWAP+StochRSI (default)",
+    "symbol": "BreakX 600",
+    "entry_price": 97687.33,
+    "sl": 97701.21742857143,
+    "tp": 97669.97071428572,
+    "lot": 0.1,
+    "entry_time": "2026-08-03 02:50:14.096811",
+    "action": "SELL",
+    "status": "open",
+    "ticket": 453013807
+  },
+  "Scalping VWAP+StochRSI (default)_BreakX 1200": {
+    "strategy": "Scalping VWAP+StochRSI (default)",
+    "symbol": "BreakX 1200",
+    "entry_price": 103739.47,
+    "sl": 103745.658,
+    "tp": 103731.735,
+    "lot": 0.1,
+    "entry_time": "2026-08-03 02:50:14.488884",
+    "action": "SELL",
+    "status": "open",
+    "ticket": 453013816
+  },
+  "Scalping VWAP+StochRSI (default)_BreakX 1800": {
+    "strategy": "Scalping VWAP+StochRSI (default)",
+    "symbol": "BreakX 1800",
+    "entry_price": 98786.61,
+    "sl": 98790.92314285714,
+    "tp": 98781.21857142857,
+    "lot": 0.1,
+    "entry_time": "2026-08-03 02:50:14.930431",
+    "action": "SELL",
+    "status": "open",
+    "ticket": 453013818
+  },
+  "Trend Following ADX (default)_BreakX 1800": {
+    "strategy": "Trend Following ADX (default)",
+    "symbol": "BreakX 1800",
+    "entry_price": 98786.61,
+    "sl": 98778.52285714286,
+    "tp": 98800.08857142857,
+    "lot": 0.1,
+    "entry_time": "2026-08-03 02:50:15.234570",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 453013825
+  }
+}

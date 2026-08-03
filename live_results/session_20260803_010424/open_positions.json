@@ -1,0 +1,74 @@
+{
+  "Scalping DMI+MACD (default)_FX Vol 60": {
+    "strategy": "Scalping DMI+MACD (default)",
+    "symbol": "FX Vol 60",
+    "entry_price": 26685.98,
+    "sl": 26551.452142857142,
+    "tp": 26839.777142857143,
+    "lot": 0.01,
+    "entry_time": "2026-08-03 01:34:35.425987",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 452941611
+  },
+  "Scalping VWAP+StochRSI (default)_FX Vol 99": {
+    "strategy": "Scalping VWAP+StochRSI (default)",
+    "symbol": "FX Vol 99",
+    "entry_price": 40914.56,
+    "sl": 40772.13828571428,
+    "tp": 41092.58714285714,
+    "lot": 0.01,
+    "entry_time": "2026-08-03 01:34:36.484643",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 452941622
+  },
+  "Trend Following (default)_FX Vol 80": {
+    "strategy": "Trend Following (default)",
+    "symbol": "FX Vol 80",
+    "entry_price": 47924.12,
+    "sl": 47662.20821428571,
+    "tp": 48273.33571428572,
+    "lot": 0.01,
+    "entry_time": "2026-08-03 01:35:38.614783",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 452942382
+  },
+  "Scalping HMA+Stoch (tuned)_FX Vol 99": {
+    "strategy": "Scalping HMA+Stoch (tuned)",
+    "symbol": "FX Vol 99",
+    "entry_price": 40987.97,
+    "sl": 40661.94942857143,
+    "tp": 41292.24585714286,
+    "lot": 0.01,
+    "entry_time": "2026-08-03 01:36:41.459073",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 452943295
+  },
+  "Scalping DMI+MACD (default)_FX Vol 40": {
+    "strategy": "Scalping DMI+MACD (default)",
+    "symbol": "FX Vol 40",
+    "entry_price": 190739.59,
+    "sl": 190014.62392857144,
+    "tp": 191420.85142857142,
+    "lot": 0.01,
+    "entry_time": "2026-08-03 01:46:00.720596",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 452951501
+  },
+  "Trend Aroon+RSI+SMA (default)_FX Vol 40": {
+    "strategy": "Trend Aroon+RSI+SMA (default)",
+    "symbol": "FX Vol 40",
+    "entry_price": 190726.95,
+    "sl": 190014.62392857144,
+    "tp": 191578.5267857143,
+    "lot": 0.01,
+    "entry_time": "2026-08-03 01:48:05.041588",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 452953206
+  }
+}

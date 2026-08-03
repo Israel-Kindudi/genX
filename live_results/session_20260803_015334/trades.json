@@ -1,0 +1,47 @@
+[
+  {
+    "ticket": 452957128,
+    "strategy": "Scalping VWAP+StochRSI (default)",
+    "symbol": "BreakX 600",
+    "action": "BUY",
+    "entry_price": 97562.38,
+    "lot": 0.1,
+    "sl": 97546.032,
+    "tp": 97582.815,
+    "entry_time": "2026-08-03T01:53:40.750078",
+    "exit_price": null,
+    "exit_time": null,
+    "pnl": null,
+    "status": "open"
+  },
+  {
+    "ticket": 452957142,
+    "strategy": "Scalping VWAP+StochRSI (default)",
+    "symbol": "GainX 800",
+    "action": "BUY",
+    "entry_price": 98265.1,
+    "lot": 0.1,
+    "sl": 98255.83142857143,
+    "tp": 98276.68571428572,
+    "entry_time": "2026-08-03T01:53:41.743577",
+    "exit_price": null,
+    "exit_time": null,
+    "pnl": null,
+    "status": "open"
+  },
+  {
+    "ticket": 452957145,
+    "strategy": "Scalping DMI+MACD (tuned)",
+    "symbol": "FX Vol 20",
+    "action": "BUY",
+    "entry_price": 120671.29,
+    "lot": 0.01,
+    "sl": 120344.246,
+    "tp": 120882.73599999999,
+    "entry_time": "2026-08-03T01:53:42.143672",
+    "exit_price": null,
+    "exit_time": null,
+    "pnl": null,
+    "status": "open"
+  }
+]
