@@ -1,0 +1,20 @@
+{
+  "Scalping DMI+MACD (tuned)": {
+    "trades": 1,
+    "pnl": -15.45,
+    "wins": 0,
+    "losses": 1
+  },
+  "Scalping RSI+VWMA (tuned)": {
+    "trades": 0,
+    "pnl": 0,
+    "wins": 0,
+    "losses": 0
+  },
+  "": {
+    "trades": 0,
+    "pnl": 0,
+    "wins": 0,
+    "losses": 0
+  }
+}

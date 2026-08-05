@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Trend PMax+NSM (tuned),PlusX 1_PERIOD_data,M5,165,29.09090909090909,0.7731731995952643,-33.88228571428597,2.4061011904761838,-1.2877167487684726,1.868501899021889,-37.73581748201104,-0.7843285544102823,-33.88228571428604,20260803_102443

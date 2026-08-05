@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Trend Following (default),FlipX 4_PERIOD_data,M5,1757,37.73477518497439,0.9408440883303217,-71.38464285714551,1.7124218918336533,-1.1121846609611592,1.539692060088083,-90.35694968854773,0.04827524034603279,-71.3846428571456,20260803_165926

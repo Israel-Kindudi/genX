@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Scalping RSI+VWMA (default),FX Vol 20_PERIOD_data,M5,4646,35.96642272922945,0.8637769123869209,-312.7987999999965,1.1869693382918693,-0.7718401896758691,1.5378433957816215,-297.0416198736549,0.17459899704410992,-312.7987999999968,20260803_171115

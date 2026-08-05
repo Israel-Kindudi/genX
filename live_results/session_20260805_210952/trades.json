@@ -1,0 +1,18 @@
+[
+  {
+    "ticket": 456850276,
+    "strategy": "Scalping DMI+MACD (default)",
+    "symbol": "PainX 600",
+    "action": "BUY",
+    "entry_price": 102688.87,
+    "lot": 0.1,
+    "sl": 102655.86571428571,
+    "tp": 102724.2757142857,
+    "entry_time": "2026-08-05T21:12:09.893592",
+    "exit_price": 102650.74,
+    "exit_time": "2026-08-06T00:14:56",
+    "pnl": -3.89,
+    "status": "closed",
+    "close_reason": "external (SL/TP or manual)"
+  }
+]

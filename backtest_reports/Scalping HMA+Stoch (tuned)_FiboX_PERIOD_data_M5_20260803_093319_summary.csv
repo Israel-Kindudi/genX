@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Scalping HMA+Stoch (tuned),FiboX_PERIOD_data,M5,1503,38.05721889554225,0.9632129236867919,-67.01828571426695,3.0677807192807536,-1.9631345443349757,1.5626950929743757,-85.76248905773637,-0.057909586685218374,-67.01828571426691,20260803_093319

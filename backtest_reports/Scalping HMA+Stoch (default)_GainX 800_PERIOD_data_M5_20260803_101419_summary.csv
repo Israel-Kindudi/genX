@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Scalping HMA+Stoch (default),GainX 800_PERIOD_data,M5,1455,35.4639175257732,0.6711586031086304,-126.52234285713871,0.500444822812846,-0.40974640194735595,1.2213525742616353,-126.30929353958602,-0.2142595748425418,-126.5223428571385,20260803_101419

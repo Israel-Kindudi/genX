@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Trend Following ADX (default),BreakX 1200_PERIOD_data,M1,1373,48.87108521485797,1.507717928167358,147796.0196356976,654.0904641952253,-414.67048695056775,1.5773740470543747,-46.76482692876159,1.3959200839440353,147796.0196356976,20260803_134302

@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Scalping (default),PlusX 1_PERIOD_data,M5,6405,44.71506635441062,0.9843514698669392,-99.04971428571933,2.175488826815636,-1.7875316899987859,1.2170351099157932,-101.08053772445243,0.06415646577273214,-99.04971428571936,20260803_181345

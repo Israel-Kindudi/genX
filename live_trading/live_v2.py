@@ -154,8 +154,8 @@ DEFAULT_PARAMS = {
 # ============================================================================
 # SYMBOLS
 # ============================================================================
-ALL_SYMBOLS = ["BreakX 600", "BreakX 1200", "BreakX 1800", "PainX 600", "GainX 800",
-               "FX Vol 20", "FX Vol 40", "FX Vol 60", "FX Vol 80", "FX Vol 99"]
+ALL_SYMBOLS = ["BreakX 600", "BreakX 1200",  "PainX 600", "GainX 600","GainX 1200","PainX 1200" ]
+               #"FX Vol 20", "FX Vol 40", "FX Vol 60", "FX Vol 80", "FX Vol 99","BreakX 1800",]
 
 SYMBOL_VARIANTS = {
     "FX Vol 20": ["FX Vol 20", "Fx Vol 20"],
@@ -911,6 +911,6 @@ if __name__ == "__main__":
         use_optimized=False,
         demo_mode=False,
         verbose=True,
-        risk_per_trade=1.0
+        risk_per_trade=1.5
     )
-    engine.run(cycles=100, bars=200, interval=15)
+    engine.run(cycles=9000, bars=207, interval=15)

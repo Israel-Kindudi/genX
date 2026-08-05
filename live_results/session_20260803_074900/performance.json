@@ -1,0 +1,20 @@
+{
+  "Scalping DMI+MACD (tuned)": {
+    "trades": 10,
+    "pnl": 39.699999999999996,
+    "wins": 6,
+    "losses": 4
+  },
+  "Scalping RSI+VWMA (tuned)": {
+    "trades": 3,
+    "pnl": 4.54,
+    "wins": 2,
+    "losses": 1
+  },
+  "Scalping VWAP+StochRSI (tuned)": {
+    "trades": 22,
+    "pnl": 61.97,
+    "wins": 9,
+    "losses": 13
+  }
+}

@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Trend Aroon+RSI+SMA (default),PainX 600_PERIOD_data,M5,386,44.81865284974093,1.109081441407514,176.6859250000432,10.384089471511281,-7.604514336016,1.3655164567618527,-56.48043706561481,0.6772889465171699,176.68592500004337,20260803_181207

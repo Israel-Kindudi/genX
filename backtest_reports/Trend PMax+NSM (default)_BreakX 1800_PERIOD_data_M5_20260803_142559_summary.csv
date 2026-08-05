@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Trend PMax+NSM (default),BreakX 1800_PERIOD_data,M5,239,46.86192468619247,1.0034662758039465,0.9635500000126189,2.4905536352041224,-2.188806749156292,1.1378590805991178,-39.50566082686855,0.14126181911506622,0.9635500000126883,20260803_142559

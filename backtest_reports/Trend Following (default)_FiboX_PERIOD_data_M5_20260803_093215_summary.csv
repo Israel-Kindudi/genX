@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Trend Following (default),FiboX_PERIOD_data,M5,129,46.51162790697674,1.1666975538172126,74.8510714285703,8.731238095238039,-6.507582815734957,1.3417021868897945,-37.97184340959367,0.6318497044872368,74.85107142857032,20260803_093215

@@ -1,0 +1,74 @@
+{
+  "Scalping DMI+MACD (tuned)_FX Vol 99": {
+    "strategy": "Scalping DMI+MACD (tuned)",
+    "symbol": "FX Vol 99",
+    "entry_price": 42180.78,
+    "sl": 41965.15,
+    "tp": 42485.66,
+    "lot": 0.07,
+    "entry_time": "2026-08-03 19:55:22",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 453932375
+  },
+  "Scalping DMI+MACD (tuned)_FX Vol 40": {
+    "strategy": "Scalping DMI+MACD (tuned)",
+    "symbol": "FX Vol 40",
+    "entry_price": 193221.9,
+    "sl": 192466.34,
+    "tp": 193940.6,
+    "lot": 0.02,
+    "entry_time": "2026-08-03 19:56:25",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 453952216
+  },
+  "Scalping DMI+MACD (tuned)_PainX 600": {
+    "strategy": "Scalping DMI+MACD (tuned)",
+    "symbol": "PainX 600",
+    "entry_price": 101992.82,
+    "sl": 101959.79,
+    "tp": 102032.95,
+    "lot": 0.41,
+    "entry_time": "2026-08-03 20:01:40",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 453938500
+  },
+  "Scalping DMI+MACD (tuned)_BreakX 600": {
+    "strategy": "Scalping DMI+MACD (tuned)",
+    "symbol": "BreakX 600",
+    "entry_price": 97467.04,
+    "sl": 97401.92,
+    "tp": 97508.59,
+    "lot": 0.2,
+    "entry_time": "2026-08-03 20:05:37",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 453942218
+  },
+  "Scalping DMI+MACD (tuned)_GainX 800": {
+    "strategy": "Scalping DMI+MACD (tuned)",
+    "symbol": "GainX 800",
+    "entry_price": 98041.38,
+    "sl": 97980.61,
+    "tp": 98063.63,
+    "lot": 0.41,
+    "entry_time": "2026-08-03 20:09:33",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 453947137
+  },
+  "Scalping RSI+VWMA (tuned)_PainX 600": {
+    "strategy": "Scalping RSI+VWMA (tuned)",
+    "symbol": "PainX 600",
+    "entry_price": 101995.98,
+    "sl": 101971.98714285714,
+    "tp": 102031.96928571428,
+    "lot": 0.31,
+    "entry_time": "2026-08-03 17:12:45.187520",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 453949831
+  }
+}

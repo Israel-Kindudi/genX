@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Scalping HMA+Stoch (tuned),Fx Vol 40_PERIOD_data,M1,3013,37.57052771324261,0.9977517469477485,-6.660895714276837,2.6113405489651726,-1.5750656018834943,1.657924943470596,-108.17449207271694,0.026335177069428863,-6.660895714276663,20260803_095408

@@ -1,0 +1,50 @@
+[
+  {
+    "ticket": null,
+    "strategy": "Scalping DMI+MACD (default)",
+    "symbol": "BreakX 600",
+    "action": "BUY",
+    "entry_price": 96824.71,
+    "lot": 0.13,
+    "sl": 96782.90642857143,
+    "tp": 96874.58142857143,
+    "entry_time": "2026-08-05T19:46:28.186763",
+    "exit_price": 96826.11,
+    "exit_time": "2026-08-05T19:46:56.442642",
+    "pnl": 0.1819999999992433,
+    "status": "closed",
+    "close_reason": "signal"
+  },
+  {
+    "ticket": null,
+    "strategy": "Scalping DMI+MACD (tuned)",
+    "symbol": "BreakX 600",
+    "action": "BUY",
+    "entry_price": 96824.71,
+    "lot": 0.15,
+    "sl": 96790.38714285714,
+    "tp": 96869.5942857143,
+    "entry_time": "2026-08-05T19:46:28.213820",
+    "exit_price": 96826.11,
+    "exit_time": "2026-08-05T19:46:56.451096",
+    "pnl": 0.20999999999912689,
+    "status": "closed",
+    "close_reason": "signal"
+  },
+  {
+    "ticket": null,
+    "strategy": "Scalping DMI+MACD (default)",
+    "symbol": "PainX 600",
+    "action": "BUY",
+    "entry_price": 102621.37,
+    "lot": 0.13,
+    "sl": 102581.39964285714,
+    "tp": 102668.79714285713,
+    "entry_time": "2026-08-05T19:46:28.366172",
+    "exit_price": 102622.77,
+    "exit_time": "2026-08-05T19:46:56.460808",
+    "pnl": 0.18200000000113506,
+    "status": "closed",
+    "close_reason": "signal"
+  }
+]

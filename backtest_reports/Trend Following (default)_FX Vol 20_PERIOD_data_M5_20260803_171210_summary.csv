@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Trend Following (default),FX Vol 20_PERIOD_data,M5,3930,37.68447837150127,0.981561165794721,-101.86603214284727,3.661493267097516,-2.2558340386746707,1.6231217387111896,-109.16038321319678,0.013648564754621255,-101.86603214284715,20260803_171210

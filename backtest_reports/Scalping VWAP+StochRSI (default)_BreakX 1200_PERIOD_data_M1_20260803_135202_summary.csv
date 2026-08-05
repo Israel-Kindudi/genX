@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Scalping VWAP+StochRSI (default),BreakX 1200_PERIOD_data,M1,623,60.51364365971108,1.267046880537583,1783.6505107007551,22.447789806709967,-27.151082302556514,0.8267732960537013,-44.85594663232947,1.0179103509255345,1783.650510700754,20260803_135202

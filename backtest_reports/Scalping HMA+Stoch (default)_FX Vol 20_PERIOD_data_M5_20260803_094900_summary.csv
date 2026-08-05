@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Scalping HMA+Stoch (default),FX Vol 20_PERIOD_data,M5,2234,33.84064458370636,0.9665001897035802,-59.77865357141562,2.2813080309901768,-1.2073393267929562,1.8895334396585866,-83.23082670675106,0.023041843412579244,-59.77865357141566,20260803_094900

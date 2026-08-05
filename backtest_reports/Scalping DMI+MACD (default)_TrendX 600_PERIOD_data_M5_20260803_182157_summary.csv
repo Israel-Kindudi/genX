@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Scalping DMI+MACD (default),TrendX 600_PERIOD_data,M5,1757,46.556630620375635,0.9624337264266261,-97.2823857142837,3.0468679008033237,-2.7578491252091615,1.1047986174995132,-100.32918814774175,-0.0816103644308705,-97.28238571428359,20260803_182157

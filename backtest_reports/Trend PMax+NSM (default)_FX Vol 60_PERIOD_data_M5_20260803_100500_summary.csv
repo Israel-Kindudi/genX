@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Trend PMax+NSM (default),FX Vol 60_PERIOD_data,M5,216,35.18518518518518,0.9809711534073999,-4.092764285714183,2.7761754699248047,-1.53630071428571,1.8070521246978422,-28.350017389055747,0.013731413504837711,-4.092764285714182,20260803_100500

@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Scalping RSI+VWMA (tuned),FiboX_PERIOD_data,M5,2611,35.23554193795481,0.8386390290748116,-134.54035714285885,0.7600485248447226,-0.5010727163461561,1.5168427656309633,-125.4512443974324,-0.06721742387512988,-134.54035714285888,20260803_165047

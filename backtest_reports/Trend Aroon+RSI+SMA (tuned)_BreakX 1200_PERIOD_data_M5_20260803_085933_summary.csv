@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Trend Aroon+RSI+SMA (tuned),BreakX 1200_PERIOD_data,M5,1069,54.349859681945745,1.2217959132089375,1184.6161371425621,11.231729628719066,-10.967184347316662,1.024121531381674,-56.58130969290374,0.6566213558074865,1184.616137142562,20260803_085933

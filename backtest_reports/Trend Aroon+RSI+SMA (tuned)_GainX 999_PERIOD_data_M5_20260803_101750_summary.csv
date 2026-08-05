@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Trend Aroon+RSI+SMA (tuned),GainX 999_PERIOD_data,M5,1047,32.664756446991404,0.656286355534203,-122.71846000000558,0.6851416875522087,-0.5064353434650509,1.3528709960573482,-121.60963632179728,0.30836522191998944,-122.7184600000054,20260803_101750

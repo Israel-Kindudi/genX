@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Scalping BB+MACD+TM (tuned),Fx Vol 40_PERIOD_data,M1,619,33.764135702746366,1.0744321786194866,71.78495714285471,4.957987587149698,-2.3522791428571512,2.107737766669806,-36.02074954095814,0.3654253207178683,71.78495714285461,20260803_172415

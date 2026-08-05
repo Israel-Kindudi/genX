@@ -1,0 +1,31 @@
+{"timestamp": "2026-08-03T06:00:16.326129", "type": "trade_open", "data": {"ticket": 453167144, "strategy": "Scalping VWAP+StochRSI (default)", "symbol": "BreakX 600", "action": "SELL", "entry_price": 97784.82, "lot": 0.13, "sl": 97800.05314285716, "tp": 97765.77857142859}}
+{"timestamp": "2026-08-03T06:00:16.339645", "type": "equity", "data": {"balance": 200.0, "equity": 199.83, "open_positions": 1, "cycle": 1}}
+{"timestamp": "2026-08-03T06:00:16.780054", "type": "trade_open", "data": {"ticket": 453167151, "strategy": "Scalping DMI+MACD (tuned)", "symbol": "PainX 600", "action": "BUY", "entry_price": 101977.97, "lot": 0.1, "sl": 101955.74057142857, "tp": 102010.11414285714}}
+{"timestamp": "2026-08-03T06:00:16.786366", "type": "equity", "data": {"balance": 200.0, "equity": 199.75, "open_positions": 2, "cycle": 1}}
+{"timestamp": "2026-08-03T06:00:17.088192", "type": "trade_open", "data": {"ticket": 453167157, "strategy": "Scalping VWAP+StochRSI (default)", "symbol": "PainX 600", "action": "SELL", "entry_price": 101977.97, "lot": 0.14, "sl": 101992.25628571429, "tp": 101960.11214285714}}
+{"timestamp": "2026-08-03T06:00:17.088192", "type": "equity", "data": {"balance": 200.0, "equity": 199.62, "open_positions": 3, "cycle": 1}}
+{"timestamp": "2026-08-03T06:00:17.755890", "type": "trade_open", "data": {"ticket": 453167169, "strategy": "Scalping DMI+MACD (default)", "symbol": "FX Vol 80", "action": "BUY", "entry_price": 48061.04, "lot": 0.01, "sl": 47802.46178571429, "tp": 48360.30428571429}}
+{"timestamp": "2026-08-03T06:00:17.757893", "type": "equity", "data": {"balance": 200.0, "equity": 199.48, "open_positions": 4, "cycle": 1}}
+{"timestamp": "2026-08-03T06:00:18.101558", "type": "trade_open", "data": {"ticket": 453167174, "strategy": "Scalping DMI+MACD (tuned)", "symbol": "FX Vol 99", "action": "BUY", "entry_price": 41178.23, "lot": 0.01, "sl": 40944.32257142857, "tp": 41521.62114285714}}
+{"timestamp": "2026-08-03T06:00:18.117202", "type": "equity", "data": {"balance": 200.0, "equity": 199.34, "open_positions": 5, "cycle": 1}}
+{"timestamp": "2026-08-03T06:00:18.152350", "type": "equity", "data": {"balance": 200.0, "equity": 199.34, "open_positions": 5, "cycle": 1}}
+{"timestamp": "2026-08-03T06:00:34.257400", "type": "trade_open", "data": {"ticket": 453167320, "strategy": "Scalping VWAP+StochRSI (default)", "symbol": "FX Vol 99", "action": "SELL", "entry_price": 41235.28, "lot": 0.01, "sl": 41389.62114285714, "tp": 41042.35357142857}}
+{"timestamp": "2026-08-03T06:00:34.258532", "type": "equity", "data": {"balance": 200.0, "equity": 199.39, "open_positions": 6, "cycle": 2}}
+{"timestamp": "2026-08-03T06:00:34.278873", "type": "equity", "data": {"balance": 200.0, "equity": 199.39, "open_positions": 6, "cycle": 2}}
+{"timestamp": "2026-08-03T06:00:50.019548", "type": "equity", "data": {"balance": 200.0, "equity": 199.4, "open_positions": 6, "cycle": 3}}
+{"timestamp": "2026-08-03T06:01:05.678442", "type": "equity", "data": {"balance": 200.0, "equity": 199.46, "open_positions": 6, "cycle": 4}}
+{"timestamp": "2026-08-03T06:01:21.401019", "type": "trade_open", "data": {"ticket": 453168300, "strategy": "Scalping DMI+MACD (tuned)", "symbol": "FX Vol 40", "action": "BUY", "entry_price": 192145.01, "lot": 0.01, "sl": 191565.19314285714, "tp": 192718.36528571427}}
+{"timestamp": "2026-08-03T06:01:21.401019", "type": "equity", "data": {"balance": 200.0, "equity": 198.48, "open_positions": 7, "cycle": 5}}
+{"timestamp": "2026-08-03T06:01:21.623878", "type": "equity", "data": {"balance": 200.0, "equity": 198.48, "open_positions": 7, "cycle": 5}}
+{"timestamp": "2026-08-03T06:01:37.301728", "type": "equity", "data": {"balance": 200.0, "equity": 198.35, "open_positions": 7, "cycle": 6}}
+{"timestamp": "2026-08-03T06:01:53.044379", "type": "equity", "data": {"balance": 200.0, "equity": 197.39, "open_positions": 7, "cycle": 7}}
+{"timestamp": "2026-08-03T06:02:08.806891", "type": "equity", "data": {"balance": 200.0, "equity": 197.31, "open_positions": 7, "cycle": 8}}
+{"timestamp": "2026-08-03T06:02:24.545197", "type": "equity", "data": {"balance": 201.32, "equity": 198.07, "open_positions": 7, "cycle": 9}}
+{"timestamp": "2026-08-03T06:02:39.552903", "type": "equity", "data": {"balance": 201.32, "equity": 197.98, "open_positions": 5, "cycle": 10}}
+{"timestamp": "2026-08-03T06:02:40.128429", "type": "trade_open", "data": {"ticket": 453169699, "strategy": "Scalping DMI+MACD (default)", "symbol": "PainX 600", "action": "BUY", "entry_price": 101985.12, "lot": 0.1, "sl": 101949.61714285714, "tp": 102021.85714285714}}
+{"timestamp": "2026-08-03T06:02:40.132030", "type": "equity", "data": {"balance": 201.32, "equity": 197.78, "open_positions": 6, "cycle": 10}}
+{"timestamp": "2026-08-03T06:02:40.406434", "type": "trade_open", "data": {"ticket": 453169708, "strategy": "Scalping DMI+MACD (tuned)", "symbol": "PainX 600", "action": "BUY", "entry_price": 101985.12, "lot": 0.1, "sl": 101955.12771428571, "tp": 102018.18342857143}}
+{"timestamp": "2026-08-03T06:02:40.406434", "type": "equity", "data": {"balance": 201.32, "equity": 197.7, "open_positions": 7, "cycle": 10}}
+{"timestamp": "2026-08-03T06:02:40.827814", "type": "equity", "data": {"balance": 201.32, "equity": 197.7, "open_positions": 7, "cycle": 10}}
+{"timestamp": "2026-08-03T06:02:56.516390", "type": "equity", "data": {"balance": 201.32, "equity": 197.0, "open_positions": 7, "cycle": 11}}
+{"timestamp": "2026-08-03T06:03:12.370955", "type": "equity", "data": {"balance": 201.32, "equity": 197.24, "open_positions": 7, "cycle": 12}}

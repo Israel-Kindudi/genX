@@ -1,0 +1,14 @@
+{
+  "Scalping DMI+MACD (tuned)_FX Vol 60": {
+    "strategy": "Scalping DMI+MACD (tuned)",
+    "symbol": "FX Vol 60",
+    "entry_price": 27931.96,
+    "sl": 27835.246285714285,
+    "tp": 28067.29557142857,
+    "lot": 0.01,
+    "entry_time": "2026-08-05 22:01:17.184972",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 456929639
+  }
+}

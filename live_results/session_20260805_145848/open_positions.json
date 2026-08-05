@@ -1,0 +1,86 @@
+{
+  "Scalping RSI+VWMA (tuned)_GainX 800": {
+    "strategy": "Scalping RSI+VWMA (tuned)",
+    "symbol": "GainX 800",
+    "entry_price": 97837.89,
+    "sl": 97818.83142857143,
+    "tp": 97866.47785714286,
+    "lot": 0.1,
+    "entry_time": "2026-08-05 20:14:52.251245",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 456778185
+  },
+  "Scalping VWAP+StochRSI (default)_BreakX 1800": {
+    "strategy": "Scalping VWAP+StochRSI (default)",
+    "symbol": "BreakX 1800",
+    "entry_price": 99191.93,
+    "sl": 99194.15914285714,
+    "tp": 99186.97040349999,
+    "lot": 0.11,
+    "entry_time": "2026-08-05 20:25:01.420326",
+    "action": "SELL",
+    "status": "open",
+    "ticket": 456789792
+  },
+  "Scalping VWAP+StochRSI (tuned)_BreakX 1800": {
+    "strategy": "Scalping VWAP+StochRSI (tuned)",
+    "symbol": "BreakX 1800",
+    "entry_price": 99191.93,
+    "sl": 99193.8805,
+    "tp": 99185.9784842,
+    "lot": 0.12,
+    "entry_time": "2026-08-05 20:25:01.656915",
+    "action": "SELL",
+    "status": "open",
+    "ticket": 456789798
+  },
+  "Scalping DMI+MACD (default)_PainX 600": {
+    "strategy": "Scalping DMI+MACD (default)",
+    "symbol": "PainX 600",
+    "entry_price": 102613.19,
+    "sl": 102579.59571428572,
+    "tp": 102657.91571428571,
+    "lot": 0.1,
+    "entry_time": "2026-08-05 20:25:02.356736",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 456789802
+  },
+  "Scalping DMI+MACD (tuned)_PainX 600": {
+    "strategy": "Scalping DMI+MACD (tuned)",
+    "symbol": "PainX 600",
+    "entry_price": 102613.19,
+    "sl": 102586.30457142857,
+    "tp": 102653.44314285714,
+    "lot": 0.1,
+    "entry_time": "2026-08-05 20:25:02.601943",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 456789828
+  },
+  "Scalping DMI+MACD (default)_FX Vol 20": {
+    "strategy": "Scalping DMI+MACD (default)",
+    "symbol": "FX Vol 20",
+    "entry_price": 118580.86,
+    "sl": 118414.90107142857,
+    "tp": 118802.13857142859,
+    "lot": 0.01,
+    "entry_time": "2026-08-05 20:25:03.461744",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 456789842
+  },
+  "Scalping DMI+MACD (tuned)_FX Vol 20": {
+    "strategy": "Scalping DMI+MACD (tuned)",
+    "symbol": "FX Vol 20",
+    "entry_price": 118580.86,
+    "sl": 118448.09285714285,
+    "tp": 118780.01071428573,
+    "lot": 0.01,
+    "entry_time": "2026-08-05 20:25:03.688882",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 456789851
+  }
+}

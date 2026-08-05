@@ -1,0 +1,16 @@
+{
+    "symbols": ["BreakX 600","BreakX 1200", "BreakX 1800",
+                "PainX 600",  "GainX 800"],
+    "strategies": [
+        
+        "Scalping DMI+MACD (tuned)",
+        "Scalping RSI+VWMA (tuned)",
+        "Scalping VWAP+StochRSI (tuned) "
+    ],
+    "demo": false,
+    "cycles": 500,
+    "bars": 250,
+    "interval": 12,
+    "risk": 1,
+    "terminal": "C:\\Program Files\\MetaTrader 5\\Terminal64.exe"
+}

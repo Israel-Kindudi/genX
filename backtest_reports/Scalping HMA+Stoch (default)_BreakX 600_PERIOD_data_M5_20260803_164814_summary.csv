@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Scalping HMA+Stoch (default),BreakX 600_PERIOD_data,M5,2478,43.74495560936239,1.0289270784906506,265.8053000000416,8.721965748550414,-6.591682619389245,1.323177442265652,-75.55682642466985,0.2608497579803212,265.80530000004234,20260803_164814

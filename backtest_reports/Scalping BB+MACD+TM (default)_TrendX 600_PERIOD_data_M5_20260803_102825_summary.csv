@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Scalping BB+MACD+TM (default),TrendX 600_PERIOD_data,M5,143,32.16783216783217,0.8265851240725028,-32.84867500000489,3.4037782608695184,-1.952809020618585,1.7430164572833213,-40.536218840170775,-0.6456324003769548,-32.84867500000486,20260803_102825

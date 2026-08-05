@@ -1,0 +1,14 @@
+{
+  "Scalping VWAP+StochRSI (tuned)_BreakX 600": {
+    "strategy": "Scalping VWAP+StochRSI (tuned)",
+    "symbol": "BreakX 600",
+    "entry_price": 96762.22,
+    "sl": 96742.48,
+    "tp": 96786.895,
+    "lot": 0.16,
+    "entry_time": "2026-08-04 22:43:27.456379",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 455499478
+  }
+}

@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Scalping BB+MACD+TM (default),PainX 600_PERIOD_data,M5,287,30.66202090592334,0.8806231477107919,-53.28347857143729,4.46662889610391,-2.2429488513999067,1.9914091635732678,-71.41938586652404,-0.5602314918480873,-53.2834785714372,20260803_180820

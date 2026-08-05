@@ -226,16 +226,63 @@ def find_strategy_key(strategy_name, strategy_map):
             return key
     return None
 
+import glob
+import json
+import os
+
 def get_dna_context(symbol, timeframe='M5'):
-    """Load DNA context for a symbol and timeframe."""
-    dna_file = f"dna_results/{symbol}_{timeframe}_DNA.json"
-    if os.path.exists(dna_file):
+    """
+    Load DNA context for a symbol and timeframe.
+    Handles flexible filename patterns:
+    - {symbol}_{timeframe}_DNA.json
+    - {symbol}_PERIOD_{timeframe}_data_{timeframe}_DNA.json
+    - {symbol}_*_{timeframe}_DNA.json
+    """
+    dna_folder = "dna_results"
+
+    # 1. Try exact match first (fastest)
+    exact_file = f"{dna_folder}/{symbol}_{timeframe}_DNA.json"
+    if os.path.exists(exact_file):
         try:
-            with open(dna_file, 'r') as f:
-                data = json.load(f)
-                return data
+            with open(exact_file, 'r') as f:
+                return json.load(f)
         except:
             pass
+
+    # 2. Try glob with symbol and timeframe in filename
+    pattern = f"{dna_folder}/*{symbol}*{timeframe}*_DNA.json"
+    files = glob.glob(pattern)
+    if files:
+        try:
+            with open(files[0], 'r') as f:
+                return json.load(f)
+        except:
+            pass
+
+    # 3. Try glob with symbol only, then check content for timeframe
+    pattern2 = f"{dna_folder}/*{symbol}*_DNA.json"
+    files2 = glob.glob(pattern2)
+    for file in files2:
+        try:
+            with open(file, 'r') as f:
+                data = json.load(f)
+                # Check if the data's timeframe matches
+                if data.get('timeframe') == timeframe:
+                    return data
+        except:
+            continue
+
+    # 4. Try glob with symbol and any timeframe (return first match)
+    pattern3 = f"{dna_folder}/*{symbol}*.json"
+    files3 = glob.glob(pattern3)
+    if files3:
+        try:
+            with open(files3[0], 'r') as f:
+                return json.load(f)
+        except:
+            pass
+
+    # 5. Not found
     return None
 
 def evaluate_parameters(strategy_class, params, df, symbol, dna_context):

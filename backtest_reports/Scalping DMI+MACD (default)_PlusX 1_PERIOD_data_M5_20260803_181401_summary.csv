@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Scalping DMI+MACD (default),PlusX 1_PERIOD_data,M5,1515,41.78217821782178,0.9540858034375647,-65.9949999999993,2.166445497630333,-1.635216154721274,1.3248679640151966,-90.3040301534966,0.007457965720869555,-65.99499999999927,20260803_181401

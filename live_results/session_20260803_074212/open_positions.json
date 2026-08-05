@@ -1,0 +1,74 @@
+{
+  "Scalping BB+MACD+TM (default)_GainX 800": {
+    "strategy": "Scalping BB+MACD+TM (default)",
+    "symbol": "GainX 800",
+    "entry_price": 98282.82,
+    "sl": 98205.83,
+    "tp": 98319.92,
+    "lot": 0.18,
+    "entry_time": "2026-08-03 07:42:12.893226",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 453233240
+  },
+  "Scalping DMI+MACD (default)_FX Vol 60": {
+    "strategy": "Scalping DMI+MACD (default)",
+    "symbol": "FX Vol 60",
+    "entry_price": 26683.96,
+    "sl": 26554.191785714283,
+    "tp": 26826.464285714286,
+    "lot": 0.08,
+    "entry_time": "2026-08-03 07:52:51.409143",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 453274649
+  },
+  "Scalping DMI+MACD (tuned)_PainX 600": {
+    "strategy": "Scalping DMI+MACD (tuned)",
+    "symbol": "PainX 600",
+    "entry_price": 102105.71,
+    "sl": 102076.65371428571,
+    "tp": 102145.46942857144,
+    "lot": 0.42,
+    "entry_time": "2026-08-03 08:00:52.098979",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 453282178
+  },
+  "Trend Following (default)_FX Vol 60": {
+    "strategy": "Trend Following (default)",
+    "symbol": "FX Vol 60",
+    "entry_price": 26762.84,
+    "sl": 26667.878214285716,
+    "tp": 26889.455714285716,
+    "lot": 0.13,
+    "entry_time": "2026-08-03 08:00:52.954803",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 453282183
+  },
+  "Scalping DMI+MACD (default)_PainX 600": {
+    "strategy": "Scalping DMI+MACD (default)",
+    "symbol": "PainX 600",
+    "entry_price": 102118.36,
+    "sl": 102089.64285714286,
+    "tp": 102156.38285714286,
+    "lot": 0.43,
+    "entry_time": "2026-08-03 08:05:09.621787",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 453286262
+  },
+  "Scalping BB+MACD+TM (default)_PainX 600": {
+    "strategy": "Scalping BB+MACD+TM (default)",
+    "symbol": "PainX 600",
+    "entry_price": 102118.61,
+    "sl": 102133.83,
+    "tp": 102099.58,
+    "lot": 0.24,
+    "entry_time": "2026-08-03 08:06:16.145890",
+    "action": "SELL",
+    "status": "open",
+    "ticket": 453286270
+  }
+}

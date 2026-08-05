@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Scalping HMA+Stoch (default),FlipX 3_PERIOD_data,M5,1084,34.50184501845018,0.9775393518760925,-26.042142857145226,3.0305194805194753,-1.6399666599313,1.8479152988673726,-66.58496193908552,0.0276626059136915,-26.04214285714546,20260803_093801

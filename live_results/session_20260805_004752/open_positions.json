@@ -1,0 +1,74 @@
+{
+  "Scalping DMI+MACD (tuned)_PainX 600": {
+    "strategy": "Scalping DMI+MACD (tuned)",
+    "symbol": "PainX 600",
+    "entry_price": 102616.59,
+    "sl": 102583.94257142856,
+    "tp": 102652.36114285715,
+    "lot": 0.1,
+    "entry_time": "2026-08-05 14:32:57.197873",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 456210670
+  },
+  "Scalping DMI+MACD (default)_PainX 600": {
+    "strategy": "Scalping DMI+MACD (default)",
+    "symbol": "PainX 600",
+    "entry_price": 102633.04,
+    "sl": 102592.82535714285,
+    "tp": 102672.99285714285,
+    "lot": 0.1,
+    "entry_time": "2026-08-05 14:38:25.524061",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 456219305
+  },
+  "Scalping DMI+MACD (default)_PainX 1200": {
+    "strategy": "Scalping DMI+MACD (default)",
+    "symbol": "PainX 1200",
+    "entry_price": 94037.78,
+    "sl": 94015.41142857143,
+    "tp": 94061.31142857143,
+    "lot": 0.1,
+    "entry_time": "2026-08-05 14:38:56.998830",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 456220044
+  },
+  "Scalping VWAP+StochRSI (default)_PainX 600": {
+    "strategy": "Scalping VWAP+StochRSI (default)",
+    "symbol": "PainX 600",
+    "entry_price": 102638.49,
+    "sl": 102652.84485714286,
+    "tp": 102620.54642857143,
+    "lot": 0.1,
+    "entry_time": "2026-08-05 14:40:14.829320",
+    "action": "SELL",
+    "status": "open",
+    "ticket": 456222475
+  },
+  "Scalping VWAP+StochRSI (tuned)_PainX 600": {
+    "strategy": "Scalping VWAP+StochRSI (tuned)",
+    "symbol": "PainX 600",
+    "entry_price": 102638.49,
+    "sl": 102652.84485714286,
+    "tp": 102620.54642857143,
+    "lot": 0.1,
+    "entry_time": "2026-08-05 14:40:14.995862",
+    "action": "SELL",
+    "status": "open",
+    "ticket": 456222479
+  },
+  "Scalping VWAP+StochRSI (default)_PainX 1200": {
+    "strategy": "Scalping VWAP+StochRSI (default)",
+    "symbol": "PainX 1200",
+    "entry_price": 94039.36,
+    "sl": 94045.464,
+    "tp": 94031.73,
+    "lot": 0.1,
+    "entry_time": "2026-08-05 14:40:15.478537",
+    "action": "SELL",
+    "status": "open",
+    "ticket": 456222494
+  }
+}

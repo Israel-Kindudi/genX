@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Trend PMax+NSM (tuned),FlipX 3_PERIOD_data,M5,128,35.15625,1.0991727256572141,14.988285714284,3.6915873015872624,-1.8208812392426845,2.027363027323306,-17.72840412675777,0.5357468731072318,14.98828571428399,20260803_165824

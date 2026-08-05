@@ -1,0 +1,18 @@
+2026-08-05 23:19:02 | INFO     | 🚀 Starting Batch Optimization
+2026-08-05 23:19:02 | INFO     |    Generations: 10, Population: 20
+2026-08-05 23:19:02 | INFO     |    Output directory: optimized_strategies
+2026-08-05 23:19:02 | INFO     |    Log file: optimization/logs\batch_run_20260805_231902.log
+2026-08-05 23:19:02 | INFO     | ============================================================
+2026-08-05 23:19:02 | INFO     | 📋 Strategies: 17
+2026-08-05 23:19:02 | INFO     | 📋 Symbols: 4
+2026-08-05 23:19:02 | INFO     | Total combinations: 68
+2026-08-05 23:19:02 | INFO     | ============================================================
+2026-08-05 23:19:02 | INFO     | 
+📌 Strategy [1/17]: Scalping RSI+VWMA (default)
+2026-08-05 23:19:02 | INFO     |    Symbol [1/4]: BreakX 600
+2026-08-05 23:19:02 | INFO     |       ⏭️  Skipping: result already exists.
+2026-08-05 23:19:02 | INFO     |    Symbol [2/4]: BreakX 1200
+2026-08-05 23:19:02 | INFO     |       ⏭️  Skipping: result already exists.
+2026-08-05 23:19:02 | INFO     |    Symbol [3/4]: BreakX 1800
+2026-08-05 23:19:02 | INFO     |       ⏭️  Skipping: result already exists.
+2026-08-05 23:19:02 | INFO     |    Symbol [4/4]: FX Vol 20

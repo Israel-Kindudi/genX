@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Scalping BB+MACD+TM (default),BreakX 1800_PERIOD_data,M5,347,54.7550432276657,1.0778856686120966,56.76209642854083,4.134471203007447,-4.6419581665151215,0.8906739472215747,-42.51677530516644,0.44311338229194636,56.762096428540985,20260803_141844

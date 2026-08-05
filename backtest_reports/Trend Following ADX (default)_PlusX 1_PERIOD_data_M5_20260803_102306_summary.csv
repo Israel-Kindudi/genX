@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Trend Following ADX (default),PlusX 1_PERIOD_data,M5,406,42.11822660098522,1.0762199072381307,181.30214285710306,14.970607769423447,-10.252895628078909,1.4601346109897442,-58.69287962068383,0.4065514723790714,181.30214285710332,20260803_102306

@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Scalping DMI+MACD (tuned),Fx Vol 40_PERIOD_data,M1,3799,41.61621479336667,0.9926275730403121,-35.046628571415326,2.984628159392792,-2.143256874919486,1.3925667027219562,-109.79395389596078,-0.09565799209182788,-35.04662857141534,20260803_095312

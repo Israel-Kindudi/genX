@@ -1,0 +1,56 @@
+{
+  "Scalping DMI+MACD (default)": {
+    "trades": 0,
+    "pnl": 0,
+    "wins": 0,
+    "losses": 0
+  },
+  "Scalping DMI+MACD (tuned)": {
+    "trades": 0,
+    "pnl": 0,
+    "wins": 0,
+    "losses": 0
+  },
+  "Scalping HMA+Stoch (tuned)": {
+    "trades": 2,
+    "pnl": 6.210000000000001,
+    "wins": 1,
+    "losses": 1
+  },
+  "Scalping RSI+VWMA (default)": {
+    "trades": 0,
+    "pnl": 0,
+    "wins": 0,
+    "losses": 0
+  },
+  "Scalping RSI+VWMA (tuned)": {
+    "trades": 1,
+    "pnl": 5.95,
+    "wins": 1,
+    "losses": 0
+  },
+  "Trend Aroon+RSI+SMA (default)": {
+    "trades": 1,
+    "pnl": 1.85,
+    "wins": 1,
+    "losses": 0
+  },
+  "Trend Aroon+RSI+SMA (tuned)": {
+    "trades": 1,
+    "pnl": 3.55,
+    "wins": 1,
+    "losses": 0
+  },
+  "Trend Following (default)": {
+    "trades": 1,
+    "pnl": 4.21,
+    "wins": 1,
+    "losses": 0
+  },
+  "Trend Following ADX (default)": {
+    "trades": 0,
+    "pnl": 0,
+    "wins": 0,
+    "losses": 0
+  }
+}

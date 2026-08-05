@@ -913,4 +913,4 @@ if __name__ == "__main__":
         verbose=True,
         risk_per_trade=1.0
     )
-    engine.run(cycles=100, bars=200, interval=60)
+    engine.run(cycles=500, bars=200, interval=15)

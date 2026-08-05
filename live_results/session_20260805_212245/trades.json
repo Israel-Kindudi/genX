@@ -1,0 +1,34 @@
+[
+  {
+    "ticket": null,
+    "strategy": "Scalping DMI+MACD (default)",
+    "symbol": "FX Vol 40",
+    "action": "BUY",
+    "entry_price": 200659.96,
+    "lot": 0.01,
+    "sl": 200082.56321428574,
+    "tp": 201399.63571428572,
+    "entry_time": "2026-08-05T21:22:46.918078",
+    "exit_price": 200776.6,
+    "exit_time": "2026-08-05T21:23:32.822023",
+    "pnl": 1.1664000000001398,
+    "status": "closed",
+    "close_reason": "signal"
+  },
+  {
+    "ticket": null,
+    "strategy": "Trend Following (default)",
+    "symbol": "FX Vol 40",
+    "action": "BUY",
+    "entry_price": 200659.96,
+    "lot": 0.01,
+    "sl": 200105.20321428572,
+    "tp": 201399.63571428572,
+    "entry_time": "2026-08-05T21:22:46.992089",
+    "exit_price": 200776.6,
+    "exit_time": "2026-08-05T21:23:32.831912",
+    "pnl": 1.1664000000001398,
+    "status": "closed",
+    "close_reason": "signal"
+  }
+]

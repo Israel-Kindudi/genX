@@ -1,0 +1,86 @@
+{
+  "Scalping DMI+MACD (default)_FX Vol 80": {
+    "strategy": "Scalping DMI+MACD (default)",
+    "symbol": "FX Vol 80",
+    "entry_price": 47938.03,
+    "sl": 47575.39178571429,
+    "tp": 48306.57428571428,
+    "lot": 0.03,
+    "entry_time": "2026-08-03 06:53:33.522363",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 453216161
+  },
+  "Trend Aroon+RSI+SMA (tuned)_GainX 800": {
+    "strategy": "Trend Aroon+RSI+SMA (tuned)",
+    "symbol": "GainX 800",
+    "entry_price": 98233.92,
+    "sl": 98188.02,
+    "tp": 98265.12,
+    "lot": 0.21,
+    "entry_time": "2026-08-03 06:57:17.695715",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 453220127
+  },
+  "Scalping DMI+MACD (default)_GainX 800": {
+    "strategy": "Scalping DMI+MACD (default)",
+    "symbol": "GainX 800",
+    "entry_price": 98228.67,
+    "sl": 98206.1925,
+    "tp": 98258.64,
+    "lot": 0.52,
+    "entry_time": "2026-08-03 07:00:12.829662",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 453223779
+  },
+  "Scalping RSI+VWMA (tuned)_BreakX 600": {
+    "strategy": "Scalping RSI+VWMA (tuned)",
+    "symbol": "BreakX 600",
+    "entry_price": 97884.93,
+    "sl": 97863.74714285714,
+    "tp": 97916.70428571428,
+    "lot": 0.57,
+    "entry_time": "2026-08-03 07:05:15.701717",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 453228195
+  },
+  "Scalping DMI+MACD (tuned)_BreakX 600": {
+    "strategy": "Scalping DMI+MACD (tuned)",
+    "symbol": "BreakX 600",
+    "entry_price": 97889.68,
+    "sl": 97858.35342857143,
+    "tp": 97928.41985714284,
+    "lot": 0.38,
+    "entry_time": "2026-08-03 07:06:51.027567",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 453229067
+  },
+  "Scalping VWAP+StochRSI (default)_BreakX 600": {
+    "strategy": "Scalping VWAP+StochRSI (default)",
+    "symbol": "BreakX 600",
+    "entry_price": 97889.68,
+    "sl": 97906.8977142857,
+    "tp": 97868.15785714285,
+    "lot": 0.69,
+    "entry_time": "2026-08-03 07:06:52.328835",
+    "action": "SELL",
+    "status": "open",
+    "ticket": 453229069
+  },
+  "Scalping DMI+MACD (default)_BreakX 1200": {
+    "strategy": "Scalping DMI+MACD (default)",
+    "symbol": "BreakX 1200",
+    "entry_price": 103825.53,
+    "sl": 103800.30321428573,
+    "tp": 103851.96571428572,
+    "lot": 0.52,
+    "entry_time": "2026-08-03 07:09:31.515472",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 453230488
+  }
+}

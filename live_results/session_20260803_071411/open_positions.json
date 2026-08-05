@@ -1,0 +1,86 @@
+{
+  "Scalping DMI+MACD (default)_GainX 800": {
+    "strategy": "Scalping DMI+MACD (default)",
+    "symbol": "GainX 800",
+    "entry_price": 98282.19,
+    "sl": 98205.83464285715,
+    "tp": 98319.91714285714,
+    "lot": 0.18,
+    "entry_time": "2026-08-03 07:14:22.832410",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 453233240
+  },
+  "Scalping DMI+MACD (default)_FX Vol 80": {
+    "strategy": "Scalping DMI+MACD (default)",
+    "symbol": "FX Vol 80",
+    "entry_price": 48000.06,
+    "sl": 47687.84642857143,
+    "tp": 48345.21142857143,
+    "lot": 0.04,
+    "entry_time": "2026-08-03 07:14:23.770349",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 453233246
+  },
+  "Scalping DMI+MACD (tuned)_BreakX 1200": {
+    "strategy": "Scalping DMI+MACD (tuned)",
+    "symbol": "BreakX 1200",
+    "entry_price": 103809.78,
+    "sl": 103788.078,
+    "tp": 103833.963,
+    "lot": 0.64,
+    "entry_time": "2026-08-03 07:24:39.696700",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 453244838
+  },
+  "Scalping BB+MACD+TM (default)_BreakX 1200": {
+    "strategy": "Scalping BB+MACD+TM (default)",
+    "symbol": "BreakX 1200",
+    "entry_price": 103810.96,
+    "sl": 103797.16,
+    "tp": 103829.75,
+    "lot": 0.53,
+    "entry_time": "2026-08-03 07:27:18.234812",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 453245443
+  },
+  "Scalping DMI+MACD (default)_BreakX 1200": {
+    "strategy": "Scalping DMI+MACD (default)",
+    "symbol": "BreakX 1200",
+    "entry_price": 103814.54,
+    "sl": 103790.18035714285,
+    "tp": 103841.23285714285,
+    "lot": 0.54,
+    "entry_time": "2026-08-03 07:28:37.722305",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 453249031
+  },
+  "Scalping VWAP+StochRSI (default)_FX Vol 80": {
+    "strategy": "Scalping VWAP+StochRSI (default)",
+    "symbol": "FX Vol 80",
+    "entry_price": 48176.51,
+    "sl": 48298.08314285715,
+    "tp": 48024.54357142857,
+    "lot": 0.11,
+    "entry_time": "2026-08-03 07:35:13.973055",
+    "action": "SELL",
+    "status": "open",
+    "ticket": 453256693
+  },
+  "Trend Following (default)_FX Vol 80": {
+    "strategy": "Trend Following (default)",
+    "symbol": "FX Vol 80",
+    "entry_price": 48176.51,
+    "sl": 47948.56035714286,
+    "tp": 48480.44285714286,
+    "lot": 0.06,
+    "entry_time": "2026-08-03 07:35:14.283686",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 453256694
+  }
+}

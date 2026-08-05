@@ -1,0 +1,17 @@
+[
+  {
+    "ticket": 453262536,
+    "strategy": "Scalping VWAP+StochRSI (tuned)",
+    "symbol": "BreakX 1800",
+    "action": "SELL",
+    "entry_price": 98864.1,
+    "lot": 0.5,
+    "sl": 98867.94228571429,
+    "tp": 98859.156795,
+    "entry_time": "2026-08-03T07:40:32.789273",
+    "exit_price": null,
+    "exit_time": null,
+    "pnl": null,
+    "status": "open"
+  }
+]

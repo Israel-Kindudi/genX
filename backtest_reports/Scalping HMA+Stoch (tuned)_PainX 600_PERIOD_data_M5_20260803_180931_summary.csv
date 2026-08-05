@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Scalping HMA+Stoch (tuned),PainX 600_PERIOD_data,M5,2737,43.40518816222141,1.0312459787080592,1260.496871427914,35.018171635401394,-26.04331247994122,1.3446128123053733,-80.76666496425734,0.3578777561473836,1260.4968714279153,20260803_180931

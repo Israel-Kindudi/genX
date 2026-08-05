@@ -1,0 +1,26 @@
+{
+  "Scalping DMI+MACD (default)_BreakX 600": {
+    "strategy": "Scalping DMI+MACD (default)",
+    "symbol": "BreakX 600",
+    "entry_price": 96763.47,
+    "sl": 96742.48,
+    "tp": 96786.9,
+    "lot": 0.16,
+    "entry_time": "2026-08-04 22:48:33.276317",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 455499478
+  },
+  "Scalping DMI+MACD (default)_GainX 800": {
+    "strategy": "Scalping DMI+MACD (default)",
+    "symbol": "GainX 800",
+    "entry_price": 97857.69,
+    "sl": 97840.56,
+    "tp": 97882.19,
+    "lot": 0.21,
+    "entry_time": "2026-08-04 22:48:33.278985",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 455501348
+  }
+}

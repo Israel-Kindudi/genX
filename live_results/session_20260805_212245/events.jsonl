@@ -1,0 +1,9 @@
+{"timestamp": "2026-08-05T21:22:46.918078", "type": "trade_open", "data": {"ticket": null, "strategy": "Scalping DMI+MACD (default)", "symbol": "FX Vol 40", "action": "BUY", "entry_price": 200659.96, "lot": 0.01, "sl": 200082.56321428574, "tp": 201399.63571428572}}
+{"timestamp": "2026-08-05T21:22:46.921064", "type": "equity", "data": {"balance": 537.79, "equity": 537.79, "open_positions": 1, "cycle": 1}}
+{"timestamp": "2026-08-05T21:22:46.992089", "type": "trade_open", "data": {"ticket": null, "strategy": "Trend Following (default)", "symbol": "FX Vol 40", "action": "BUY", "entry_price": 200659.96, "lot": 0.01, "sl": 200105.20321428572, "tp": 201399.63571428572}}
+{"timestamp": "2026-08-05T21:22:46.995115", "type": "equity", "data": {"balance": 537.79, "equity": 537.79, "open_positions": 2, "cycle": 1}}
+{"timestamp": "2026-08-05T21:22:47.418056", "type": "equity", "data": {"balance": 537.79, "equity": 537.79, "open_positions": 2, "cycle": 1}}
+{"timestamp": "2026-08-05T21:23:32.822023", "type": "trade_close", "data": {"ticket": null, "strategy": "Scalping DMI+MACD (default)", "symbol": "FX Vol 40", "exit_price": 200776.6, "pnl": 1.1664000000001398, "reason": "signal"}}
+{"timestamp": "2026-08-05T21:23:32.824554", "type": "equity", "data": {"balance": 537.79, "equity": 537.79, "open_positions": 1, "cycle": 1}}
+{"timestamp": "2026-08-05T21:23:32.831912", "type": "trade_close", "data": {"ticket": null, "strategy": "Trend Following (default)", "symbol": "FX Vol 40", "exit_price": 200776.6, "pnl": 1.1664000000001398, "reason": "signal"}}
+{"timestamp": "2026-08-05T21:23:32.835750", "type": "equity", "data": {"balance": 537.79, "equity": 537.79, "open_positions": 0, "cycle": 1}}

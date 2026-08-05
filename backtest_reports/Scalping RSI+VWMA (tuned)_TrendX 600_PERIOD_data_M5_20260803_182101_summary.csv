@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Scalping RSI+VWMA (tuned),TrendX 600_PERIOD_data,M5,2301,45.32811820947414,1.2519669253983516,420890.5765642803,2005.091579283662,-1327.8377906427497,1.5100425619857396,-50.4199121147231,1.0609908081436348,420890.5765642803,20260803_182101

@@ -1,0 +1,38 @@
+{
+  "Scalping DMI+MACD (tuned)_BreakX 1800": {
+    "strategy": "Scalping DMI+MACD (tuned)",
+    "symbol": "BreakX 1800",
+    "entry_price": 98962.13,
+    "sl": 98939.56,
+    "tp": 98968.93,
+    "lot": 0.1,
+    "entry_time": "2026-08-03 22:01:08",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 533355301
+  },
+  "Scalping DMI+MACD (tuned)_FX Vol 80": {
+    "strategy": "Scalping DMI+MACD (tuned)",
+    "symbol": "FX Vol 80",
+    "entry_price": 47807.43,
+    "sl": 47638.74,
+    "tp": 47987.65,
+    "lot": 0.01,
+    "entry_time": "2026-08-03 22:09:00",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 533365480
+  },
+  "Scalping VWAP+StochRSI (tuned)_BreakX 1200": {
+    "strategy": "Scalping VWAP+StochRSI (tuned)",
+    "symbol": "BreakX 1200",
+    "entry_price": 103906.76,
+    "sl": 103915.80285714284,
+    "tp": 103895.45642857143,
+    "lot": 0.1,
+    "entry_time": "2026-08-03 19:12:25.515166",
+    "action": "SELL",
+    "status": "open",
+    "ticket": 533370775
+  }
+}

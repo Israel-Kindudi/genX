@@ -1,0 +1,17 @@
+[
+  {
+    "ticket": 453245443,
+    "strategy": "",
+    "symbol": "BreakX 1200",
+    "action": "BUY",
+    "entry_price": 103810.2,
+    "lot": 0.53,
+    "sl": 103797.16357142857,
+    "tp": 103829.75464285714,
+    "entry_time": "2026-08-03T07:25:01.295172",
+    "exit_price": null,
+    "exit_time": null,
+    "pnl": null,
+    "status": "open"
+  }
+]

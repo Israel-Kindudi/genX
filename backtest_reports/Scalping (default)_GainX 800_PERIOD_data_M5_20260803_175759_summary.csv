@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Scalping (default),GainX 800_PERIOD_data,M5,6860,38.352769679300295,0.8404614671120014,-138.18073571429005,0.27668069989683064,-0.20480672904773028,1.3509355927087243,-130.68202154731577,-0.022033364702511778,-138.18073571429005,20260803_175759

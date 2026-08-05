@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Trend Aroon+RSI+SMA (tuned),FiboX_PERIOD_data,M5,734,38.283378746594,0.988013452134475,-10.25371428570941,3.0077630910015434,-1.9137251518056893,1.5716797619363356,-68.38320396842023,0.0781748071849858,-10.253714285709705,20260803_093417

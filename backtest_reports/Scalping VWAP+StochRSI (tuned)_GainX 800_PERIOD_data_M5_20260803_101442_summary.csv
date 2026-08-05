@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Scalping VWAP+StochRSI (tuned),GainX 800_PERIOD_data,M5,490,44.285714285714285,0.8751502034269052,-84.67185571423428,2.7351056287031867,-2.484211637885809,1.1009954172144938,-92.45151551488665,-0.5036936802455938,-84.67185571423423,20260803_101442

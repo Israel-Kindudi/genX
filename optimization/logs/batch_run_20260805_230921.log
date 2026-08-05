@@ -1,0 +1,28 @@
+2026-08-05 23:09:21 | INFO     |    Generations: 10, Population: 20
+2026-08-05 23:09:21 | INFO     |    Output directory: optimized_strategies
+2026-08-05 23:09:21 | INFO     |    Log file: optimization/logs\batch_run_20260805_230921.log
+2026-08-05 23:09:21 | INFO     | ============================================================
+2026-08-05 23:09:21 | INFO     | Total combinations: 68
+2026-08-05 23:09:21 | INFO     | ============================================================
+2026-08-05 23:09:21 | INFO     |    Symbol [1/4]: BreakX 600
+2026-08-05 23:09:21 | INFO     |    Symbol [2/4]: BreakX 1200
+2026-08-05 23:09:21 | INFO     |    Symbol [3/4]: BreakX 1800
+2026-08-05 23:09:21 | INFO     |    Symbol [4/4]: FX Vol 20
+2026-08-05 23:09:22 | INFO     |       Data loaded: 100712 rows
+2026-08-05 23:09:23 | INFO     |    Symbol [1/4]: BreakX 600
+2026-08-05 23:09:23 | INFO     |    Symbol [2/4]: BreakX 1200
+2026-08-05 23:09:23 | INFO     |    Symbol [3/4]: BreakX 1800
+2026-08-05 23:09:23 | INFO     |    Symbol [4/4]: FX Vol 20
+2026-08-05 23:09:23 | INFO     |       Data loaded: 100712 rows
+2026-08-05 23:09:24 | INFO     |    Symbol [1/4]: BreakX 600
+2026-08-05 23:09:24 | INFO     |       Data loaded: 100000 rows
+2026-08-05 23:09:24 | INFO     |    Symbol [2/4]: BreakX 1200
+2026-08-05 23:09:25 | INFO     |       Data loaded: 100119 rows
+2026-08-05 23:09:25 | INFO     |    Symbol [3/4]: BreakX 1800
+2026-08-05 23:09:26 | INFO     |       Data loaded: 100119 rows
+2026-08-05 23:09:26 | INFO     |    Symbol [4/4]: FX Vol 20
+2026-08-05 23:09:26 | INFO     |       Data loaded: 100712 rows
+2026-08-05 23:09:26 | INFO     |    Symbol [1/4]: BreakX 600
+2026-08-05 23:09:27 | INFO     |       Data loaded: 100000 rows
+2026-08-05 23:09:31 | INFO     |    Symbol [2/4]: BreakX 1200
+2026-08-05 23:09:31 | INFO     |       Data loaded: 100119 rows

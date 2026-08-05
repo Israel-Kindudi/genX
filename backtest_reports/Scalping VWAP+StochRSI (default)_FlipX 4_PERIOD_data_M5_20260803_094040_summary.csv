@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Scalping VWAP+StochRSI (default),FlipX 4_PERIOD_data,M5,248,43.145161290322584,0.8289030807864969,-62.633571428572324,2.8358611481975906,-2.596246200607904,1.0922928447747295,-71.44512433665774,-0.47646825920124813,-62.633571428572246,20260803_094040
