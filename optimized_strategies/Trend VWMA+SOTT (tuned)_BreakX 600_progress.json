@@ -1,0 +1,37 @@
+{
+  "strategy": "Trend VWMA+SOTT (tuned)",
+  "matched_key": "Trend VWMA+SOTT (tuned)",
+  "symbol": "BreakX 600",
+  "generation": 0,
+  "best_fitness": 0,
+  "best_params": {
+    "vwma_fast": 10,
+    "vwma_slow": 23,
+    "sott_k": 110,
+    "sott_k_smooth": 7,
+    "sott_ott_period": 2,
+    "sott_ott_percent": 0.74,
+    "atr_period": 14,
+    "stop_multiplier": 1.53,
+    "take_profit_multiplier": 3.3
+  },
+  "fitness_history": [
+    0
+  ],
+  "best_report": {
+    "total_trades": 0,
+    "win_rate": 0,
+    "profit_factor": 0,
+    "total_pnl": 0,
+    "avg_win": 0,
+    "avg_loss": 0,
+    "win_loss_ratio": 0,
+    "max_drawdown": 0,
+    "sharpe_ratio": 0,
+    "return_pct": 0,
+    "trades_df": "Empty DataFrame\nColumns: [exit_date]\nIndex: []",
+    "trade_dna": [],
+    "equity_df": "Empty DataFrame\nColumns: []\nIndex: []"
+  },
+  "timestamp": "2026-08-07T18:02:39.298184"
+}

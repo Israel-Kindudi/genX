@@ -1,0 +1,5 @@
+{"timestamp": "2026-08-06T14:55:05.605299", "type": "trade_open", "data": {"ticket": 538058729, "strategy": "Scalping RSI+VWMA (tuned)", "symbol": "PainX 600", "action": "BUY", "entry_price": 103180.48, "lot": 0.1, "sl": 103164.885, "tp": 103203.8725}}
+{"timestamp": "2026-08-06T14:55:05.608657", "type": "equity", "data": {"balance": 16.93, "equity": 16.67, "open_positions": 2, "cycle": 1}}
+{"timestamp": "2026-08-06T14:55:05.953651", "type": "equity", "data": {"balance": 16.93, "equity": 16.67, "open_positions": 2, "cycle": 1}}
+{"timestamp": "2026-08-06T14:55:22.401371", "type": "equity", "data": {"balance": 16.93, "equity": 16.64, "open_positions": 2, "cycle": 2}}
+{"timestamp": "2026-08-06T14:55:38.890871", "type": "equity", "data": {"balance": 16.93, "equity": 16.77, "open_positions": 2, "cycle": 3}}

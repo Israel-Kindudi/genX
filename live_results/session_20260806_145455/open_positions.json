@@ -1,0 +1,26 @@
+{
+  "Scalping DMI+MACD (default)_GainX 800": {
+    "strategy": "Scalping DMI+MACD (default)",
+    "symbol": "GainX 800",
+    "entry_price": 97574.89,
+    "sl": 97539.45,
+    "tp": 97594.67,
+    "lot": 0.1,
+    "entry_time": "2026-08-06 17:54:26",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 538057967
+  },
+  "Scalping RSI+VWMA (tuned)_PainX 600": {
+    "strategy": "Scalping RSI+VWMA (tuned)",
+    "symbol": "PainX 600",
+    "entry_price": 103180.48,
+    "sl": 103164.885,
+    "tp": 103203.8725,
+    "lot": 0.1,
+    "entry_time": "2026-08-06 14:55:05.605299",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 538058729
+  }
+}

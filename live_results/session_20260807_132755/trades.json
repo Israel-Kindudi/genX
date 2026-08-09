@@ -1,0 +1,50 @@
+[
+  {
+    "ticket": 539505273,
+    "strategy": "Scalping DMI+MACD (default)",
+    "symbol": "GainX 800",
+    "action": "BUY",
+    "entry_price": 97360.57,
+    "lot": 0.1,
+    "sl": 97335.80500000001,
+    "tp": 97393.59000000001,
+    "entry_time": "2026-08-07T13:28:35.295357",
+    "exit_price": 97396.95,
+    "exit_time": "2026-08-07T16:28:57",
+    "pnl": 3.58,
+    "status": "closed",
+    "close_reason": "external (SL/TP or manual)"
+  },
+  {
+    "ticket": 539509478,
+    "strategy": "Scalping DMI+MACD (default)",
+    "symbol": "PainX 600",
+    "action": "BUY",
+    "entry_price": 103026.01,
+    "lot": 0.1,
+    "sl": 102979.50785714285,
+    "tp": 103071.41285714286,
+    "entry_time": "2026-08-07T13:29:09.290220",
+    "exit_price": 102995.48,
+    "exit_time": "2026-08-07T16:35:46",
+    "pnl": -3.13,
+    "status": "closed",
+    "close_reason": "external (SL/TP or manual)"
+  },
+  {
+    "ticket": 539570080,
+    "strategy": "Scalping DMI+MACD (default)",
+    "symbol": "GainX 800",
+    "action": "BUY",
+    "entry_price": 97393.56,
+    "lot": 0.1,
+    "sl": 97366.32428571429,
+    "tp": 97429.87428571428,
+    "entry_time": "2026-08-07T13:30:50.653527",
+    "exit_price": 97381.89,
+    "exit_time": "2026-08-07T16:37:19",
+    "pnl": -1.23,
+    "status": "closed",
+    "close_reason": "external (SL/TP or manual)"
+  }
+]

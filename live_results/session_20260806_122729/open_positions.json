@@ -1,0 +1,14 @@
+{
+  "Scalping DMI+MACD (default)_PainX 600": {
+    "strategy": "Scalping DMI+MACD (default)",
+    "symbol": "PainX 600",
+    "entry_price": 102882.47,
+    "sl": 102860.59,
+    "tp": 102913.16,
+    "lot": 0.1,
+    "entry_time": "2026-08-06 15:14:55",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 537824577
+  }
+}

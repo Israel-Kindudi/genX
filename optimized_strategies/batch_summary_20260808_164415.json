@@ -1,0 +1,473 @@
+[
+  {
+    "strategy": "Scalping RSI+VWMA (default)",
+    "results": [
+      {
+        "symbol": "BreakX 600",
+        "status": "skipped"
+      },
+      {
+        "symbol": "BreakX 1200",
+        "status": "skipped"
+      },
+      {
+        "symbol": "BreakX 1800",
+        "status": "skipped"
+      },
+      {
+        "symbol": "FX Vol 20",
+        "status": "success",
+        "best_fitness": 0.5970098080396254,
+        "elapsed": 4891.610814809799
+      }
+    ]
+  },
+  {
+    "strategy": "Scalping RSI+VWMA (tuned)",
+    "results": [
+      {
+        "symbol": "BreakX 600",
+        "status": "skipped"
+      },
+      {
+        "symbol": "BreakX 1200",
+        "status": "skipped"
+      },
+      {
+        "symbol": "BreakX 1800",
+        "status": "skipped"
+      },
+      {
+        "symbol": "FX Vol 20",
+        "status": "success",
+        "best_fitness": 0.5934769437310986,
+        "elapsed": 2381.323041677475
+      }
+    ]
+  },
+  {
+    "strategy": "Scalping (default)",
+    "results": [
+      {
+        "symbol": "BreakX 600",
+        "status": "success",
+        "best_fitness": 1.184381578170415,
+        "elapsed": 2312.0898599624634
+      },
+      {
+        "symbol": "BreakX 1200",
+        "status": "success",
+        "best_fitness": 3.0582680500089867,
+        "elapsed": 3081.298599243164
+      },
+      {
+        "symbol": "BreakX 1800",
+        "status": "success",
+        "best_fitness": 0.3817103295166082,
+        "elapsed": 3014.2925267219543
+      },
+      {
+        "symbol": "FX Vol 20",
+        "status": "success",
+        "best_fitness": 0.387987765738665,
+        "elapsed": 2626.933675289154
+      }
+    ]
+  },
+  {
+    "strategy": "Scalping DMI+MACD (default)",
+    "results": [
+      {
+        "symbol": "BreakX 600",
+        "status": "success",
+        "best_fitness": 0.46503666871844646,
+        "elapsed": 2564.4017391204834
+      },
+      {
+        "symbol": "BreakX 1200",
+        "status": "success",
+        "best_fitness": 1.5566696649821925,
+        "elapsed": 2584.6605315208435
+      },
+      {
+        "symbol": "BreakX 1800",
+        "status": "success",
+        "best_fitness": 2.061161805351305,
+        "elapsed": 2554.703911304474
+      },
+      {
+        "symbol": "FX Vol 20",
+        "status": "success",
+        "best_fitness": 0.29550785189748424,
+        "elapsed": 2561.499869823456
+      }
+    ]
+  },
+  {
+    "strategy": "Scalping DMI+MACD (tuned)",
+    "results": [
+      {
+        "symbol": "BreakX 600",
+        "status": "success",
+        "best_fitness": 0.531455046084591,
+        "elapsed": 2608.013653278351
+      },
+      {
+        "symbol": "BreakX 1200",
+        "status": "success",
+        "best_fitness": 1.6038434165780049,
+        "elapsed": 2567.7876963615417
+      },
+      {
+        "symbol": "BreakX 1800",
+        "status": "success",
+        "best_fitness": 2.1440955602158653,
+        "elapsed": 4993.964426994324
+      },
+      {
+        "symbol": "FX Vol 20",
+        "status": "success",
+        "best_fitness": 0.2788039530701552,
+        "elapsed": 4377.747546195984
+      }
+    ]
+  },
+  {
+    "strategy": "Scalping BB+MACD+TM (default)",
+    "results": [
+      {
+        "symbol": "BreakX 600",
+        "status": "success",
+        "best_fitness": 3.851486198619743,
+        "elapsed": 3360.3711507320404
+      },
+      {
+        "symbol": "BreakX 1200",
+        "status": "success",
+        "best_fitness": 2.4354982006171535,
+        "elapsed": 3491.015918970108
+      },
+      {
+        "symbol": "BreakX 1800",
+        "status": "success",
+        "best_fitness": 2.6674313262728493,
+        "elapsed": 3438.0702250003815
+      },
+      {
+        "symbol": "FX Vol 20",
+        "status": "success",
+        "best_fitness": 1.8866652477807972,
+        "elapsed": 3416.764355659485
+      }
+    ]
+  },
+  {
+    "strategy": "Scalping BB+MACD+TM (tuned)",
+    "results": [
+      {
+        "symbol": "BreakX 600",
+        "status": "success",
+        "best_fitness": 2.1805363290090507,
+        "elapsed": 3369.0476315021515
+      },
+      {
+        "symbol": "BreakX 1200",
+        "status": "success",
+        "best_fitness": 2.289956628306839,
+        "elapsed": 2809.3887927532196
+      },
+      {
+        "symbol": "BreakX 1800",
+        "status": "success",
+        "best_fitness": 1.8737764225709663,
+        "elapsed": 4832.176666736603
+      },
+      {
+        "symbol": "FX Vol 20",
+        "status": "success",
+        "best_fitness": 1.517613398461094,
+        "elapsed": 7139.169639825821
+      }
+    ]
+  },
+  {
+    "strategy": "Scalping HMA+Stoch (default)",
+    "results": [
+      {
+        "symbol": "BreakX 600",
+        "status": "success",
+        "best_fitness": 0.6143026633989451,
+        "elapsed": 11989.887885332108
+      },
+      {
+        "symbol": "BreakX 1200",
+        "status": "success",
+        "best_fitness": 0.37870372795277735,
+        "elapsed": 3853.4593365192413
+      },
+      {
+        "symbol": "BreakX 1800",
+        "status": "success",
+        "best_fitness": 0.3805101817535203,
+        "elapsed": 3793.8201682567596
+      },
+      {
+        "symbol": "FX Vol 20",
+        "status": "success",
+        "best_fitness": 0.34548061745470926,
+        "elapsed": 3783.0502240657806
+      }
+    ]
+  },
+  {
+    "strategy": "Scalping HMA+Stoch (tuned)",
+    "results": [
+      {
+        "symbol": "BreakX 600",
+        "status": "success",
+        "best_fitness": 0.5203407197468454,
+        "elapsed": 3767.8313779830933
+      },
+      {
+        "symbol": "BreakX 1200",
+        "status": "success",
+        "best_fitness": 0.42935800883434316,
+        "elapsed": 3819.3071026802063
+      },
+      {
+        "symbol": "BreakX 1800",
+        "status": "success",
+        "best_fitness": 0.3530703805635358,
+        "elapsed": 3808.017741918564
+      },
+      {
+        "symbol": "FX Vol 20",
+        "status": "success",
+        "best_fitness": 0.44526423439281704,
+        "elapsed": 3726.3514728546143
+      }
+    ]
+  },
+  {
+    "strategy": "Trend Following (default)",
+    "results": [
+      {
+        "symbol": "BreakX 600",
+        "status": "success",
+        "best_fitness": 211.2509535670299,
+        "elapsed": 2663.1744248867035
+      },
+      {
+        "symbol": "BreakX 1200",
+        "status": "error",
+        "error": "probabilities contain NaN"
+      },
+      {
+        "symbol": "BreakX 1800",
+        "status": "error",
+        "error": "probabilities contain NaN"
+      },
+      {
+        "symbol": "FX Vol 20",
+        "status": "success",
+        "best_fitness": 3.57566268516786,
+        "elapsed": 3205.4648361206055
+      }
+    ]
+  },
+  {
+    "strategy": "Trend Following ADX (default)",
+    "results": [
+      {
+        "symbol": "BreakX 600",
+        "status": "success",
+        "best_fitness": 1.048417511765487,
+        "elapsed": 15771.95306801796
+      },
+      {
+        "symbol": "BreakX 1200",
+        "status": "success",
+        "best_fitness": 3.51590254932832,
+        "elapsed": 4568.628015041351
+      },
+      {
+        "symbol": "BreakX 1800",
+        "status": "success",
+        "best_fitness": 2.9163098455422776,
+        "elapsed": 5027.362188577652
+      },
+      {
+        "symbol": "FX Vol 20",
+        "status": "success",
+        "best_fitness": 0.6674117781108377,
+        "elapsed": 4251.984824895859
+      }
+    ]
+  },
+  {
+    "strategy": "Trend VWMA+SOTT (default)",
+    "results": [
+      {
+        "symbol": "BreakX 600",
+        "status": "error",
+        "error": "probabilities contain NaN"
+      },
+      {
+        "symbol": "BreakX 1200",
+        "status": "error",
+        "error": "probabilities contain NaN"
+      },
+      {
+        "symbol": "BreakX 1800",
+        "status": "error",
+        "error": "probabilities contain NaN"
+      },
+      {
+        "symbol": "FX Vol 20",
+        "status": "error",
+        "error": "probabilities contain NaN"
+      }
+    ]
+  },
+  {
+    "strategy": "Trend VWMA+SOTT (tuned)",
+    "results": [
+      {
+        "symbol": "BreakX 600",
+        "status": "error",
+        "error": "probabilities contain NaN"
+      },
+      {
+        "symbol": "BreakX 1200",
+        "status": "error",
+        "error": "probabilities contain NaN"
+      },
+      {
+        "symbol": "BreakX 1800",
+        "status": "error",
+        "error": "probabilities contain NaN"
+      },
+      {
+        "symbol": "FX Vol 20",
+        "status": "error",
+        "error": "probabilities contain NaN"
+      }
+    ]
+  },
+  {
+    "strategy": "Trend PMax+NSM (default)",
+    "results": [
+      {
+        "symbol": "BreakX 600",
+        "status": "success",
+        "best_fitness": 2.0382752165465203,
+        "elapsed": 17463.345892190933
+      },
+      {
+        "symbol": "BreakX 1200",
+        "status": "success",
+        "best_fitness": 0.6282867880589518,
+        "elapsed": 3526.4779572486877
+      },
+      {
+        "symbol": "BreakX 1800",
+        "status": "success",
+        "best_fitness": 1.2591993716451888,
+        "elapsed": 3473.1195611953735
+      },
+      {
+        "symbol": "FX Vol 20",
+        "status": "success",
+        "best_fitness": 1.8251571308200514,
+        "elapsed": 3461.3154611587524
+      }
+    ]
+  },
+  {
+    "strategy": "Trend PMax+NSM (tuned)",
+    "results": [
+      {
+        "symbol": "BreakX 600",
+        "status": "success",
+        "best_fitness": 1.9218249386029282,
+        "elapsed": 3215.191505432129
+      },
+      {
+        "symbol": "BreakX 1200",
+        "status": "success",
+        "best_fitness": 0.5461726565506543,
+        "elapsed": 3242.381239414215
+      },
+      {
+        "symbol": "BreakX 1800",
+        "status": "success",
+        "best_fitness": 1.0204018827309431,
+        "elapsed": 3191.0630741119385
+      },
+      {
+        "symbol": "FX Vol 20",
+        "status": "success",
+        "best_fitness": 1.7637863599162613,
+        "elapsed": 3231.6955437660217
+      }
+    ]
+  },
+  {
+    "strategy": "Trend Aroon+RSI+SMA (default)",
+    "results": [
+      {
+        "symbol": "BreakX 600",
+        "status": "success",
+        "best_fitness": 1.1107571461033041,
+        "elapsed": 3299.5119359493256
+      },
+      {
+        "symbol": "BreakX 1200",
+        "status": "success",
+        "best_fitness": 1.4871516430329528,
+        "elapsed": 3378.8193941116333
+      },
+      {
+        "symbol": "BreakX 1800",
+        "status": "success",
+        "best_fitness": 1.666659482457356,
+        "elapsed": 3431.43745470047
+      },
+      {
+        "symbol": "FX Vol 20",
+        "status": "success",
+        "best_fitness": 0.7957143047151467,
+        "elapsed": 3502.6684334278107
+      }
+    ]
+  },
+  {
+    "strategy": "Trend Aroon+RSI+SMA (tuned)",
+    "results": [
+      {
+        "symbol": "BreakX 600",
+        "status": "success",
+        "best_fitness": 1.3567562700447031,
+        "elapsed": 4384.265145778656
+      },
+      {
+        "symbol": "BreakX 1200",
+        "status": "success",
+        "best_fitness": 1.3244969510838136,
+        "elapsed": 6280.3708572387695
+      },
+      {
+        "symbol": "BreakX 1800",
+        "status": "success",
+        "best_fitness": 2.1277837055351174,
+        "elapsed": 12238.644034862518
+      },
+      {
+        "symbol": "FX Vol 20",
+        "status": "success",
+        "best_fitness": 1.216350863910883,
+        "elapsed": 2573.8307263851166
+      }
+    ]
+  }
+]

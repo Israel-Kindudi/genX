@@ -1,0 +1,50 @@
+{
+  "Scalping DMI+MACD (default)_BreakX 600": {
+    "strategy": "Scalping DMI+MACD (default)",
+    "symbol": "BreakX 600",
+    "entry_price": 96733.37,
+    "sl": 96628.32,
+    "tp": 96789.07,
+    "lot": 0.1,
+    "entry_time": "2026-08-06 14:49:50",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 537792077
+  },
+  "Scalping DMI+MACD (default)_PainX 600": {
+    "strategy": "Scalping DMI+MACD (default)",
+    "symbol": "PainX 600",
+    "entry_price": 102868.52,
+    "sl": 102842.88,
+    "tp": 102903.73,
+    "lot": 0.1,
+    "entry_time": "2026-08-06 15:10:16",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 537824577
+  },
+  "Trend Following (default)_FX Vol 40": {
+    "strategy": "Trend Following (default)",
+    "symbol": "FX Vol 40",
+    "entry_price": 200155.55,
+    "sl": 199569.54285714283,
+    "tp": 200936.89285714284,
+    "lot": 0.01,
+    "entry_time": "2026-08-06 12:18:57.083631",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 537827763
+  },
+  "Scalping HMA+Stoch (tuned)_FX Vol 20": {
+    "strategy": "Scalping HMA+Stoch (tuned)",
+    "symbol": "FX Vol 20",
+    "entry_price": 117452.54,
+    "sl": 117243.15628571429,
+    "tp": 117629.50057142857,
+    "lot": 0.01,
+    "entry_time": "2026-08-06 12:21:30.321838",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 537831453
+  }
+}

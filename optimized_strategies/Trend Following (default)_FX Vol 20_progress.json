@@ -1,0 +1,3479 @@
+{
+  "strategy": "Trend Following (default)",
+  "matched_key": "Trend Following (default)",
+  "symbol": "FX Vol 20",
+  "generation": 9,
+  "best_fitness": 3.57566268516786,
+  "best_params": {
+    "lookback_bars": 93,
+    "entry_threshold": 3.72,
+    "stop_multiplier": 1.31,
+    "take_profit_multiplier": 4.1,
+    "max_trend_bars": 22,
+    "min_trend_bars": 3,
+    "atr_period": 12
+  },
+  "fitness_history": [
+    2.691596737719634,
+    2.691596737719634,
+    3.026791736577104,
+    3.227212884137905,
+    3.235864086515651,
+    3.2536168941297157,
+    3.2536168941297157,
+    3.3962674775862625,
+    3.57566268516786,
+    3.57566268516786
+  ],
+  "best_report": {
+    "total_trades": 17,
+    "win_rate": 52.94117647058824,
+    "profit_factor": 3.769091283089991,
+    "total_pnl": 20.040174833333005,
+    "avg_win": 3.0308076851851364,
+    "avg_loss": -0.9046367916666532,
+    "win_loss_ratio": 3.3503033627466583,
+    "max_drawdown": -22.432892461503762,
+    "sharpe_ratio": 3.57566268516786,
+    "return_pct": 200.40174833333006,
+    "trades_df": "            entry_date           exit_date type  entry_price  ...       pnl           reason  confidence                              signal_reason\n0  2025-08-18 18:10:00 2025-08-18 19:15:00  BUY     96184.92  ...  3.737731               TP          70  Breakout above upper band, momentum 0.002\n1  2025-08-27 03:40:00 2025-08-27 04:05:00  BUY    100372.48  ... -1.032300  Trend exhausted          70  Breakout above upper band, momentum 0.004\n2  2025-09-18 14:30:00 2025-09-18 14:45:00  BUY    101763.95  ... -0.542200  Trend exhausted          70  Breakout above upper band, momentum 0.002\n3  2025-11-01 06:15:00 2025-11-01 06:30:00  BUY    108333.34  ... -1.378044               SL          70  Breakout above upper band, momentum 0.003\n4  2025-11-08 15:30:00 2025-11-08 16:35:00  BUY    113776.47  ...  1.260900  Trend exhausted          70  Breakout above upper band, momentum 0.004\n5  2025-11-24 17:25:00 2025-11-24 18:05:00  BUY    115435.02  ...  4.247019               TP          70  Breakout above upper band, momentum 0.002\n6  2025-12-21 11:25:00 2025-12-21 12:30:00  BUY    112633.68  ...  1.696900  Trend exhausted          70  Breakout above upper band, momentum 0.002\n7  2026-01-15 19:10:00 2026-01-15 19:25:00  BUY    112041.75  ... -1.108600  Trend exhausted          70  Breakout above upper band, momentum 0.003\n8  2026-01-21 21:20:00 2026-01-21 22:10:00  BUY    118505.66  ...  4.549736               TP          70  Breakout above upper band, momentum 0.002\n9  2026-01-26 18:45:00 2026-01-26 18:55:00  BUY    117161.54  ... -1.451251               SL          70  Breakout above upper band, momentum 0.002\n10 2026-03-09 00:10:00 2026-03-09 00:30:00  BUY    110910.95  ... -0.568500  Trend exhausted          70  Breakout above upper band, momentum 0.004\n11 2026-04-25 21:00:00 2026-04-25 21:25:00  BUY     99519.29  ... -1.096700  Trend exhausted          70  Breakout above upper band, momentum 0.003\n12 2026-05-13 16:55:00 2026-05-13 18:00:00  BUY    104845.41  ...  0.482800  Trend exhausted          70  Breakout above upper band, momentum 0.003\n13 2026-05-30 05:00:00 2026-05-30 05:40:00  BUY    110175.83  ... -0.059500  Trend exhausted          70  Breakout above upper band, momentum 0.003\n14 2026-07-18 01:05:00 2026-07-18 02:05:00  BUY    119568.01  ...  5.195383               TP          70  Breakout above upper band, momentum 0.002\n15 2026-07-21 08:50:00 2026-07-21 09:30:00  BUY    118105.55  ...  5.485800               TP          70  Breakout above upper band, momentum 0.003\n16 2026-07-21 09:35:00 2026-07-21 10:00:00  BUY    118737.24  ...  0.621000  Trend exhausted          70  Breakout above upper band, momentum 0.002\n\n[17 rows x 10 columns]",
+    "trade_dna": [
+      {
+        "entry_date": "2025-08-18 18:10:00",
+        "exit_date": "2025-08-18 19:15:00",
+        "direction": "BUY",
+        "entry_price": 96184.92,
+        "exit_price": 96558.69308333332,
+        "volume": 0.01,
+        "pnl": 3.7377308333331896,
+        "reason": "TP",
+        "holding_bars": 65.0,
+        "confidence": 70,
+        "signal_reason": "Breakout above upper band, momentum 0.002",
+        "trade_duration_minutes": 65.0,
+        "entry_exit_spread": 373.77308333331894,
+        "pnl_per_unit": 373.77308333331894,
+        "is_winner": true,
+        "profit_pct": 0.38859842409113504,
+        "dna_context": {
+          "symbol": "FX Vol 20_PERIOD_M5_data",
+          "timeframe": "M5",
+          "bars": 100712,
+          "dna": {
+            "chromosome_i": {
+              "mean_return": 0.020506019139164156,
+              "median_return": 0.012655112122672563,
+              "std_return": 6.194036578443151,
+              "coef_variation": 302.05943612981656,
+              "skewness": 0.007140966467218907,
+              "excess_kurtosis": 0.012365630020404694,
+              "tail_index": 13.145790787677884,
+              "var_95": -10.201349705226903,
+              "cvar_95": -12.768545883369118,
+              "min_return": -24.611248665014074,
+              "max_return": 27.353462441670473,
+              "positive_ratio": 50.07993644804131,
+              "negative_ratio": 49.92006355195869
+            },
+            "chromosome_ii": {
+              "autocorrelation": {
+                "lag_1": -0.003688421708236106,
+                "lag_3": -0.0005305378195973902,
+                "lag_5": 0.0019155115755391378,
+                "lag_10": 0.004463590336824271,
+                "lag_20": -0.0026363644319073757
+              },
+              "hurst_exponent": 0.1746368293072916,
+              "dfa_exponent": 0.23970946344583327,
+              "ljung_box_pvalue": 0.7138189443613407,
+              "is_random": true
+            },
+            "chromosome_iii": {
+              "realized_vol": 0.98324353384334,
+              "rolling_vol_20": 1.0298266612439855,
+              "rolling_vol_100": 0.9959043972197051,
+              "ewma_vol": 0.05929723457002285,
+              "atr": 98.32428571428629,
+              "vol_of_vol": 0.1605347868665117,
+              "vol_persistence": 0.9480460850253551
+            },
+            "chromosome_iv": {
+              "jump_stats": {
+                "threshold_3": {
+                  "positive": 144,
+                  "negative": 120,
+                  "total": 264,
+                  "rate": 0.2621362115359792,
+                  "pos_rate": 0.1429833881105341,
+                  "neg_rate": 0.11915282342544507,
+                  "mean_pos": 20.55743255228627,
+                  "mean_neg": -20.251050719921466,
+                  "max_pos": 27.353462441670473,
+                  "max_neg": -24.611248665014074
+                },
+                "threshold_4": {
+                  "positive": 4,
+                  "negative": 0,
+                  "total": 4,
+                  "rate": 0.0039717607808481695,
+                  "pos_rate": 0.0039717607808481695,
+                  "neg_rate": 0.0,
+                  "mean_pos": 25.86507380469172,
+                  "mean_neg": 0,
+                  "max_pos": 27.353462441670473,
+                  "max_neg": 0
+                }
+              },
+              "jump_intensity": 3.971760780848169e-05,
+              "waiting_time_cv": 0.8754676439106441,
+              "jump_asymmetry": 1.0
+            },
+            "chromosome_v": {
+              "hourly_returns": {
+                "0": -1.1957061813973613e-06,
+                "1": -2.5662731058452458e-06,
+                "2": 7.161689431076255e-06,
+                "3": 3.805405954319393e-06,
+                "4": 6.301889528756294e-06,
+                "5": -2.4122453502501576e-06,
+                "6": 4.48647339594328e-06,
+                "7": 6.400766826772335e-06,
+                "8": 1.1048655671888152e-05,
+                "9": 5.376393068613385e-06,
+                "10": 5.431552083746251e-06,
+                "11": 6.916365681455201e-06,
+                "12": 5.301469803930612e-06,
+                "13": -4.136132430107259e-06,
+                "14": 1.1706935104558923e-05,
+                "15": 9.326478522298165e-06,
+                "16": -1.8983101069943773e-05,
+                "17": 1.0896416303987606e-05,
+                "18": -1.5691023020352615e-05,
+                "19": 9.375274130928683e-06,
+                "20": 6.205809624926334e-06,
+                "21": -8.937200059244833e-06,
+                "22": 3.7953072662686016e-06,
+                "23": -1.0346171066360673e-05
+              },
+              "dow_returns": {
+                "0": -6.8977497486857575e-06,
+                "1": -1.9755800800322664e-06,
+                "2": 4.234132656674531e-06,
+                "3": 1.832268162114989e-06,
+                "4": 6.9652058639887064e-06,
+                "5": 5.7049657702670565e-06,
+                "6": 4.504721298017283e-06
+              },
+              "month_returns": {
+                "1": 2.5430041409872468e-06,
+                "2": 2.0133243366057684e-06,
+                "3": -1.3923893708930717e-05,
+                "4": -9.735841091693513e-07,
+                "5": 7.239757191187393e-06,
+                "6": 1.025763844998151e-06,
+                "7": 8.784045425443374e-06,
+                "8": 1.3669856980606e-05,
+                "9": 3.007320271120683e-07,
+                "10": 4.7072450789031055e-06,
+                "11": 7.037200857571175e-06,
+                "12": -2.4829108068614202e-06
+              },
+              "session_returns": {
+                "asian": 2.7426644902220155e-06,
+                "european": 5.00351215746778e-06,
+                "american": 4.79709510457647e-07
+              },
+              "best_hour": 14,
+              "worst_hour": 16,
+              "best_dow": 4,
+              "worst_dow": 0
+            },
+            "chromosome_vi": {
+              "shannon_entropy": 3.3677439891430594,
+              "max_entropy": 4.321928094887363,
+              "normalized_entropy": 0.7792225865874405,
+              "permutation_entropy": 0.9999910888026584,
+              "sample_entropy": null,
+              "lz_complexity": 0.121625,
+              "predictability": 22.07774134125595
+            },
+            "chromosome_vii": {
+              "avg_trend_length": 3.0030200675541425,
+              "max_trend_length": 16,
+              "ou_theta": 6.161196479141586e-05,
+              "ou_half_life": 11250.2041268536,
+              "swing_mean": 53.805453326846106,
+              "swing_std": 40.98429426888204,
+              "mean_reversion_speed": 6.161196479141586e-05
+            },
+            "chromosome_viii": {
+              "signatures": [
+                "Constant tick volume (73.6% at 300)",
+                "100% positive jumps",
+                "Poisson-like jump process (CV=0.88)"
+              ],
+              "confidence": 50,
+              "is_synthetic": false,
+              "confidence_level": "Low",
+              "benford_score": 423.3824630318882,
+              "jump_asymmetry": 1.0
+            },
+            "strategy_affinity": {
+              "Mean Reversion": 60,
+              "Trend Following": 15,
+              "Scalping": 100,
+              "Market Making": 100,
+              "Momentum": 15,
+              "Breakout": 30
+            },
+            "overall_score": 59.63471766765699
+          },
+          "scores": {
+            "Distribution": 0,
+            "Memory": 0,
+            "Volatility": 100,
+            "Jumps": 100,
+            "Temporal": 100,
+            "Information": 47.07774134125595,
+            "Structure": 80,
+            "Synthetic": 50
+          }
+        }
+      },
+      {
+        "entry_date": "2025-08-27 03:40:00",
+        "exit_date": "2025-08-27 04:05:00",
+        "direction": "BUY",
+        "entry_price": 100372.48,
+        "exit_price": 100269.25,
+        "volume": 0.01,
+        "pnl": -1.0322999999999594,
+        "reason": "Trend exhausted",
+        "holding_bars": 25.0,
+        "confidence": 70,
+        "signal_reason": "Breakout above upper band, momentum 0.004",
+        "trade_duration_minutes": 25.0,
+        "entry_exit_spread": 103.22999999999593,
+        "pnl_per_unit": -103.22999999999594,
+        "is_winner": false,
+        "profit_pct": -0.10284691580799432,
+        "dna_context": {
+          "symbol": "FX Vol 20_PERIOD_M5_data",
+          "timeframe": "M5",
+          "bars": 100712,
+          "dna": {
+            "chromosome_i": {
+              "mean_return": 0.020506019139164156,
+              "median_return": 0.012655112122672563,
+              "std_return": 6.194036578443151,
+              "coef_variation": 302.05943612981656,
+              "skewness": 0.007140966467218907,
+              "excess_kurtosis": 0.012365630020404694,
+              "tail_index": 13.145790787677884,
+              "var_95": -10.201349705226903,
+              "cvar_95": -12.768545883369118,
+              "min_return": -24.611248665014074,
+              "max_return": 27.353462441670473,
+              "positive_ratio": 50.07993644804131,
+              "negative_ratio": 49.92006355195869
+            },
+            "chromosome_ii": {
+              "autocorrelation": {
+                "lag_1": -0.003688421708236106,
+                "lag_3": -0.0005305378195973902,
+                "lag_5": 0.0019155115755391378,
+                "lag_10": 0.004463590336824271,
+                "lag_20": -0.0026363644319073757
+              },
+              "hurst_exponent": 0.1746368293072916,
+              "dfa_exponent": 0.23970946344583327,
+              "ljung_box_pvalue": 0.7138189443613407,
+              "is_random": true
+            },
+            "chromosome_iii": {
+              "realized_vol": 0.98324353384334,
+              "rolling_vol_20": 1.0298266612439855,
+              "rolling_vol_100": 0.9959043972197051,
+              "ewma_vol": 0.05929723457002285,
+              "atr": 98.32428571428629,
+              "vol_of_vol": 0.1605347868665117,
+              "vol_persistence": 0.9480460850253551
+            },
+            "chromosome_iv": {
+              "jump_stats": {
+                "threshold_3": {
+                  "positive": 144,
+                  "negative": 120,
+                  "total": 264,
+                  "rate": 0.2621362115359792,
+                  "pos_rate": 0.1429833881105341,
+                  "neg_rate": 0.11915282342544507,
+                  "mean_pos": 20.55743255228627,
+                  "mean_neg": -20.251050719921466,
+                  "max_pos": 27.353462441670473,
+                  "max_neg": -24.611248665014074
+                },
+                "threshold_4": {
+                  "positive": 4,
+                  "negative": 0,
+                  "total": 4,
+                  "rate": 0.0039717607808481695,
+                  "pos_rate": 0.0039717607808481695,
+                  "neg_rate": 0.0,
+                  "mean_pos": 25.86507380469172,
+                  "mean_neg": 0,
+                  "max_pos": 27.353462441670473,
+                  "max_neg": 0
+                }
+              },
+              "jump_intensity": 3.971760780848169e-05,
+              "waiting_time_cv": 0.8754676439106441,
+              "jump_asymmetry": 1.0
+            },
+            "chromosome_v": {
+              "hourly_returns": {
+                "0": -1.1957061813973613e-06,
+                "1": -2.5662731058452458e-06,
+                "2": 7.161689431076255e-06,
+                "3": 3.805405954319393e-06,
+                "4": 6.301889528756294e-06,
+                "5": -2.4122453502501576e-06,
+                "6": 4.48647339594328e-06,
+                "7": 6.400766826772335e-06,
+                "8": 1.1048655671888152e-05,
+                "9": 5.376393068613385e-06,
+                "10": 5.431552083746251e-06,
+                "11": 6.916365681455201e-06,
+                "12": 5.301469803930612e-06,
+                "13": -4.136132430107259e-06,
+                "14": 1.1706935104558923e-05,
+                "15": 9.326478522298165e-06,
+                "16": -1.8983101069943773e-05,
+                "17": 1.0896416303987606e-05,
+                "18": -1.5691023020352615e-05,
+                "19": 9.375274130928683e-06,
+                "20": 6.205809624926334e-06,
+                "21": -8.937200059244833e-06,
+                "22": 3.7953072662686016e-06,
+                "23": -1.0346171066360673e-05
+              },
+              "dow_returns": {
+                "0": -6.8977497486857575e-06,
+                "1": -1.9755800800322664e-06,
+                "2": 4.234132656674531e-06,
+                "3": 1.832268162114989e-06,
+                "4": 6.9652058639887064e-06,
+                "5": 5.7049657702670565e-06,
+                "6": 4.504721298017283e-06
+              },
+              "month_returns": {
+                "1": 2.5430041409872468e-06,
+                "2": 2.0133243366057684e-06,
+                "3": -1.3923893708930717e-05,
+                "4": -9.735841091693513e-07,
+                "5": 7.239757191187393e-06,
+                "6": 1.025763844998151e-06,
+                "7": 8.784045425443374e-06,
+                "8": 1.3669856980606e-05,
+                "9": 3.007320271120683e-07,
+                "10": 4.7072450789031055e-06,
+                "11": 7.037200857571175e-06,
+                "12": -2.4829108068614202e-06
+              },
+              "session_returns": {
+                "asian": 2.7426644902220155e-06,
+                "european": 5.00351215746778e-06,
+                "american": 4.79709510457647e-07
+              },
+              "best_hour": 14,
+              "worst_hour": 16,
+              "best_dow": 4,
+              "worst_dow": 0
+            },
+            "chromosome_vi": {
+              "shannon_entropy": 3.3677439891430594,
+              "max_entropy": 4.321928094887363,
+              "normalized_entropy": 0.7792225865874405,
+              "permutation_entropy": 0.9999910888026584,
+              "sample_entropy": null,
+              "lz_complexity": 0.121625,
+              "predictability": 22.07774134125595
+            },
+            "chromosome_vii": {
+              "avg_trend_length": 3.0030200675541425,
+              "max_trend_length": 16,
+              "ou_theta": 6.161196479141586e-05,
+              "ou_half_life": 11250.2041268536,
+              "swing_mean": 53.805453326846106,
+              "swing_std": 40.98429426888204,
+              "mean_reversion_speed": 6.161196479141586e-05
+            },
+            "chromosome_viii": {
+              "signatures": [
+                "Constant tick volume (73.6% at 300)",
+                "100% positive jumps",
+                "Poisson-like jump process (CV=0.88)"
+              ],
+              "confidence": 50,
+              "is_synthetic": false,
+              "confidence_level": "Low",
+              "benford_score": 423.3824630318882,
+              "jump_asymmetry": 1.0
+            },
+            "strategy_affinity": {
+              "Mean Reversion": 60,
+              "Trend Following": 15,
+              "Scalping": 100,
+              "Market Making": 100,
+              "Momentum": 15,
+              "Breakout": 30
+            },
+            "overall_score": 59.63471766765699
+          },
+          "scores": {
+            "Distribution": 0,
+            "Memory": 0,
+            "Volatility": 100,
+            "Jumps": 100,
+            "Temporal": 100,
+            "Information": 47.07774134125595,
+            "Structure": 80,
+            "Synthetic": 50
+          }
+        }
+      },
+      {
+        "entry_date": "2025-09-18 14:30:00",
+        "exit_date": "2025-09-18 14:45:00",
+        "direction": "BUY",
+        "entry_price": 101763.95,
+        "exit_price": 101709.73,
+        "volume": 0.01,
+        "pnl": -0.5422000000000117,
+        "reason": "Trend exhausted",
+        "holding_bars": 15.0,
+        "confidence": 70,
+        "signal_reason": "Breakout above upper band, momentum 0.002",
+        "trade_duration_minutes": 15.0,
+        "entry_exit_spread": 54.220000000001164,
+        "pnl_per_unit": -54.220000000001164,
+        "is_winner": false,
+        "profit_pct": -0.05328016453763947,
+        "dna_context": {
+          "symbol": "FX Vol 20_PERIOD_M5_data",
+          "timeframe": "M5",
+          "bars": 100712,
+          "dna": {
+            "chromosome_i": {
+              "mean_return": 0.020506019139164156,
+              "median_return": 0.012655112122672563,
+              "std_return": 6.194036578443151,
+              "coef_variation": 302.05943612981656,
+              "skewness": 0.007140966467218907,
+              "excess_kurtosis": 0.012365630020404694,
+              "tail_index": 13.145790787677884,
+              "var_95": -10.201349705226903,
+              "cvar_95": -12.768545883369118,
+              "min_return": -24.611248665014074,
+              "max_return": 27.353462441670473,
+              "positive_ratio": 50.07993644804131,
+              "negative_ratio": 49.92006355195869
+            },
+            "chromosome_ii": {
+              "autocorrelation": {
+                "lag_1": -0.003688421708236106,
+                "lag_3": -0.0005305378195973902,
+                "lag_5": 0.0019155115755391378,
+                "lag_10": 0.004463590336824271,
+                "lag_20": -0.0026363644319073757
+              },
+              "hurst_exponent": 0.1746368293072916,
+              "dfa_exponent": 0.23970946344583327,
+              "ljung_box_pvalue": 0.7138189443613407,
+              "is_random": true
+            },
+            "chromosome_iii": {
+              "realized_vol": 0.98324353384334,
+              "rolling_vol_20": 1.0298266612439855,
+              "rolling_vol_100": 0.9959043972197051,
+              "ewma_vol": 0.05929723457002285,
+              "atr": 98.32428571428629,
+              "vol_of_vol": 0.1605347868665117,
+              "vol_persistence": 0.9480460850253551
+            },
+            "chromosome_iv": {
+              "jump_stats": {
+                "threshold_3": {
+                  "positive": 144,
+                  "negative": 120,
+                  "total": 264,
+                  "rate": 0.2621362115359792,
+                  "pos_rate": 0.1429833881105341,
+                  "neg_rate": 0.11915282342544507,
+                  "mean_pos": 20.55743255228627,
+                  "mean_neg": -20.251050719921466,
+                  "max_pos": 27.353462441670473,
+                  "max_neg": -24.611248665014074
+                },
+                "threshold_4": {
+                  "positive": 4,
+                  "negative": 0,
+                  "total": 4,
+                  "rate": 0.0039717607808481695,
+                  "pos_rate": 0.0039717607808481695,
+                  "neg_rate": 0.0,
+                  "mean_pos": 25.86507380469172,
+                  "mean_neg": 0,
+                  "max_pos": 27.353462441670473,
+                  "max_neg": 0
+                }
+              },
+              "jump_intensity": 3.971760780848169e-05,
+              "waiting_time_cv": 0.8754676439106441,
+              "jump_asymmetry": 1.0
+            },
+            "chromosome_v": {
+              "hourly_returns": {
+                "0": -1.1957061813973613e-06,
+                "1": -2.5662731058452458e-06,
+                "2": 7.161689431076255e-06,
+                "3": 3.805405954319393e-06,
+                "4": 6.301889528756294e-06,
+                "5": -2.4122453502501576e-06,
+                "6": 4.48647339594328e-06,
+                "7": 6.400766826772335e-06,
+                "8": 1.1048655671888152e-05,
+                "9": 5.376393068613385e-06,
+                "10": 5.431552083746251e-06,
+                "11": 6.916365681455201e-06,
+                "12": 5.301469803930612e-06,
+                "13": -4.136132430107259e-06,
+                "14": 1.1706935104558923e-05,
+                "15": 9.326478522298165e-06,
+                "16": -1.8983101069943773e-05,
+                "17": 1.0896416303987606e-05,
+                "18": -1.5691023020352615e-05,
+                "19": 9.375274130928683e-06,
+                "20": 6.205809624926334e-06,
+                "21": -8.937200059244833e-06,
+                "22": 3.7953072662686016e-06,
+                "23": -1.0346171066360673e-05
+              },
+              "dow_returns": {
+                "0": -6.8977497486857575e-06,
+                "1": -1.9755800800322664e-06,
+                "2": 4.234132656674531e-06,
+                "3": 1.832268162114989e-06,
+                "4": 6.9652058639887064e-06,
+                "5": 5.7049657702670565e-06,
+                "6": 4.504721298017283e-06
+              },
+              "month_returns": {
+                "1": 2.5430041409872468e-06,
+                "2": 2.0133243366057684e-06,
+                "3": -1.3923893708930717e-05,
+                "4": -9.735841091693513e-07,
+                "5": 7.239757191187393e-06,
+                "6": 1.025763844998151e-06,
+                "7": 8.784045425443374e-06,
+                "8": 1.3669856980606e-05,
+                "9": 3.007320271120683e-07,
+                "10": 4.7072450789031055e-06,
+                "11": 7.037200857571175e-06,
+                "12": -2.4829108068614202e-06
+              },
+              "session_returns": {
+                "asian": 2.7426644902220155e-06,
+                "european": 5.00351215746778e-06,
+                "american": 4.79709510457647e-07
+              },
+              "best_hour": 14,
+              "worst_hour": 16,
+              "best_dow": 4,
+              "worst_dow": 0
+            },
+            "chromosome_vi": {
+              "shannon_entropy": 3.3677439891430594,
+              "max_entropy": 4.321928094887363,
+              "normalized_entropy": 0.7792225865874405,
+              "permutation_entropy": 0.9999910888026584,
+              "sample_entropy": null,
+              "lz_complexity": 0.121625,
+              "predictability": 22.07774134125595
+            },
+            "chromosome_vii": {
+              "avg_trend_length": 3.0030200675541425,
+              "max_trend_length": 16,
+              "ou_theta": 6.161196479141586e-05,
+              "ou_half_life": 11250.2041268536,
+              "swing_mean": 53.805453326846106,
+              "swing_std": 40.98429426888204,
+              "mean_reversion_speed": 6.161196479141586e-05
+            },
+            "chromosome_viii": {
+              "signatures": [
+                "Constant tick volume (73.6% at 300)",
+                "100% positive jumps",
+                "Poisson-like jump process (CV=0.88)"
+              ],
+              "confidence": 50,
+              "is_synthetic": false,
+              "confidence_level": "Low",
+              "benford_score": 423.3824630318882,
+              "jump_asymmetry": 1.0
+            },
+            "strategy_affinity": {
+              "Mean Reversion": 60,
+              "Trend Following": 15,
+              "Scalping": 100,
+              "Market Making": 100,
+              "Momentum": 15,
+              "Breakout": 30
+            },
+            "overall_score": 59.63471766765699
+          },
+          "scores": {
+            "Distribution": 0,
+            "Memory": 0,
+            "Volatility": 100,
+            "Jumps": 100,
+            "Temporal": 100,
+            "Information": 47.07774134125595,
+            "Structure": 80,
+            "Synthetic": 50
+          }
+        }
+      },
+      {
+        "entry_date": "2025-11-01 06:15:00",
+        "exit_date": "2025-11-01 06:30:00",
+        "direction": "BUY",
+        "entry_price": 108333.34,
+        "exit_price": 108195.53564166666,
+        "volume": 0.01,
+        "pnl": -1.3780435833333469,
+        "reason": "SL",
+        "holding_bars": 15.0,
+        "confidence": 70,
+        "signal_reason": "Breakout above upper band, momentum 0.003",
+        "trade_duration_minutes": 15.0,
+        "entry_exit_spread": 137.80435833333468,
+        "pnl_per_unit": -137.80435833333468,
+        "is_winner": false,
+        "profit_pct": -0.12720401524898492,
+        "dna_context": {
+          "symbol": "FX Vol 20_PERIOD_M5_data",
+          "timeframe": "M5",
+          "bars": 100712,
+          "dna": {
+            "chromosome_i": {
+              "mean_return": 0.020506019139164156,
+              "median_return": 0.012655112122672563,
+              "std_return": 6.194036578443151,
+              "coef_variation": 302.05943612981656,
+              "skewness": 0.007140966467218907,
+              "excess_kurtosis": 0.012365630020404694,
+              "tail_index": 13.145790787677884,
+              "var_95": -10.201349705226903,
+              "cvar_95": -12.768545883369118,
+              "min_return": -24.611248665014074,
+              "max_return": 27.353462441670473,
+              "positive_ratio": 50.07993644804131,
+              "negative_ratio": 49.92006355195869
+            },
+            "chromosome_ii": {
+              "autocorrelation": {
+                "lag_1": -0.003688421708236106,
+                "lag_3": -0.0005305378195973902,
+                "lag_5": 0.0019155115755391378,
+                "lag_10": 0.004463590336824271,
+                "lag_20": -0.0026363644319073757
+              },
+              "hurst_exponent": 0.1746368293072916,
+              "dfa_exponent": 0.23970946344583327,
+              "ljung_box_pvalue": 0.7138189443613407,
+              "is_random": true
+            },
+            "chromosome_iii": {
+              "realized_vol": 0.98324353384334,
+              "rolling_vol_20": 1.0298266612439855,
+              "rolling_vol_100": 0.9959043972197051,
+              "ewma_vol": 0.05929723457002285,
+              "atr": 98.32428571428629,
+              "vol_of_vol": 0.1605347868665117,
+              "vol_persistence": 0.9480460850253551
+            },
+            "chromosome_iv": {
+              "jump_stats": {
+                "threshold_3": {
+                  "positive": 144,
+                  "negative": 120,
+                  "total": 264,
+                  "rate": 0.2621362115359792,
+                  "pos_rate": 0.1429833881105341,
+                  "neg_rate": 0.11915282342544507,
+                  "mean_pos": 20.55743255228627,
+                  "mean_neg": -20.251050719921466,
+                  "max_pos": 27.353462441670473,
+                  "max_neg": -24.611248665014074
+                },
+                "threshold_4": {
+                  "positive": 4,
+                  "negative": 0,
+                  "total": 4,
+                  "rate": 0.0039717607808481695,
+                  "pos_rate": 0.0039717607808481695,
+                  "neg_rate": 0.0,
+                  "mean_pos": 25.86507380469172,
+                  "mean_neg": 0,
+                  "max_pos": 27.353462441670473,
+                  "max_neg": 0
+                }
+              },
+              "jump_intensity": 3.971760780848169e-05,
+              "waiting_time_cv": 0.8754676439106441,
+              "jump_asymmetry": 1.0
+            },
+            "chromosome_v": {
+              "hourly_returns": {
+                "0": -1.1957061813973613e-06,
+                "1": -2.5662731058452458e-06,
+                "2": 7.161689431076255e-06,
+                "3": 3.805405954319393e-06,
+                "4": 6.301889528756294e-06,
+                "5": -2.4122453502501576e-06,
+                "6": 4.48647339594328e-06,
+                "7": 6.400766826772335e-06,
+                "8": 1.1048655671888152e-05,
+                "9": 5.376393068613385e-06,
+                "10": 5.431552083746251e-06,
+                "11": 6.916365681455201e-06,
+                "12": 5.301469803930612e-06,
+                "13": -4.136132430107259e-06,
+                "14": 1.1706935104558923e-05,
+                "15": 9.326478522298165e-06,
+                "16": -1.8983101069943773e-05,
+                "17": 1.0896416303987606e-05,
+                "18": -1.5691023020352615e-05,
+                "19": 9.375274130928683e-06,
+                "20": 6.205809624926334e-06,
+                "21": -8.937200059244833e-06,
+                "22": 3.7953072662686016e-06,
+                "23": -1.0346171066360673e-05
+              },
+              "dow_returns": {
+                "0": -6.8977497486857575e-06,
+                "1": -1.9755800800322664e-06,
+                "2": 4.234132656674531e-06,
+                "3": 1.832268162114989e-06,
+                "4": 6.9652058639887064e-06,
+                "5": 5.7049657702670565e-06,
+                "6": 4.504721298017283e-06
+              },
+              "month_returns": {
+                "1": 2.5430041409872468e-06,
+                "2": 2.0133243366057684e-06,
+                "3": -1.3923893708930717e-05,
+                "4": -9.735841091693513e-07,
+                "5": 7.239757191187393e-06,
+                "6": 1.025763844998151e-06,
+                "7": 8.784045425443374e-06,
+                "8": 1.3669856980606e-05,
+                "9": 3.007320271120683e-07,
+                "10": 4.7072450789031055e-06,
+                "11": 7.037200857571175e-06,
+                "12": -2.4829108068614202e-06
+              },
+              "session_returns": {
+                "asian": 2.7426644902220155e-06,
+                "european": 5.00351215746778e-06,
+                "american": 4.79709510457647e-07
+              },
+              "best_hour": 14,
+              "worst_hour": 16,
+              "best_dow": 4,
+              "worst_dow": 0
+            },
+            "chromosome_vi": {
+              "shannon_entropy": 3.3677439891430594,
+              "max_entropy": 4.321928094887363,
+              "normalized_entropy": 0.7792225865874405,
+              "permutation_entropy": 0.9999910888026584,
+              "sample_entropy": null,
+              "lz_complexity": 0.121625,
+              "predictability": 22.07774134125595
+            },
+            "chromosome_vii": {
+              "avg_trend_length": 3.0030200675541425,
+              "max_trend_length": 16,
+              "ou_theta": 6.161196479141586e-05,
+              "ou_half_life": 11250.2041268536,
+              "swing_mean": 53.805453326846106,
+              "swing_std": 40.98429426888204,
+              "mean_reversion_speed": 6.161196479141586e-05
+            },
+            "chromosome_viii": {
+              "signatures": [
+                "Constant tick volume (73.6% at 300)",
+                "100% positive jumps",
+                "Poisson-like jump process (CV=0.88)"
+              ],
+              "confidence": 50,
+              "is_synthetic": false,
+              "confidence_level": "Low",
+              "benford_score": 423.3824630318882,
+              "jump_asymmetry": 1.0
+            },
+            "strategy_affinity": {
+              "Mean Reversion": 60,
+              "Trend Following": 15,
+              "Scalping": 100,
+              "Market Making": 100,
+              "Momentum": 15,
+              "Breakout": 30
+            },
+            "overall_score": 59.63471766765699
+          },
+          "scores": {
+            "Distribution": 0,
+            "Memory": 0,
+            "Volatility": 100,
+            "Jumps": 100,
+            "Temporal": 100,
+            "Information": 47.07774134125595,
+            "Structure": 80,
+            "Synthetic": 50
+          }
+        }
+      },
+      {
+        "entry_date": "2025-11-08 15:30:00",
+        "exit_date": "2025-11-08 16:35:00",
+        "direction": "BUY",
+        "entry_price": 113776.47,
+        "exit_price": 113902.56,
+        "volume": 0.01,
+        "pnl": 1.260899999999965,
+        "reason": "Trend exhausted",
+        "holding_bars": 65.0,
+        "confidence": 70,
+        "signal_reason": "Breakout above upper band, momentum 0.004",
+        "trade_duration_minutes": 65.0,
+        "entry_exit_spread": 126.08999999999651,
+        "pnl_per_unit": 126.08999999999651,
+        "is_winner": true,
+        "profit_pct": 0.110822562872619,
+        "dna_context": {
+          "symbol": "FX Vol 20_PERIOD_M5_data",
+          "timeframe": "M5",
+          "bars": 100712,
+          "dna": {
+            "chromosome_i": {
+              "mean_return": 0.020506019139164156,
+              "median_return": 0.012655112122672563,
+              "std_return": 6.194036578443151,
+              "coef_variation": 302.05943612981656,
+              "skewness": 0.007140966467218907,
+              "excess_kurtosis": 0.012365630020404694,
+              "tail_index": 13.145790787677884,
+              "var_95": -10.201349705226903,
+              "cvar_95": -12.768545883369118,
+              "min_return": -24.611248665014074,
+              "max_return": 27.353462441670473,
+              "positive_ratio": 50.07993644804131,
+              "negative_ratio": 49.92006355195869
+            },
+            "chromosome_ii": {
+              "autocorrelation": {
+                "lag_1": -0.003688421708236106,
+                "lag_3": -0.0005305378195973902,
+                "lag_5": 0.0019155115755391378,
+                "lag_10": 0.004463590336824271,
+                "lag_20": -0.0026363644319073757
+              },
+              "hurst_exponent": 0.1746368293072916,
+              "dfa_exponent": 0.23970946344583327,
+              "ljung_box_pvalue": 0.7138189443613407,
+              "is_random": true
+            },
+            "chromosome_iii": {
+              "realized_vol": 0.98324353384334,
+              "rolling_vol_20": 1.0298266612439855,
+              "rolling_vol_100": 0.9959043972197051,
+              "ewma_vol": 0.05929723457002285,
+              "atr": 98.32428571428629,
+              "vol_of_vol": 0.1605347868665117,
+              "vol_persistence": 0.9480460850253551
+            },
+            "chromosome_iv": {
+              "jump_stats": {
+                "threshold_3": {
+                  "positive": 144,
+                  "negative": 120,
+                  "total": 264,
+                  "rate": 0.2621362115359792,
+                  "pos_rate": 0.1429833881105341,
+                  "neg_rate": 0.11915282342544507,
+                  "mean_pos": 20.55743255228627,
+                  "mean_neg": -20.251050719921466,
+                  "max_pos": 27.353462441670473,
+                  "max_neg": -24.611248665014074
+                },
+                "threshold_4": {
+                  "positive": 4,
+                  "negative": 0,
+                  "total": 4,
+                  "rate": 0.0039717607808481695,
+                  "pos_rate": 0.0039717607808481695,
+                  "neg_rate": 0.0,
+                  "mean_pos": 25.86507380469172,
+                  "mean_neg": 0,
+                  "max_pos": 27.353462441670473,
+                  "max_neg": 0
+                }
+              },
+              "jump_intensity": 3.971760780848169e-05,
+              "waiting_time_cv": 0.8754676439106441,
+              "jump_asymmetry": 1.0
+            },
+            "chromosome_v": {
+              "hourly_returns": {
+                "0": -1.1957061813973613e-06,
+                "1": -2.5662731058452458e-06,
+                "2": 7.161689431076255e-06,
+                "3": 3.805405954319393e-06,
+                "4": 6.301889528756294e-06,
+                "5": -2.4122453502501576e-06,
+                "6": 4.48647339594328e-06,
+                "7": 6.400766826772335e-06,
+                "8": 1.1048655671888152e-05,
+                "9": 5.376393068613385e-06,
+                "10": 5.431552083746251e-06,
+                "11": 6.916365681455201e-06,
+                "12": 5.301469803930612e-06,
+                "13": -4.136132430107259e-06,
+                "14": 1.1706935104558923e-05,
+                "15": 9.326478522298165e-06,
+                "16": -1.8983101069943773e-05,
+                "17": 1.0896416303987606e-05,
+                "18": -1.5691023020352615e-05,
+                "19": 9.375274130928683e-06,
+                "20": 6.205809624926334e-06,
+                "21": -8.937200059244833e-06,
+                "22": 3.7953072662686016e-06,
+                "23": -1.0346171066360673e-05
+              },
+              "dow_returns": {
+                "0": -6.8977497486857575e-06,
+                "1": -1.9755800800322664e-06,
+                "2": 4.234132656674531e-06,
+                "3": 1.832268162114989e-06,
+                "4": 6.9652058639887064e-06,
+                "5": 5.7049657702670565e-06,
+                "6": 4.504721298017283e-06
+              },
+              "month_returns": {
+                "1": 2.5430041409872468e-06,
+                "2": 2.0133243366057684e-06,
+                "3": -1.3923893708930717e-05,
+                "4": -9.735841091693513e-07,
+                "5": 7.239757191187393e-06,
+                "6": 1.025763844998151e-06,
+                "7": 8.784045425443374e-06,
+                "8": 1.3669856980606e-05,
+                "9": 3.007320271120683e-07,
+                "10": 4.7072450789031055e-06,
+                "11": 7.037200857571175e-06,
+                "12": -2.4829108068614202e-06
+              },
+              "session_returns": {
+                "asian": 2.7426644902220155e-06,
+                "european": 5.00351215746778e-06,
+                "american": 4.79709510457647e-07
+              },
+              "best_hour": 14,
+              "worst_hour": 16,
+              "best_dow": 4,
+              "worst_dow": 0
+            },
+            "chromosome_vi": {
+              "shannon_entropy": 3.3677439891430594,
+              "max_entropy": 4.321928094887363,
+              "normalized_entropy": 0.7792225865874405,
+              "permutation_entropy": 0.9999910888026584,
+              "sample_entropy": null,
+              "lz_complexity": 0.121625,
+              "predictability": 22.07774134125595
+            },
+            "chromosome_vii": {
+              "avg_trend_length": 3.0030200675541425,
+              "max_trend_length": 16,
+              "ou_theta": 6.161196479141586e-05,
+              "ou_half_life": 11250.2041268536,
+              "swing_mean": 53.805453326846106,
+              "swing_std": 40.98429426888204,
+              "mean_reversion_speed": 6.161196479141586e-05
+            },
+            "chromosome_viii": {
+              "signatures": [
+                "Constant tick volume (73.6% at 300)",
+                "100% positive jumps",
+                "Poisson-like jump process (CV=0.88)"
+              ],
+              "confidence": 50,
+              "is_synthetic": false,
+              "confidence_level": "Low",
+              "benford_score": 423.3824630318882,
+              "jump_asymmetry": 1.0
+            },
+            "strategy_affinity": {
+              "Mean Reversion": 60,
+              "Trend Following": 15,
+              "Scalping": 100,
+              "Market Making": 100,
+              "Momentum": 15,
+              "Breakout": 30
+            },
+            "overall_score": 59.63471766765699
+          },
+          "scores": {
+            "Distribution": 0,
+            "Memory": 0,
+            "Volatility": 100,
+            "Jumps": 100,
+            "Temporal": 100,
+            "Information": 47.07774134125595,
+            "Structure": 80,
+            "Synthetic": 50
+          }
+        }
+      },
+      {
+        "entry_date": "2025-11-24 17:25:00",
+        "exit_date": "2025-11-24 18:05:00",
+        "direction": "BUY",
+        "entry_price": 115435.02,
+        "exit_price": 115859.72191666666,
+        "volume": 0.01,
+        "pnl": 4.247019166666578,
+        "reason": "TP",
+        "holding_bars": 40.0,
+        "confidence": 70,
+        "signal_reason": "Breakout above upper band, momentum 0.002",
+        "trade_duration_minutes": 40.0,
+        "entry_exit_spread": 424.7019166666578,
+        "pnl_per_unit": 424.70191666665784,
+        "is_winner": true,
+        "profit_pct": 0.36791427477264504,
+        "dna_context": {
+          "symbol": "FX Vol 20_PERIOD_M5_data",
+          "timeframe": "M5",
+          "bars": 100712,
+          "dna": {
+            "chromosome_i": {
+              "mean_return": 0.020506019139164156,
+              "median_return": 0.012655112122672563,
+              "std_return": 6.194036578443151,
+              "coef_variation": 302.05943612981656,
+              "skewness": 0.007140966467218907,
+              "excess_kurtosis": 0.012365630020404694,
+              "tail_index": 13.145790787677884,
+              "var_95": -10.201349705226903,
+              "cvar_95": -12.768545883369118,
+              "min_return": -24.611248665014074,
+              "max_return": 27.353462441670473,
+              "positive_ratio": 50.07993644804131,
+              "negative_ratio": 49.92006355195869
+            },
+            "chromosome_ii": {
+              "autocorrelation": {
+                "lag_1": -0.003688421708236106,
+                "lag_3": -0.0005305378195973902,
+                "lag_5": 0.0019155115755391378,
+                "lag_10": 0.004463590336824271,
+                "lag_20": -0.0026363644319073757
+              },
+              "hurst_exponent": 0.1746368293072916,
+              "dfa_exponent": 0.23970946344583327,
+              "ljung_box_pvalue": 0.7138189443613407,
+              "is_random": true
+            },
+            "chromosome_iii": {
+              "realized_vol": 0.98324353384334,
+              "rolling_vol_20": 1.0298266612439855,
+              "rolling_vol_100": 0.9959043972197051,
+              "ewma_vol": 0.05929723457002285,
+              "atr": 98.32428571428629,
+              "vol_of_vol": 0.1605347868665117,
+              "vol_persistence": 0.9480460850253551
+            },
+            "chromosome_iv": {
+              "jump_stats": {
+                "threshold_3": {
+                  "positive": 144,
+                  "negative": 120,
+                  "total": 264,
+                  "rate": 0.2621362115359792,
+                  "pos_rate": 0.1429833881105341,
+                  "neg_rate": 0.11915282342544507,
+                  "mean_pos": 20.55743255228627,
+                  "mean_neg": -20.251050719921466,
+                  "max_pos": 27.353462441670473,
+                  "max_neg": -24.611248665014074
+                },
+                "threshold_4": {
+                  "positive": 4,
+                  "negative": 0,
+                  "total": 4,
+                  "rate": 0.0039717607808481695,
+                  "pos_rate": 0.0039717607808481695,
+                  "neg_rate": 0.0,
+                  "mean_pos": 25.86507380469172,
+                  "mean_neg": 0,
+                  "max_pos": 27.353462441670473,
+                  "max_neg": 0
+                }
+              },
+              "jump_intensity": 3.971760780848169e-05,
+              "waiting_time_cv": 0.8754676439106441,
+              "jump_asymmetry": 1.0
+            },
+            "chromosome_v": {
+              "hourly_returns": {
+                "0": -1.1957061813973613e-06,
+                "1": -2.5662731058452458e-06,
+                "2": 7.161689431076255e-06,
+                "3": 3.805405954319393e-06,
+                "4": 6.301889528756294e-06,
+                "5": -2.4122453502501576e-06,
+                "6": 4.48647339594328e-06,
+                "7": 6.400766826772335e-06,
+                "8": 1.1048655671888152e-05,
+                "9": 5.376393068613385e-06,
+                "10": 5.431552083746251e-06,
+                "11": 6.916365681455201e-06,
+                "12": 5.301469803930612e-06,
+                "13": -4.136132430107259e-06,
+                "14": 1.1706935104558923e-05,
+                "15": 9.326478522298165e-06,
+                "16": -1.8983101069943773e-05,
+                "17": 1.0896416303987606e-05,
+                "18": -1.5691023020352615e-05,
+                "19": 9.375274130928683e-06,
+                "20": 6.205809624926334e-06,
+                "21": -8.937200059244833e-06,
+                "22": 3.7953072662686016e-06,
+                "23": -1.0346171066360673e-05
+              },
+              "dow_returns": {
+                "0": -6.8977497486857575e-06,
+                "1": -1.9755800800322664e-06,
+                "2": 4.234132656674531e-06,
+                "3": 1.832268162114989e-06,
+                "4": 6.9652058639887064e-06,
+                "5": 5.7049657702670565e-06,
+                "6": 4.504721298017283e-06
+              },
+              "month_returns": {
+                "1": 2.5430041409872468e-06,
+                "2": 2.0133243366057684e-06,
+                "3": -1.3923893708930717e-05,
+                "4": -9.735841091693513e-07,
+                "5": 7.239757191187393e-06,
+                "6": 1.025763844998151e-06,
+                "7": 8.784045425443374e-06,
+                "8": 1.3669856980606e-05,
+                "9": 3.007320271120683e-07,
+                "10": 4.7072450789031055e-06,
+                "11": 7.037200857571175e-06,
+                "12": -2.4829108068614202e-06
+              },
+              "session_returns": {
+                "asian": 2.7426644902220155e-06,
+                "european": 5.00351215746778e-06,
+                "american": 4.79709510457647e-07
+              },
+              "best_hour": 14,
+              "worst_hour": 16,
+              "best_dow": 4,
+              "worst_dow": 0
+            },
+            "chromosome_vi": {
+              "shannon_entropy": 3.3677439891430594,
+              "max_entropy": 4.321928094887363,
+              "normalized_entropy": 0.7792225865874405,
+              "permutation_entropy": 0.9999910888026584,
+              "sample_entropy": null,
+              "lz_complexity": 0.121625,
+              "predictability": 22.07774134125595
+            },
+            "chromosome_vii": {
+              "avg_trend_length": 3.0030200675541425,
+              "max_trend_length": 16,
+              "ou_theta": 6.161196479141586e-05,
+              "ou_half_life": 11250.2041268536,
+              "swing_mean": 53.805453326846106,
+              "swing_std": 40.98429426888204,
+              "mean_reversion_speed": 6.161196479141586e-05
+            },
+            "chromosome_viii": {
+              "signatures": [
+                "Constant tick volume (73.6% at 300)",
+                "100% positive jumps",
+                "Poisson-like jump process (CV=0.88)"
+              ],
+              "confidence": 50,
+              "is_synthetic": false,
+              "confidence_level": "Low",
+              "benford_score": 423.3824630318882,
+              "jump_asymmetry": 1.0
+            },
+            "strategy_affinity": {
+              "Mean Reversion": 60,
+              "Trend Following": 15,
+              "Scalping": 100,
+              "Market Making": 100,
+              "Momentum": 15,
+              "Breakout": 30
+            },
+            "overall_score": 59.63471766765699
+          },
+          "scores": {
+            "Distribution": 0,
+            "Memory": 0,
+            "Volatility": 100,
+            "Jumps": 100,
+            "Temporal": 100,
+            "Information": 47.07774134125595,
+            "Structure": 80,
+            "Synthetic": 50
+          }
+        }
+      },
+      {
+        "entry_date": "2025-12-21 11:25:00",
+        "exit_date": "2025-12-21 12:30:00",
+        "direction": "BUY",
+        "entry_price": 112633.68,
+        "exit_price": 112803.37,
+        "volume": 0.01,
+        "pnl": 1.6969000000000234,
+        "reason": "Trend exhausted",
+        "holding_bars": 65.0,
+        "confidence": 70,
+        "signal_reason": "Breakout above upper band, momentum 0.002",
+        "trade_duration_minutes": 65.0,
+        "entry_exit_spread": 169.69000000000233,
+        "pnl_per_unit": 169.69000000000233,
+        "is_winner": true,
+        "profit_pct": 0.15065653541640683,
+        "dna_context": {
+          "symbol": "FX Vol 20_PERIOD_M5_data",
+          "timeframe": "M5",
+          "bars": 100712,
+          "dna": {
+            "chromosome_i": {
+              "mean_return": 0.020506019139164156,
+              "median_return": 0.012655112122672563,
+              "std_return": 6.194036578443151,
+              "coef_variation": 302.05943612981656,
+              "skewness": 0.007140966467218907,
+              "excess_kurtosis": 0.012365630020404694,
+              "tail_index": 13.145790787677884,
+              "var_95": -10.201349705226903,
+              "cvar_95": -12.768545883369118,
+              "min_return": -24.611248665014074,
+              "max_return": 27.353462441670473,
+              "positive_ratio": 50.07993644804131,
+              "negative_ratio": 49.92006355195869
+            },
+            "chromosome_ii": {
+              "autocorrelation": {
+                "lag_1": -0.003688421708236106,
+                "lag_3": -0.0005305378195973902,
+                "lag_5": 0.0019155115755391378,
+                "lag_10": 0.004463590336824271,
+                "lag_20": -0.0026363644319073757
+              },
+              "hurst_exponent": 0.1746368293072916,
+              "dfa_exponent": 0.23970946344583327,
+              "ljung_box_pvalue": 0.7138189443613407,
+              "is_random": true
+            },
+            "chromosome_iii": {
+              "realized_vol": 0.98324353384334,
+              "rolling_vol_20": 1.0298266612439855,
+              "rolling_vol_100": 0.9959043972197051,
+              "ewma_vol": 0.05929723457002285,
+              "atr": 98.32428571428629,
+              "vol_of_vol": 0.1605347868665117,
+              "vol_persistence": 0.9480460850253551
+            },
+            "chromosome_iv": {
+              "jump_stats": {
+                "threshold_3": {
+                  "positive": 144,
+                  "negative": 120,
+                  "total": 264,
+                  "rate": 0.2621362115359792,
+                  "pos_rate": 0.1429833881105341,
+                  "neg_rate": 0.11915282342544507,
+                  "mean_pos": 20.55743255228627,
+                  "mean_neg": -20.251050719921466,
+                  "max_pos": 27.353462441670473,
+                  "max_neg": -24.611248665014074
+                },
+                "threshold_4": {
+                  "positive": 4,
+                  "negative": 0,
+                  "total": 4,
+                  "rate": 0.0039717607808481695,
+                  "pos_rate": 0.0039717607808481695,
+                  "neg_rate": 0.0,
+                  "mean_pos": 25.86507380469172,
+                  "mean_neg": 0,
+                  "max_pos": 27.353462441670473,
+                  "max_neg": 0
+                }
+              },
+              "jump_intensity": 3.971760780848169e-05,
+              "waiting_time_cv": 0.8754676439106441,
+              "jump_asymmetry": 1.0
+            },
+            "chromosome_v": {
+              "hourly_returns": {
+                "0": -1.1957061813973613e-06,
+                "1": -2.5662731058452458e-06,
+                "2": 7.161689431076255e-06,
+                "3": 3.805405954319393e-06,
+                "4": 6.301889528756294e-06,
+                "5": -2.4122453502501576e-06,
+                "6": 4.48647339594328e-06,
+                "7": 6.400766826772335e-06,
+                "8": 1.1048655671888152e-05,
+                "9": 5.376393068613385e-06,
+                "10": 5.431552083746251e-06,
+                "11": 6.916365681455201e-06,
+                "12": 5.301469803930612e-06,
+                "13": -4.136132430107259e-06,
+                "14": 1.1706935104558923e-05,
+                "15": 9.326478522298165e-06,
+                "16": -1.8983101069943773e-05,
+                "17": 1.0896416303987606e-05,
+                "18": -1.5691023020352615e-05,
+                "19": 9.375274130928683e-06,
+                "20": 6.205809624926334e-06,
+                "21": -8.937200059244833e-06,
+                "22": 3.7953072662686016e-06,
+                "23": -1.0346171066360673e-05
+              },
+              "dow_returns": {
+                "0": -6.8977497486857575e-06,
+                "1": -1.9755800800322664e-06,
+                "2": 4.234132656674531e-06,
+                "3": 1.832268162114989e-06,
+                "4": 6.9652058639887064e-06,
+                "5": 5.7049657702670565e-06,
+                "6": 4.504721298017283e-06
+              },
+              "month_returns": {
+                "1": 2.5430041409872468e-06,
+                "2": 2.0133243366057684e-06,
+                "3": -1.3923893708930717e-05,
+                "4": -9.735841091693513e-07,
+                "5": 7.239757191187393e-06,
+                "6": 1.025763844998151e-06,
+                "7": 8.784045425443374e-06,
+                "8": 1.3669856980606e-05,
+                "9": 3.007320271120683e-07,
+                "10": 4.7072450789031055e-06,
+                "11": 7.037200857571175e-06,
+                "12": -2.4829108068614202e-06
+              },
+              "session_returns": {
+                "asian": 2.7426644902220155e-06,
+                "european": 5.00351215746778e-06,
+                "american": 4.79709510457647e-07
+              },
+              "best_hour": 14,
+              "worst_hour": 16,
+              "best_dow": 4,
+              "worst_dow": 0
+            },
+            "chromosome_vi": {
+              "shannon_entropy": 3.3677439891430594,
+              "max_entropy": 4.321928094887363,
+              "normalized_entropy": 0.7792225865874405,
+              "permutation_entropy": 0.9999910888026584,
+              "sample_entropy": null,
+              "lz_complexity": 0.121625,
+              "predictability": 22.07774134125595
+            },
+            "chromosome_vii": {
+              "avg_trend_length": 3.0030200675541425,
+              "max_trend_length": 16,
+              "ou_theta": 6.161196479141586e-05,
+              "ou_half_life": 11250.2041268536,
+              "swing_mean": 53.805453326846106,
+              "swing_std": 40.98429426888204,
+              "mean_reversion_speed": 6.161196479141586e-05
+            },
+            "chromosome_viii": {
+              "signatures": [
+                "Constant tick volume (73.6% at 300)",
+                "100% positive jumps",
+                "Poisson-like jump process (CV=0.88)"
+              ],
+              "confidence": 50,
+              "is_synthetic": false,
+              "confidence_level": "Low",
+              "benford_score": 423.3824630318882,
+              "jump_asymmetry": 1.0
+            },
+            "strategy_affinity": {
+              "Mean Reversion": 60,
+              "Trend Following": 15,
+              "Scalping": 100,
+              "Market Making": 100,
+              "Momentum": 15,
+              "Breakout": 30
+            },
+            "overall_score": 59.63471766765699
+          },
+          "scores": {
+            "Distribution": 0,
+            "Memory": 0,
+            "Volatility": 100,
+            "Jumps": 100,
+            "Temporal": 100,
+            "Information": 47.07774134125595,
+            "Structure": 80,
+            "Synthetic": 50
+          }
+        }
+      },
+      {
+        "entry_date": "2026-01-15 19:10:00",
+        "exit_date": "2026-01-15 19:25:00",
+        "direction": "BUY",
+        "entry_price": 112041.75,
+        "exit_price": 111930.89,
+        "volume": 0.01,
+        "pnl": -1.1086000000000058,
+        "reason": "Trend exhausted",
+        "holding_bars": 15.0,
+        "confidence": 70,
+        "signal_reason": "Breakout above upper band, momentum 0.003",
+        "trade_duration_minutes": 15.0,
+        "entry_exit_spread": 110.86000000000058,
+        "pnl_per_unit": -110.86000000000058,
+        "is_winner": false,
+        "profit_pct": -0.09894525924488021,
+        "dna_context": {
+          "symbol": "FX Vol 20_PERIOD_M5_data",
+          "timeframe": "M5",
+          "bars": 100712,
+          "dna": {
+            "chromosome_i": {
+              "mean_return": 0.020506019139164156,
+              "median_return": 0.012655112122672563,
+              "std_return": 6.194036578443151,
+              "coef_variation": 302.05943612981656,
+              "skewness": 0.007140966467218907,
+              "excess_kurtosis": 0.012365630020404694,
+              "tail_index": 13.145790787677884,
+              "var_95": -10.201349705226903,
+              "cvar_95": -12.768545883369118,
+              "min_return": -24.611248665014074,
+              "max_return": 27.353462441670473,
+              "positive_ratio": 50.07993644804131,
+              "negative_ratio": 49.92006355195869
+            },
+            "chromosome_ii": {
+              "autocorrelation": {
+                "lag_1": -0.003688421708236106,
+                "lag_3": -0.0005305378195973902,
+                "lag_5": 0.0019155115755391378,
+                "lag_10": 0.004463590336824271,
+                "lag_20": -0.0026363644319073757
+              },
+              "hurst_exponent": 0.1746368293072916,
+              "dfa_exponent": 0.23970946344583327,
+              "ljung_box_pvalue": 0.7138189443613407,
+              "is_random": true
+            },
+            "chromosome_iii": {
+              "realized_vol": 0.98324353384334,
+              "rolling_vol_20": 1.0298266612439855,
+              "rolling_vol_100": 0.9959043972197051,
+              "ewma_vol": 0.05929723457002285,
+              "atr": 98.32428571428629,
+              "vol_of_vol": 0.1605347868665117,
+              "vol_persistence": 0.9480460850253551
+            },
+            "chromosome_iv": {
+              "jump_stats": {
+                "threshold_3": {
+                  "positive": 144,
+                  "negative": 120,
+                  "total": 264,
+                  "rate": 0.2621362115359792,
+                  "pos_rate": 0.1429833881105341,
+                  "neg_rate": 0.11915282342544507,
+                  "mean_pos": 20.55743255228627,
+                  "mean_neg": -20.251050719921466,
+                  "max_pos": 27.353462441670473,
+                  "max_neg": -24.611248665014074
+                },
+                "threshold_4": {
+                  "positive": 4,
+                  "negative": 0,
+                  "total": 4,
+                  "rate": 0.0039717607808481695,
+                  "pos_rate": 0.0039717607808481695,
+                  "neg_rate": 0.0,
+                  "mean_pos": 25.86507380469172,
+                  "mean_neg": 0,
+                  "max_pos": 27.353462441670473,
+                  "max_neg": 0
+                }
+              },
+              "jump_intensity": 3.971760780848169e-05,
+              "waiting_time_cv": 0.8754676439106441,
+              "jump_asymmetry": 1.0
+            },
+            "chromosome_v": {
+              "hourly_returns": {
+                "0": -1.1957061813973613e-06,
+                "1": -2.5662731058452458e-06,
+                "2": 7.161689431076255e-06,
+                "3": 3.805405954319393e-06,
+                "4": 6.301889528756294e-06,
+                "5": -2.4122453502501576e-06,
+                "6": 4.48647339594328e-06,
+                "7": 6.400766826772335e-06,
+                "8": 1.1048655671888152e-05,
+                "9": 5.376393068613385e-06,
+                "10": 5.431552083746251e-06,
+                "11": 6.916365681455201e-06,
+                "12": 5.301469803930612e-06,
+                "13": -4.136132430107259e-06,
+                "14": 1.1706935104558923e-05,
+                "15": 9.326478522298165e-06,
+                "16": -1.8983101069943773e-05,
+                "17": 1.0896416303987606e-05,
+                "18": -1.5691023020352615e-05,
+                "19": 9.375274130928683e-06,
+                "20": 6.205809624926334e-06,
+                "21": -8.937200059244833e-06,
+                "22": 3.7953072662686016e-06,
+                "23": -1.0346171066360673e-05
+              },
+              "dow_returns": {
+                "0": -6.8977497486857575e-06,
+                "1": -1.9755800800322664e-06,
+                "2": 4.234132656674531e-06,
+                "3": 1.832268162114989e-06,
+                "4": 6.9652058639887064e-06,
+                "5": 5.7049657702670565e-06,
+                "6": 4.504721298017283e-06
+              },
+              "month_returns": {
+                "1": 2.5430041409872468e-06,
+                "2": 2.0133243366057684e-06,
+                "3": -1.3923893708930717e-05,
+                "4": -9.735841091693513e-07,
+                "5": 7.239757191187393e-06,
+                "6": 1.025763844998151e-06,
+                "7": 8.784045425443374e-06,
+                "8": 1.3669856980606e-05,
+                "9": 3.007320271120683e-07,
+                "10": 4.7072450789031055e-06,
+                "11": 7.037200857571175e-06,
+                "12": -2.4829108068614202e-06
+              },
+              "session_returns": {
+                "asian": 2.7426644902220155e-06,
+                "european": 5.00351215746778e-06,
+                "american": 4.79709510457647e-07
+              },
+              "best_hour": 14,
+              "worst_hour": 16,
+              "best_dow": 4,
+              "worst_dow": 0
+            },
+            "chromosome_vi": {
+              "shannon_entropy": 3.3677439891430594,
+              "max_entropy": 4.321928094887363,
+              "normalized_entropy": 0.7792225865874405,
+              "permutation_entropy": 0.9999910888026584,
+              "sample_entropy": null,
+              "lz_complexity": 0.121625,
+              "predictability": 22.07774134125595
+            },
+            "chromosome_vii": {
+              "avg_trend_length": 3.0030200675541425,
+              "max_trend_length": 16,
+              "ou_theta": 6.161196479141586e-05,
+              "ou_half_life": 11250.2041268536,
+              "swing_mean": 53.805453326846106,
+              "swing_std": 40.98429426888204,
+              "mean_reversion_speed": 6.161196479141586e-05
+            },
+            "chromosome_viii": {
+              "signatures": [
+                "Constant tick volume (73.6% at 300)",
+                "100% positive jumps",
+                "Poisson-like jump process (CV=0.88)"
+              ],
+              "confidence": 50,
+              "is_synthetic": false,
+              "confidence_level": "Low",
+              "benford_score": 423.3824630318882,
+              "jump_asymmetry": 1.0
+            },
+            "strategy_affinity": {
+              "Mean Reversion": 60,
+              "Trend Following": 15,
+              "Scalping": 100,
+              "Market Making": 100,
+              "Momentum": 15,
+              "Breakout": 30
+            },
+            "overall_score": 59.63471766765699
+          },
+          "scores": {
+            "Distribution": 0,
+            "Memory": 0,
+            "Volatility": 100,
+            "Jumps": 100,
+            "Temporal": 100,
+            "Information": 47.07774134125595,
+            "Structure": 80,
+            "Synthetic": 50
+          }
+        }
+      },
+      {
+        "entry_date": "2026-01-21 21:20:00",
+        "exit_date": "2026-01-21 22:10:00",
+        "direction": "BUY",
+        "entry_price": 118505.66,
+        "exit_price": 118960.63358333333,
+        "volume": 0.01,
+        "pnl": 4.549735833333252,
+        "reason": "TP",
+        "holding_bars": 50.0,
+        "confidence": 70,
+        "signal_reason": "Breakout above upper band, momentum 0.002",
+        "trade_duration_minutes": 50.0,
+        "entry_exit_spread": 454.9735833333252,
+        "pnl_per_unit": 454.9735833333252,
+        "is_winner": true,
+        "profit_pct": 0.3839256144671277,
+        "dna_context": {
+          "symbol": "FX Vol 20_PERIOD_M5_data",
+          "timeframe": "M5",
+          "bars": 100712,
+          "dna": {
+            "chromosome_i": {
+              "mean_return": 0.020506019139164156,
+              "median_return": 0.012655112122672563,
+              "std_return": 6.194036578443151,
+              "coef_variation": 302.05943612981656,
+              "skewness": 0.007140966467218907,
+              "excess_kurtosis": 0.012365630020404694,
+              "tail_index": 13.145790787677884,
+              "var_95": -10.201349705226903,
+              "cvar_95": -12.768545883369118,
+              "min_return": -24.611248665014074,
+              "max_return": 27.353462441670473,
+              "positive_ratio": 50.07993644804131,
+              "negative_ratio": 49.92006355195869
+            },
+            "chromosome_ii": {
+              "autocorrelation": {
+                "lag_1": -0.003688421708236106,
+                "lag_3": -0.0005305378195973902,
+                "lag_5": 0.0019155115755391378,
+                "lag_10": 0.004463590336824271,
+                "lag_20": -0.0026363644319073757
+              },
+              "hurst_exponent": 0.1746368293072916,
+              "dfa_exponent": 0.23970946344583327,
+              "ljung_box_pvalue": 0.7138189443613407,
+              "is_random": true
+            },
+            "chromosome_iii": {
+              "realized_vol": 0.98324353384334,
+              "rolling_vol_20": 1.0298266612439855,
+              "rolling_vol_100": 0.9959043972197051,
+              "ewma_vol": 0.05929723457002285,
+              "atr": 98.32428571428629,
+              "vol_of_vol": 0.1605347868665117,
+              "vol_persistence": 0.9480460850253551
+            },
+            "chromosome_iv": {
+              "jump_stats": {
+                "threshold_3": {
+                  "positive": 144,
+                  "negative": 120,
+                  "total": 264,
+                  "rate": 0.2621362115359792,
+                  "pos_rate": 0.1429833881105341,
+                  "neg_rate": 0.11915282342544507,
+                  "mean_pos": 20.55743255228627,
+                  "mean_neg": -20.251050719921466,
+                  "max_pos": 27.353462441670473,
+                  "max_neg": -24.611248665014074
+                },
+                "threshold_4": {
+                  "positive": 4,
+                  "negative": 0,
+                  "total": 4,
+                  "rate": 0.0039717607808481695,
+                  "pos_rate": 0.0039717607808481695,
+                  "neg_rate": 0.0,
+                  "mean_pos": 25.86507380469172,
+                  "mean_neg": 0,
+                  "max_pos": 27.353462441670473,
+                  "max_neg": 0
+                }
+              },
+              "jump_intensity": 3.971760780848169e-05,
+              "waiting_time_cv": 0.8754676439106441,
+              "jump_asymmetry": 1.0
+            },
+            "chromosome_v": {
+              "hourly_returns": {
+                "0": -1.1957061813973613e-06,
+                "1": -2.5662731058452458e-06,
+                "2": 7.161689431076255e-06,
+                "3": 3.805405954319393e-06,
+                "4": 6.301889528756294e-06,
+                "5": -2.4122453502501576e-06,
+                "6": 4.48647339594328e-06,
+                "7": 6.400766826772335e-06,
+                "8": 1.1048655671888152e-05,
+                "9": 5.376393068613385e-06,
+                "10": 5.431552083746251e-06,
+                "11": 6.916365681455201e-06,
+                "12": 5.301469803930612e-06,
+                "13": -4.136132430107259e-06,
+                "14": 1.1706935104558923e-05,
+                "15": 9.326478522298165e-06,
+                "16": -1.8983101069943773e-05,
+                "17": 1.0896416303987606e-05,
+                "18": -1.5691023020352615e-05,
+                "19": 9.375274130928683e-06,
+                "20": 6.205809624926334e-06,
+                "21": -8.937200059244833e-06,
+                "22": 3.7953072662686016e-06,
+                "23": -1.0346171066360673e-05
+              },
+              "dow_returns": {
+                "0": -6.8977497486857575e-06,
+                "1": -1.9755800800322664e-06,
+                "2": 4.234132656674531e-06,
+                "3": 1.832268162114989e-06,
+                "4": 6.9652058639887064e-06,
+                "5": 5.7049657702670565e-06,
+                "6": 4.504721298017283e-06
+              },
+              "month_returns": {
+                "1": 2.5430041409872468e-06,
+                "2": 2.0133243366057684e-06,
+                "3": -1.3923893708930717e-05,
+                "4": -9.735841091693513e-07,
+                "5": 7.239757191187393e-06,
+                "6": 1.025763844998151e-06,
+                "7": 8.784045425443374e-06,
+                "8": 1.3669856980606e-05,
+                "9": 3.007320271120683e-07,
+                "10": 4.7072450789031055e-06,
+                "11": 7.037200857571175e-06,
+                "12": -2.4829108068614202e-06
+              },
+              "session_returns": {
+                "asian": 2.7426644902220155e-06,
+                "european": 5.00351215746778e-06,
+                "american": 4.79709510457647e-07
+              },
+              "best_hour": 14,
+              "worst_hour": 16,
+              "best_dow": 4,
+              "worst_dow": 0
+            },
+            "chromosome_vi": {
+              "shannon_entropy": 3.3677439891430594,
+              "max_entropy": 4.321928094887363,
+              "normalized_entropy": 0.7792225865874405,
+              "permutation_entropy": 0.9999910888026584,
+              "sample_entropy": null,
+              "lz_complexity": 0.121625,
+              "predictability": 22.07774134125595
+            },
+            "chromosome_vii": {
+              "avg_trend_length": 3.0030200675541425,
+              "max_trend_length": 16,
+              "ou_theta": 6.161196479141586e-05,
+              "ou_half_life": 11250.2041268536,
+              "swing_mean": 53.805453326846106,
+              "swing_std": 40.98429426888204,
+              "mean_reversion_speed": 6.161196479141586e-05
+            },
+            "chromosome_viii": {
+              "signatures": [
+                "Constant tick volume (73.6% at 300)",
+                "100% positive jumps",
+                "Poisson-like jump process (CV=0.88)"
+              ],
+              "confidence": 50,
+              "is_synthetic": false,
+              "confidence_level": "Low",
+              "benford_score": 423.3824630318882,
+              "jump_asymmetry": 1.0
+            },
+            "strategy_affinity": {
+              "Mean Reversion": 60,
+              "Trend Following": 15,
+              "Scalping": 100,
+              "Market Making": 100,
+              "Momentum": 15,
+              "Breakout": 30
+            },
+            "overall_score": 59.63471766765699
+          },
+          "scores": {
+            "Distribution": 0,
+            "Memory": 0,
+            "Volatility": 100,
+            "Jumps": 100,
+            "Temporal": 100,
+            "Information": 47.07774134125595,
+            "Structure": 80,
+            "Synthetic": 50
+          }
+        }
+      },
+      {
+        "entry_date": "2026-01-26 18:45:00",
+        "exit_date": "2026-01-26 18:55:00",
+        "direction": "BUY",
+        "entry_price": 117161.54,
+        "exit_price": 117016.41492499999,
+        "volume": 0.01,
+        "pnl": -1.4512507500000356,
+        "reason": "SL",
+        "holding_bars": 10.0,
+        "confidence": 70,
+        "signal_reason": "Breakout above upper band, momentum 0.002",
+        "trade_duration_minutes": 10.0,
+        "entry_exit_spread": 145.12507500000356,
+        "pnl_per_unit": -145.12507500000356,
+        "is_winner": false,
+        "profit_pct": -0.1238675037900693,
+        "dna_context": {
+          "symbol": "FX Vol 20_PERIOD_M5_data",
+          "timeframe": "M5",
+          "bars": 100712,
+          "dna": {
+            "chromosome_i": {
+              "mean_return": 0.020506019139164156,
+              "median_return": 0.012655112122672563,
+              "std_return": 6.194036578443151,
+              "coef_variation": 302.05943612981656,
+              "skewness": 0.007140966467218907,
+              "excess_kurtosis": 0.012365630020404694,
+              "tail_index": 13.145790787677884,
+              "var_95": -10.201349705226903,
+              "cvar_95": -12.768545883369118,
+              "min_return": -24.611248665014074,
+              "max_return": 27.353462441670473,
+              "positive_ratio": 50.07993644804131,
+              "negative_ratio": 49.92006355195869
+            },
+            "chromosome_ii": {
+              "autocorrelation": {
+                "lag_1": -0.003688421708236106,
+                "lag_3": -0.0005305378195973902,
+                "lag_5": 0.0019155115755391378,
+                "lag_10": 0.004463590336824271,
+                "lag_20": -0.0026363644319073757
+              },
+              "hurst_exponent": 0.1746368293072916,
+              "dfa_exponent": 0.23970946344583327,
+              "ljung_box_pvalue": 0.7138189443613407,
+              "is_random": true
+            },
+            "chromosome_iii": {
+              "realized_vol": 0.98324353384334,
+              "rolling_vol_20": 1.0298266612439855,
+              "rolling_vol_100": 0.9959043972197051,
+              "ewma_vol": 0.05929723457002285,
+              "atr": 98.32428571428629,
+              "vol_of_vol": 0.1605347868665117,
+              "vol_persistence": 0.9480460850253551
+            },
+            "chromosome_iv": {
+              "jump_stats": {
+                "threshold_3": {
+                  "positive": 144,
+                  "negative": 120,
+                  "total": 264,
+                  "rate": 0.2621362115359792,
+                  "pos_rate": 0.1429833881105341,
+                  "neg_rate": 0.11915282342544507,
+                  "mean_pos": 20.55743255228627,
+                  "mean_neg": -20.251050719921466,
+                  "max_pos": 27.353462441670473,
+                  "max_neg": -24.611248665014074
+                },
+                "threshold_4": {
+                  "positive": 4,
+                  "negative": 0,
+                  "total": 4,
+                  "rate": 0.0039717607808481695,
+                  "pos_rate": 0.0039717607808481695,
+                  "neg_rate": 0.0,
+                  "mean_pos": 25.86507380469172,
+                  "mean_neg": 0,
+                  "max_pos": 27.353462441670473,
+                  "max_neg": 0
+                }
+              },
+              "jump_intensity": 3.971760780848169e-05,
+              "waiting_time_cv": 0.8754676439106441,
+              "jump_asymmetry": 1.0
+            },
+            "chromosome_v": {
+              "hourly_returns": {
+                "0": -1.1957061813973613e-06,
+                "1": -2.5662731058452458e-06,
+                "2": 7.161689431076255e-06,
+                "3": 3.805405954319393e-06,
+                "4": 6.301889528756294e-06,
+                "5": -2.4122453502501576e-06,
+                "6": 4.48647339594328e-06,
+                "7": 6.400766826772335e-06,
+                "8": 1.1048655671888152e-05,
+                "9": 5.376393068613385e-06,
+                "10": 5.431552083746251e-06,
+                "11": 6.916365681455201e-06,
+                "12": 5.301469803930612e-06,
+                "13": -4.136132430107259e-06,
+                "14": 1.1706935104558923e-05,
+                "15": 9.326478522298165e-06,
+                "16": -1.8983101069943773e-05,
+                "17": 1.0896416303987606e-05,
+                "18": -1.5691023020352615e-05,
+                "19": 9.375274130928683e-06,
+                "20": 6.205809624926334e-06,
+                "21": -8.937200059244833e-06,
+                "22": 3.7953072662686016e-06,
+                "23": -1.0346171066360673e-05
+              },
+              "dow_returns": {
+                "0": -6.8977497486857575e-06,
+                "1": -1.9755800800322664e-06,
+                "2": 4.234132656674531e-06,
+                "3": 1.832268162114989e-06,
+                "4": 6.9652058639887064e-06,
+                "5": 5.7049657702670565e-06,
+                "6": 4.504721298017283e-06
+              },
+              "month_returns": {
+                "1": 2.5430041409872468e-06,
+                "2": 2.0133243366057684e-06,
+                "3": -1.3923893708930717e-05,
+                "4": -9.735841091693513e-07,
+                "5": 7.239757191187393e-06,
+                "6": 1.025763844998151e-06,
+                "7": 8.784045425443374e-06,
+                "8": 1.3669856980606e-05,
+                "9": 3.007320271120683e-07,
+                "10": 4.7072450789031055e-06,
+                "11": 7.037200857571175e-06,
+                "12": -2.4829108068614202e-06
+              },
+              "session_returns": {
+                "asian": 2.7426644902220155e-06,
+                "european": 5.00351215746778e-06,
+                "american": 4.79709510457647e-07
+              },
+              "best_hour": 14,
+              "worst_hour": 16,
+              "best_dow": 4,
+              "worst_dow": 0
+            },
+            "chromosome_vi": {
+              "shannon_entropy": 3.3677439891430594,
+              "max_entropy": 4.321928094887363,
+              "normalized_entropy": 0.7792225865874405,
+              "permutation_entropy": 0.9999910888026584,
+              "sample_entropy": null,
+              "lz_complexity": 0.121625,
+              "predictability": 22.07774134125595
+            },
+            "chromosome_vii": {
+              "avg_trend_length": 3.0030200675541425,
+              "max_trend_length": 16,
+              "ou_theta": 6.161196479141586e-05,
+              "ou_half_life": 11250.2041268536,
+              "swing_mean": 53.805453326846106,
+              "swing_std": 40.98429426888204,
+              "mean_reversion_speed": 6.161196479141586e-05
+            },
+            "chromosome_viii": {
+              "signatures": [
+                "Constant tick volume (73.6% at 300)",
+                "100% positive jumps",
+                "Poisson-like jump process (CV=0.88)"
+              ],
+              "confidence": 50,
+              "is_synthetic": false,
+              "confidence_level": "Low",
+              "benford_score": 423.3824630318882,
+              "jump_asymmetry": 1.0
+            },
+            "strategy_affinity": {
+              "Mean Reversion": 60,
+              "Trend Following": 15,
+              "Scalping": 100,
+              "Market Making": 100,
+              "Momentum": 15,
+              "Breakout": 30
+            },
+            "overall_score": 59.63471766765699
+          },
+          "scores": {
+            "Distribution": 0,
+            "Memory": 0,
+            "Volatility": 100,
+            "Jumps": 100,
+            "Temporal": 100,
+            "Information": 47.07774134125595,
+            "Structure": 80,
+            "Synthetic": 50
+          }
+        }
+      },
+      {
+        "entry_date": "2026-03-09 00:10:00",
+        "exit_date": "2026-03-09 00:30:00",
+        "direction": "BUY",
+        "entry_price": 110910.95,
+        "exit_price": 110854.1,
+        "volume": 0.01,
+        "pnl": -0.5684999999999127,
+        "reason": "Trend exhausted",
+        "holding_bars": 20.0,
+        "confidence": 70,
+        "signal_reason": "Breakout above upper band, momentum 0.004",
+        "trade_duration_minutes": 20.0,
+        "entry_exit_spread": 56.84999999999127,
+        "pnl_per_unit": -56.849999999991276,
+        "is_winner": false,
+        "profit_pct": -0.05125733753068681,
+        "dna_context": {
+          "symbol": "FX Vol 20_PERIOD_M5_data",
+          "timeframe": "M5",
+          "bars": 100712,
+          "dna": {
+            "chromosome_i": {
+              "mean_return": 0.020506019139164156,
+              "median_return": 0.012655112122672563,
+              "std_return": 6.194036578443151,
+              "coef_variation": 302.05943612981656,
+              "skewness": 0.007140966467218907,
+              "excess_kurtosis": 0.012365630020404694,
+              "tail_index": 13.145790787677884,
+              "var_95": -10.201349705226903,
+              "cvar_95": -12.768545883369118,
+              "min_return": -24.611248665014074,
+              "max_return": 27.353462441670473,
+              "positive_ratio": 50.07993644804131,
+              "negative_ratio": 49.92006355195869
+            },
+            "chromosome_ii": {
+              "autocorrelation": {
+                "lag_1": -0.003688421708236106,
+                "lag_3": -0.0005305378195973902,
+                "lag_5": 0.0019155115755391378,
+                "lag_10": 0.004463590336824271,
+                "lag_20": -0.0026363644319073757
+              },
+              "hurst_exponent": 0.1746368293072916,
+              "dfa_exponent": 0.23970946344583327,
+              "ljung_box_pvalue": 0.7138189443613407,
+              "is_random": true
+            },
+            "chromosome_iii": {
+              "realized_vol": 0.98324353384334,
+              "rolling_vol_20": 1.0298266612439855,
+              "rolling_vol_100": 0.9959043972197051,
+              "ewma_vol": 0.05929723457002285,
+              "atr": 98.32428571428629,
+              "vol_of_vol": 0.1605347868665117,
+              "vol_persistence": 0.9480460850253551
+            },
+            "chromosome_iv": {
+              "jump_stats": {
+                "threshold_3": {
+                  "positive": 144,
+                  "negative": 120,
+                  "total": 264,
+                  "rate": 0.2621362115359792,
+                  "pos_rate": 0.1429833881105341,
+                  "neg_rate": 0.11915282342544507,
+                  "mean_pos": 20.55743255228627,
+                  "mean_neg": -20.251050719921466,
+                  "max_pos": 27.353462441670473,
+                  "max_neg": -24.611248665014074
+                },
+                "threshold_4": {
+                  "positive": 4,
+                  "negative": 0,
+                  "total": 4,
+                  "rate": 0.0039717607808481695,
+                  "pos_rate": 0.0039717607808481695,
+                  "neg_rate": 0.0,
+                  "mean_pos": 25.86507380469172,
+                  "mean_neg": 0,
+                  "max_pos": 27.353462441670473,
+                  "max_neg": 0
+                }
+              },
+              "jump_intensity": 3.971760780848169e-05,
+              "waiting_time_cv": 0.8754676439106441,
+              "jump_asymmetry": 1.0
+            },
+            "chromosome_v": {
+              "hourly_returns": {
+                "0": -1.1957061813973613e-06,
+                "1": -2.5662731058452458e-06,
+                "2": 7.161689431076255e-06,
+                "3": 3.805405954319393e-06,
+                "4": 6.301889528756294e-06,
+                "5": -2.4122453502501576e-06,
+                "6": 4.48647339594328e-06,
+                "7": 6.400766826772335e-06,
+                "8": 1.1048655671888152e-05,
+                "9": 5.376393068613385e-06,
+                "10": 5.431552083746251e-06,
+                "11": 6.916365681455201e-06,
+                "12": 5.301469803930612e-06,
+                "13": -4.136132430107259e-06,
+                "14": 1.1706935104558923e-05,
+                "15": 9.326478522298165e-06,
+                "16": -1.8983101069943773e-05,
+                "17": 1.0896416303987606e-05,
+                "18": -1.5691023020352615e-05,
+                "19": 9.375274130928683e-06,
+                "20": 6.205809624926334e-06,
+                "21": -8.937200059244833e-06,
+                "22": 3.7953072662686016e-06,
+                "23": -1.0346171066360673e-05
+              },
+              "dow_returns": {
+                "0": -6.8977497486857575e-06,
+                "1": -1.9755800800322664e-06,
+                "2": 4.234132656674531e-06,
+                "3": 1.832268162114989e-06,
+                "4": 6.9652058639887064e-06,
+                "5": 5.7049657702670565e-06,
+                "6": 4.504721298017283e-06
+              },
+              "month_returns": {
+                "1": 2.5430041409872468e-06,
+                "2": 2.0133243366057684e-06,
+                "3": -1.3923893708930717e-05,
+                "4": -9.735841091693513e-07,
+                "5": 7.239757191187393e-06,
+                "6": 1.025763844998151e-06,
+                "7": 8.784045425443374e-06,
+                "8": 1.3669856980606e-05,
+                "9": 3.007320271120683e-07,
+                "10": 4.7072450789031055e-06,
+                "11": 7.037200857571175e-06,
+                "12": -2.4829108068614202e-06
+              },
+              "session_returns": {
+                "asian": 2.7426644902220155e-06,
+                "european": 5.00351215746778e-06,
+                "american": 4.79709510457647e-07
+              },
+              "best_hour": 14,
+              "worst_hour": 16,
+              "best_dow": 4,
+              "worst_dow": 0
+            },
+            "chromosome_vi": {
+              "shannon_entropy": 3.3677439891430594,
+              "max_entropy": 4.321928094887363,
+              "normalized_entropy": 0.7792225865874405,
+              "permutation_entropy": 0.9999910888026584,
+              "sample_entropy": null,
+              "lz_complexity": 0.121625,
+              "predictability": 22.07774134125595
+            },
+            "chromosome_vii": {
+              "avg_trend_length": 3.0030200675541425,
+              "max_trend_length": 16,
+              "ou_theta": 6.161196479141586e-05,
+              "ou_half_life": 11250.2041268536,
+              "swing_mean": 53.805453326846106,
+              "swing_std": 40.98429426888204,
+              "mean_reversion_speed": 6.161196479141586e-05
+            },
+            "chromosome_viii": {
+              "signatures": [
+                "Constant tick volume (73.6% at 300)",
+                "100% positive jumps",
+                "Poisson-like jump process (CV=0.88)"
+              ],
+              "confidence": 50,
+              "is_synthetic": false,
+              "confidence_level": "Low",
+              "benford_score": 423.3824630318882,
+              "jump_asymmetry": 1.0
+            },
+            "strategy_affinity": {
+              "Mean Reversion": 60,
+              "Trend Following": 15,
+              "Scalping": 100,
+              "Market Making": 100,
+              "Momentum": 15,
+              "Breakout": 30
+            },
+            "overall_score": 59.63471766765699
+          },
+          "scores": {
+            "Distribution": 0,
+            "Memory": 0,
+            "Volatility": 100,
+            "Jumps": 100,
+            "Temporal": 100,
+            "Information": 47.07774134125595,
+            "Structure": 80,
+            "Synthetic": 50
+          }
+        }
+      },
+      {
+        "entry_date": "2026-04-25 21:00:00",
+        "exit_date": "2026-04-25 21:25:00",
+        "direction": "BUY",
+        "entry_price": 99519.29,
+        "exit_price": 99409.62,
+        "volume": 0.01,
+        "pnl": -1.0966999999999825,
+        "reason": "Trend exhausted",
+        "holding_bars": 25.0,
+        "confidence": 70,
+        "signal_reason": "Breakout above upper band, momentum 0.003",
+        "trade_duration_minutes": 25.0,
+        "entry_exit_spread": 109.66999999999825,
+        "pnl_per_unit": -109.66999999999824,
+        "is_winner": false,
+        "profit_pct": -0.11019974117580444,
+        "dna_context": {
+          "symbol": "FX Vol 20_PERIOD_M5_data",
+          "timeframe": "M5",
+          "bars": 100712,
+          "dna": {
+            "chromosome_i": {
+              "mean_return": 0.020506019139164156,
+              "median_return": 0.012655112122672563,
+              "std_return": 6.194036578443151,
+              "coef_variation": 302.05943612981656,
+              "skewness": 0.007140966467218907,
+              "excess_kurtosis": 0.012365630020404694,
+              "tail_index": 13.145790787677884,
+              "var_95": -10.201349705226903,
+              "cvar_95": -12.768545883369118,
+              "min_return": -24.611248665014074,
+              "max_return": 27.353462441670473,
+              "positive_ratio": 50.07993644804131,
+              "negative_ratio": 49.92006355195869
+            },
+            "chromosome_ii": {
+              "autocorrelation": {
+                "lag_1": -0.003688421708236106,
+                "lag_3": -0.0005305378195973902,
+                "lag_5": 0.0019155115755391378,
+                "lag_10": 0.004463590336824271,
+                "lag_20": -0.0026363644319073757
+              },
+              "hurst_exponent": 0.1746368293072916,
+              "dfa_exponent": 0.23970946344583327,
+              "ljung_box_pvalue": 0.7138189443613407,
+              "is_random": true
+            },
+            "chromosome_iii": {
+              "realized_vol": 0.98324353384334,
+              "rolling_vol_20": 1.0298266612439855,
+              "rolling_vol_100": 0.9959043972197051,
+              "ewma_vol": 0.05929723457002285,
+              "atr": 98.32428571428629,
+              "vol_of_vol": 0.1605347868665117,
+              "vol_persistence": 0.9480460850253551
+            },
+            "chromosome_iv": {
+              "jump_stats": {
+                "threshold_3": {
+                  "positive": 144,
+                  "negative": 120,
+                  "total": 264,
+                  "rate": 0.2621362115359792,
+                  "pos_rate": 0.1429833881105341,
+                  "neg_rate": 0.11915282342544507,
+                  "mean_pos": 20.55743255228627,
+                  "mean_neg": -20.251050719921466,
+                  "max_pos": 27.353462441670473,
+                  "max_neg": -24.611248665014074
+                },
+                "threshold_4": {
+                  "positive": 4,
+                  "negative": 0,
+                  "total": 4,
+                  "rate": 0.0039717607808481695,
+                  "pos_rate": 0.0039717607808481695,
+                  "neg_rate": 0.0,
+                  "mean_pos": 25.86507380469172,
+                  "mean_neg": 0,
+                  "max_pos": 27.353462441670473,
+                  "max_neg": 0
+                }
+              },
+              "jump_intensity": 3.971760780848169e-05,
+              "waiting_time_cv": 0.8754676439106441,
+              "jump_asymmetry": 1.0
+            },
+            "chromosome_v": {
+              "hourly_returns": {
+                "0": -1.1957061813973613e-06,
+                "1": -2.5662731058452458e-06,
+                "2": 7.161689431076255e-06,
+                "3": 3.805405954319393e-06,
+                "4": 6.301889528756294e-06,
+                "5": -2.4122453502501576e-06,
+                "6": 4.48647339594328e-06,
+                "7": 6.400766826772335e-06,
+                "8": 1.1048655671888152e-05,
+                "9": 5.376393068613385e-06,
+                "10": 5.431552083746251e-06,
+                "11": 6.916365681455201e-06,
+                "12": 5.301469803930612e-06,
+                "13": -4.136132430107259e-06,
+                "14": 1.1706935104558923e-05,
+                "15": 9.326478522298165e-06,
+                "16": -1.8983101069943773e-05,
+                "17": 1.0896416303987606e-05,
+                "18": -1.5691023020352615e-05,
+                "19": 9.375274130928683e-06,
+                "20": 6.205809624926334e-06,
+                "21": -8.937200059244833e-06,
+                "22": 3.7953072662686016e-06,
+                "23": -1.0346171066360673e-05
+              },
+              "dow_returns": {
+                "0": -6.8977497486857575e-06,
+                "1": -1.9755800800322664e-06,
+                "2": 4.234132656674531e-06,
+                "3": 1.832268162114989e-06,
+                "4": 6.9652058639887064e-06,
+                "5": 5.7049657702670565e-06,
+                "6": 4.504721298017283e-06
+              },
+              "month_returns": {
+                "1": 2.5430041409872468e-06,
+                "2": 2.0133243366057684e-06,
+                "3": -1.3923893708930717e-05,
+                "4": -9.735841091693513e-07,
+                "5": 7.239757191187393e-06,
+                "6": 1.025763844998151e-06,
+                "7": 8.784045425443374e-06,
+                "8": 1.3669856980606e-05,
+                "9": 3.007320271120683e-07,
+                "10": 4.7072450789031055e-06,
+                "11": 7.037200857571175e-06,
+                "12": -2.4829108068614202e-06
+              },
+              "session_returns": {
+                "asian": 2.7426644902220155e-06,
+                "european": 5.00351215746778e-06,
+                "american": 4.79709510457647e-07
+              },
+              "best_hour": 14,
+              "worst_hour": 16,
+              "best_dow": 4,
+              "worst_dow": 0
+            },
+            "chromosome_vi": {
+              "shannon_entropy": 3.3677439891430594,
+              "max_entropy": 4.321928094887363,
+              "normalized_entropy": 0.7792225865874405,
+              "permutation_entropy": 0.9999910888026584,
+              "sample_entropy": null,
+              "lz_complexity": 0.121625,
+              "predictability": 22.07774134125595
+            },
+            "chromosome_vii": {
+              "avg_trend_length": 3.0030200675541425,
+              "max_trend_length": 16,
+              "ou_theta": 6.161196479141586e-05,
+              "ou_half_life": 11250.2041268536,
+              "swing_mean": 53.805453326846106,
+              "swing_std": 40.98429426888204,
+              "mean_reversion_speed": 6.161196479141586e-05
+            },
+            "chromosome_viii": {
+              "signatures": [
+                "Constant tick volume (73.6% at 300)",
+                "100% positive jumps",
+                "Poisson-like jump process (CV=0.88)"
+              ],
+              "confidence": 50,
+              "is_synthetic": false,
+              "confidence_level": "Low",
+              "benford_score": 423.3824630318882,
+              "jump_asymmetry": 1.0
+            },
+            "strategy_affinity": {
+              "Mean Reversion": 60,
+              "Trend Following": 15,
+              "Scalping": 100,
+              "Market Making": 100,
+              "Momentum": 15,
+              "Breakout": 30
+            },
+            "overall_score": 59.63471766765699
+          },
+          "scores": {
+            "Distribution": 0,
+            "Memory": 0,
+            "Volatility": 100,
+            "Jumps": 100,
+            "Temporal": 100,
+            "Information": 47.07774134125595,
+            "Structure": 80,
+            "Synthetic": 50
+          }
+        }
+      },
+      {
+        "entry_date": "2026-05-13 16:55:00",
+        "exit_date": "2026-05-13 18:00:00",
+        "direction": "BUY",
+        "entry_price": 104845.41,
+        "exit_price": 104893.69,
+        "volume": 0.01,
+        "pnl": 0.48279999999998835,
+        "reason": "Trend exhausted",
+        "holding_bars": 65.0,
+        "confidence": 70,
+        "signal_reason": "Breakout above upper band, momentum 0.003",
+        "trade_duration_minutes": 65.0,
+        "entry_exit_spread": 48.279999999998836,
+        "pnl_per_unit": 48.279999999998836,
+        "is_winner": true,
+        "profit_pct": 0.046048749296701524,
+        "dna_context": {
+          "symbol": "FX Vol 20_PERIOD_M5_data",
+          "timeframe": "M5",
+          "bars": 100712,
+          "dna": {
+            "chromosome_i": {
+              "mean_return": 0.020506019139164156,
+              "median_return": 0.012655112122672563,
+              "std_return": 6.194036578443151,
+              "coef_variation": 302.05943612981656,
+              "skewness": 0.007140966467218907,
+              "excess_kurtosis": 0.012365630020404694,
+              "tail_index": 13.145790787677884,
+              "var_95": -10.201349705226903,
+              "cvar_95": -12.768545883369118,
+              "min_return": -24.611248665014074,
+              "max_return": 27.353462441670473,
+              "positive_ratio": 50.07993644804131,
+              "negative_ratio": 49.92006355195869
+            },
+            "chromosome_ii": {
+              "autocorrelation": {
+                "lag_1": -0.003688421708236106,
+                "lag_3": -0.0005305378195973902,
+                "lag_5": 0.0019155115755391378,
+                "lag_10": 0.004463590336824271,
+                "lag_20": -0.0026363644319073757
+              },
+              "hurst_exponent": 0.1746368293072916,
+              "dfa_exponent": 0.23970946344583327,
+              "ljung_box_pvalue": 0.7138189443613407,
+              "is_random": true
+            },
+            "chromosome_iii": {
+              "realized_vol": 0.98324353384334,
+              "rolling_vol_20": 1.0298266612439855,
+              "rolling_vol_100": 0.9959043972197051,
+              "ewma_vol": 0.05929723457002285,
+              "atr": 98.32428571428629,
+              "vol_of_vol": 0.1605347868665117,
+              "vol_persistence": 0.9480460850253551
+            },
+            "chromosome_iv": {
+              "jump_stats": {
+                "threshold_3": {
+                  "positive": 144,
+                  "negative": 120,
+                  "total": 264,
+                  "rate": 0.2621362115359792,
+                  "pos_rate": 0.1429833881105341,
+                  "neg_rate": 0.11915282342544507,
+                  "mean_pos": 20.55743255228627,
+                  "mean_neg": -20.251050719921466,
+                  "max_pos": 27.353462441670473,
+                  "max_neg": -24.611248665014074
+                },
+                "threshold_4": {
+                  "positive": 4,
+                  "negative": 0,
+                  "total": 4,
+                  "rate": 0.0039717607808481695,
+                  "pos_rate": 0.0039717607808481695,
+                  "neg_rate": 0.0,
+                  "mean_pos": 25.86507380469172,
+                  "mean_neg": 0,
+                  "max_pos": 27.353462441670473,
+                  "max_neg": 0
+                }
+              },
+              "jump_intensity": 3.971760780848169e-05,
+              "waiting_time_cv": 0.8754676439106441,
+              "jump_asymmetry": 1.0
+            },
+            "chromosome_v": {
+              "hourly_returns": {
+                "0": -1.1957061813973613e-06,
+                "1": -2.5662731058452458e-06,
+                "2": 7.161689431076255e-06,
+                "3": 3.805405954319393e-06,
+                "4": 6.301889528756294e-06,
+                "5": -2.4122453502501576e-06,
+                "6": 4.48647339594328e-06,
+                "7": 6.400766826772335e-06,
+                "8": 1.1048655671888152e-05,
+                "9": 5.376393068613385e-06,
+                "10": 5.431552083746251e-06,
+                "11": 6.916365681455201e-06,
+                "12": 5.301469803930612e-06,
+                "13": -4.136132430107259e-06,
+                "14": 1.1706935104558923e-05,
+                "15": 9.326478522298165e-06,
+                "16": -1.8983101069943773e-05,
+                "17": 1.0896416303987606e-05,
+                "18": -1.5691023020352615e-05,
+                "19": 9.375274130928683e-06,
+                "20": 6.205809624926334e-06,
+                "21": -8.937200059244833e-06,
+                "22": 3.7953072662686016e-06,
+                "23": -1.0346171066360673e-05
+              },
+              "dow_returns": {
+                "0": -6.8977497486857575e-06,
+                "1": -1.9755800800322664e-06,
+                "2": 4.234132656674531e-06,
+                "3": 1.832268162114989e-06,
+                "4": 6.9652058639887064e-06,
+                "5": 5.7049657702670565e-06,
+                "6": 4.504721298017283e-06
+              },
+              "month_returns": {
+                "1": 2.5430041409872468e-06,
+                "2": 2.0133243366057684e-06,
+                "3": -1.3923893708930717e-05,
+                "4": -9.735841091693513e-07,
+                "5": 7.239757191187393e-06,
+                "6": 1.025763844998151e-06,
+                "7": 8.784045425443374e-06,
+                "8": 1.3669856980606e-05,
+                "9": 3.007320271120683e-07,
+                "10": 4.7072450789031055e-06,
+                "11": 7.037200857571175e-06,
+                "12": -2.4829108068614202e-06
+              },
+              "session_returns": {
+                "asian": 2.7426644902220155e-06,
+                "european": 5.00351215746778e-06,
+                "american": 4.79709510457647e-07
+              },
+              "best_hour": 14,
+              "worst_hour": 16,
+              "best_dow": 4,
+              "worst_dow": 0
+            },
+            "chromosome_vi": {
+              "shannon_entropy": 3.3677439891430594,
+              "max_entropy": 4.321928094887363,
+              "normalized_entropy": 0.7792225865874405,
+              "permutation_entropy": 0.9999910888026584,
+              "sample_entropy": null,
+              "lz_complexity": 0.121625,
+              "predictability": 22.07774134125595
+            },
+            "chromosome_vii": {
+              "avg_trend_length": 3.0030200675541425,
+              "max_trend_length": 16,
+              "ou_theta": 6.161196479141586e-05,
+              "ou_half_life": 11250.2041268536,
+              "swing_mean": 53.805453326846106,
+              "swing_std": 40.98429426888204,
+              "mean_reversion_speed": 6.161196479141586e-05
+            },
+            "chromosome_viii": {
+              "signatures": [
+                "Constant tick volume (73.6% at 300)",
+                "100% positive jumps",
+                "Poisson-like jump process (CV=0.88)"
+              ],
+              "confidence": 50,
+              "is_synthetic": false,
+              "confidence_level": "Low",
+              "benford_score": 423.3824630318882,
+              "jump_asymmetry": 1.0
+            },
+            "strategy_affinity": {
+              "Mean Reversion": 60,
+              "Trend Following": 15,
+              "Scalping": 100,
+              "Market Making": 100,
+              "Momentum": 15,
+              "Breakout": 30
+            },
+            "overall_score": 59.63471766765699
+          },
+          "scores": {
+            "Distribution": 0,
+            "Memory": 0,
+            "Volatility": 100,
+            "Jumps": 100,
+            "Temporal": 100,
+            "Information": 47.07774134125595,
+            "Structure": 80,
+            "Synthetic": 50
+          }
+        }
+      },
+      {
+        "entry_date": "2026-05-30 05:00:00",
+        "exit_date": "2026-05-30 05:40:00",
+        "direction": "BUY",
+        "entry_price": 110175.83,
+        "exit_price": 110169.88,
+        "volume": 0.01,
+        "pnl": -0.059499999999970896,
+        "reason": "Trend exhausted",
+        "holding_bars": 40.0,
+        "confidence": 70,
+        "signal_reason": "Breakout above upper band, momentum 0.003",
+        "trade_duration_minutes": 40.0,
+        "entry_exit_spread": 5.94999999999709,
+        "pnl_per_unit": -5.94999999999709,
+        "is_winner": false,
+        "profit_pct": -0.0054004585216168455,
+        "dna_context": {
+          "symbol": "FX Vol 20_PERIOD_M5_data",
+          "timeframe": "M5",
+          "bars": 100712,
+          "dna": {
+            "chromosome_i": {
+              "mean_return": 0.020506019139164156,
+              "median_return": 0.012655112122672563,
+              "std_return": 6.194036578443151,
+              "coef_variation": 302.05943612981656,
+              "skewness": 0.007140966467218907,
+              "excess_kurtosis": 0.012365630020404694,
+              "tail_index": 13.145790787677884,
+              "var_95": -10.201349705226903,
+              "cvar_95": -12.768545883369118,
+              "min_return": -24.611248665014074,
+              "max_return": 27.353462441670473,
+              "positive_ratio": 50.07993644804131,
+              "negative_ratio": 49.92006355195869
+            },
+            "chromosome_ii": {
+              "autocorrelation": {
+                "lag_1": -0.003688421708236106,
+                "lag_3": -0.0005305378195973902,
+                "lag_5": 0.0019155115755391378,
+                "lag_10": 0.004463590336824271,
+                "lag_20": -0.0026363644319073757
+              },
+              "hurst_exponent": 0.1746368293072916,
+              "dfa_exponent": 0.23970946344583327,
+              "ljung_box_pvalue": 0.7138189443613407,
+              "is_random": true
+            },
+            "chromosome_iii": {
+              "realized_vol": 0.98324353384334,
+              "rolling_vol_20": 1.0298266612439855,
+              "rolling_vol_100": 0.9959043972197051,
+              "ewma_vol": 0.05929723457002285,
+              "atr": 98.32428571428629,
+              "vol_of_vol": 0.1605347868665117,
+              "vol_persistence": 0.9480460850253551
+            },
+            "chromosome_iv": {
+              "jump_stats": {
+                "threshold_3": {
+                  "positive": 144,
+                  "negative": 120,
+                  "total": 264,
+                  "rate": 0.2621362115359792,
+                  "pos_rate": 0.1429833881105341,
+                  "neg_rate": 0.11915282342544507,
+                  "mean_pos": 20.55743255228627,
+                  "mean_neg": -20.251050719921466,
+                  "max_pos": 27.353462441670473,
+                  "max_neg": -24.611248665014074
+                },
+                "threshold_4": {
+                  "positive": 4,
+                  "negative": 0,
+                  "total": 4,
+                  "rate": 0.0039717607808481695,
+                  "pos_rate": 0.0039717607808481695,
+                  "neg_rate": 0.0,
+                  "mean_pos": 25.86507380469172,
+                  "mean_neg": 0,
+                  "max_pos": 27.353462441670473,
+                  "max_neg": 0
+                }
+              },
+              "jump_intensity": 3.971760780848169e-05,
+              "waiting_time_cv": 0.8754676439106441,
+              "jump_asymmetry": 1.0
+            },
+            "chromosome_v": {
+              "hourly_returns": {
+                "0": -1.1957061813973613e-06,
+                "1": -2.5662731058452458e-06,
+                "2": 7.161689431076255e-06,
+                "3": 3.805405954319393e-06,
+                "4": 6.301889528756294e-06,
+                "5": -2.4122453502501576e-06,
+                "6": 4.48647339594328e-06,
+                "7": 6.400766826772335e-06,
+                "8": 1.1048655671888152e-05,
+                "9": 5.376393068613385e-06,
+                "10": 5.431552083746251e-06,
+                "11": 6.916365681455201e-06,
+                "12": 5.301469803930612e-06,
+                "13": -4.136132430107259e-06,
+                "14": 1.1706935104558923e-05,
+                "15": 9.326478522298165e-06,
+                "16": -1.8983101069943773e-05,
+                "17": 1.0896416303987606e-05,
+                "18": -1.5691023020352615e-05,
+                "19": 9.375274130928683e-06,
+                "20": 6.205809624926334e-06,
+                "21": -8.937200059244833e-06,
+                "22": 3.7953072662686016e-06,
+                "23": -1.0346171066360673e-05
+              },
+              "dow_returns": {
+                "0": -6.8977497486857575e-06,
+                "1": -1.9755800800322664e-06,
+                "2": 4.234132656674531e-06,
+                "3": 1.832268162114989e-06,
+                "4": 6.9652058639887064e-06,
+                "5": 5.7049657702670565e-06,
+                "6": 4.504721298017283e-06
+              },
+              "month_returns": {
+                "1": 2.5430041409872468e-06,
+                "2": 2.0133243366057684e-06,
+                "3": -1.3923893708930717e-05,
+                "4": -9.735841091693513e-07,
+                "5": 7.239757191187393e-06,
+                "6": 1.025763844998151e-06,
+                "7": 8.784045425443374e-06,
+                "8": 1.3669856980606e-05,
+                "9": 3.007320271120683e-07,
+                "10": 4.7072450789031055e-06,
+                "11": 7.037200857571175e-06,
+                "12": -2.4829108068614202e-06
+              },
+              "session_returns": {
+                "asian": 2.7426644902220155e-06,
+                "european": 5.00351215746778e-06,
+                "american": 4.79709510457647e-07
+              },
+              "best_hour": 14,
+              "worst_hour": 16,
+              "best_dow": 4,
+              "worst_dow": 0
+            },
+            "chromosome_vi": {
+              "shannon_entropy": 3.3677439891430594,
+              "max_entropy": 4.321928094887363,
+              "normalized_entropy": 0.7792225865874405,
+              "permutation_entropy": 0.9999910888026584,
+              "sample_entropy": null,
+              "lz_complexity": 0.121625,
+              "predictability": 22.07774134125595
+            },
+            "chromosome_vii": {
+              "avg_trend_length": 3.0030200675541425,
+              "max_trend_length": 16,
+              "ou_theta": 6.161196479141586e-05,
+              "ou_half_life": 11250.2041268536,
+              "swing_mean": 53.805453326846106,
+              "swing_std": 40.98429426888204,
+              "mean_reversion_speed": 6.161196479141586e-05
+            },
+            "chromosome_viii": {
+              "signatures": [
+                "Constant tick volume (73.6% at 300)",
+                "100% positive jumps",
+                "Poisson-like jump process (CV=0.88)"
+              ],
+              "confidence": 50,
+              "is_synthetic": false,
+              "confidence_level": "Low",
+              "benford_score": 423.3824630318882,
+              "jump_asymmetry": 1.0
+            },
+            "strategy_affinity": {
+              "Mean Reversion": 60,
+              "Trend Following": 15,
+              "Scalping": 100,
+              "Market Making": 100,
+              "Momentum": 15,
+              "Breakout": 30
+            },
+            "overall_score": 59.63471766765699
+          },
+          "scores": {
+            "Distribution": 0,
+            "Memory": 0,
+            "Volatility": 100,
+            "Jumps": 100,
+            "Temporal": 100,
+            "Information": 47.07774134125595,
+            "Structure": 80,
+            "Synthetic": 50
+          }
+        }
+      },
+      {
+        "entry_date": "2026-07-18 01:05:00",
+        "exit_date": "2026-07-18 02:05:00",
+        "direction": "BUY",
+        "entry_price": 119568.01,
+        "exit_price": 120087.54833333332,
+        "volume": 0.01,
+        "pnl": 5.195383333333303,
+        "reason": "TP",
+        "holding_bars": 60.0,
+        "confidence": 70,
+        "signal_reason": "Breakout above upper band, momentum 0.002",
+        "trade_duration_minutes": 60.0,
+        "entry_exit_spread": 519.5383333333302,
+        "pnl_per_unit": 519.5383333333302,
+        "is_winner": true,
+        "profit_pct": 0.4345128210575138,
+        "dna_context": {
+          "symbol": "FX Vol 20_PERIOD_M5_data",
+          "timeframe": "M5",
+          "bars": 100712,
+          "dna": {
+            "chromosome_i": {
+              "mean_return": 0.020506019139164156,
+              "median_return": 0.012655112122672563,
+              "std_return": 6.194036578443151,
+              "coef_variation": 302.05943612981656,
+              "skewness": 0.007140966467218907,
+              "excess_kurtosis": 0.012365630020404694,
+              "tail_index": 13.145790787677884,
+              "var_95": -10.201349705226903,
+              "cvar_95": -12.768545883369118,
+              "min_return": -24.611248665014074,
+              "max_return": 27.353462441670473,
+              "positive_ratio": 50.07993644804131,
+              "negative_ratio": 49.92006355195869
+            },
+            "chromosome_ii": {
+              "autocorrelation": {
+                "lag_1": -0.003688421708236106,
+                "lag_3": -0.0005305378195973902,
+                "lag_5": 0.0019155115755391378,
+                "lag_10": 0.004463590336824271,
+                "lag_20": -0.0026363644319073757
+              },
+              "hurst_exponent": 0.1746368293072916,
+              "dfa_exponent": 0.23970946344583327,
+              "ljung_box_pvalue": 0.7138189443613407,
+              "is_random": true
+            },
+            "chromosome_iii": {
+              "realized_vol": 0.98324353384334,
+              "rolling_vol_20": 1.0298266612439855,
+              "rolling_vol_100": 0.9959043972197051,
+              "ewma_vol": 0.05929723457002285,
+              "atr": 98.32428571428629,
+              "vol_of_vol": 0.1605347868665117,
+              "vol_persistence": 0.9480460850253551
+            },
+            "chromosome_iv": {
+              "jump_stats": {
+                "threshold_3": {
+                  "positive": 144,
+                  "negative": 120,
+                  "total": 264,
+                  "rate": 0.2621362115359792,
+                  "pos_rate": 0.1429833881105341,
+                  "neg_rate": 0.11915282342544507,
+                  "mean_pos": 20.55743255228627,
+                  "mean_neg": -20.251050719921466,
+                  "max_pos": 27.353462441670473,
+                  "max_neg": -24.611248665014074
+                },
+                "threshold_4": {
+                  "positive": 4,
+                  "negative": 0,
+                  "total": 4,
+                  "rate": 0.0039717607808481695,
+                  "pos_rate": 0.0039717607808481695,
+                  "neg_rate": 0.0,
+                  "mean_pos": 25.86507380469172,
+                  "mean_neg": 0,
+                  "max_pos": 27.353462441670473,
+                  "max_neg": 0
+                }
+              },
+              "jump_intensity": 3.971760780848169e-05,
+              "waiting_time_cv": 0.8754676439106441,
+              "jump_asymmetry": 1.0
+            },
+            "chromosome_v": {
+              "hourly_returns": {
+                "0": -1.1957061813973613e-06,
+                "1": -2.5662731058452458e-06,
+                "2": 7.161689431076255e-06,
+                "3": 3.805405954319393e-06,
+                "4": 6.301889528756294e-06,
+                "5": -2.4122453502501576e-06,
+                "6": 4.48647339594328e-06,
+                "7": 6.400766826772335e-06,
+                "8": 1.1048655671888152e-05,
+                "9": 5.376393068613385e-06,
+                "10": 5.431552083746251e-06,
+                "11": 6.916365681455201e-06,
+                "12": 5.301469803930612e-06,
+                "13": -4.136132430107259e-06,
+                "14": 1.1706935104558923e-05,
+                "15": 9.326478522298165e-06,
+                "16": -1.8983101069943773e-05,
+                "17": 1.0896416303987606e-05,
+                "18": -1.5691023020352615e-05,
+                "19": 9.375274130928683e-06,
+                "20": 6.205809624926334e-06,
+                "21": -8.937200059244833e-06,
+                "22": 3.7953072662686016e-06,
+                "23": -1.0346171066360673e-05
+              },
+              "dow_returns": {
+                "0": -6.8977497486857575e-06,
+                "1": -1.9755800800322664e-06,
+                "2": 4.234132656674531e-06,
+                "3": 1.832268162114989e-06,
+                "4": 6.9652058639887064e-06,
+                "5": 5.7049657702670565e-06,
+                "6": 4.504721298017283e-06
+              },
+              "month_returns": {
+                "1": 2.5430041409872468e-06,
+                "2": 2.0133243366057684e-06,
+                "3": -1.3923893708930717e-05,
+                "4": -9.735841091693513e-07,
+                "5": 7.239757191187393e-06,
+                "6": 1.025763844998151e-06,
+                "7": 8.784045425443374e-06,
+                "8": 1.3669856980606e-05,
+                "9": 3.007320271120683e-07,
+                "10": 4.7072450789031055e-06,
+                "11": 7.037200857571175e-06,
+                "12": -2.4829108068614202e-06
+              },
+              "session_returns": {
+                "asian": 2.7426644902220155e-06,
+                "european": 5.00351215746778e-06,
+                "american": 4.79709510457647e-07
+              },
+              "best_hour": 14,
+              "worst_hour": 16,
+              "best_dow": 4,
+              "worst_dow": 0
+            },
+            "chromosome_vi": {
+              "shannon_entropy": 3.3677439891430594,
+              "max_entropy": 4.321928094887363,
+              "normalized_entropy": 0.7792225865874405,
+              "permutation_entropy": 0.9999910888026584,
+              "sample_entropy": null,
+              "lz_complexity": 0.121625,
+              "predictability": 22.07774134125595
+            },
+            "chromosome_vii": {
+              "avg_trend_length": 3.0030200675541425,
+              "max_trend_length": 16,
+              "ou_theta": 6.161196479141586e-05,
+              "ou_half_life": 11250.2041268536,
+              "swing_mean": 53.805453326846106,
+              "swing_std": 40.98429426888204,
+              "mean_reversion_speed": 6.161196479141586e-05
+            },
+            "chromosome_viii": {
+              "signatures": [
+                "Constant tick volume (73.6% at 300)",
+                "100% positive jumps",
+                "Poisson-like jump process (CV=0.88)"
+              ],
+              "confidence": 50,
+              "is_synthetic": false,
+              "confidence_level": "Low",
+              "benford_score": 423.3824630318882,
+              "jump_asymmetry": 1.0
+            },
+            "strategy_affinity": {
+              "Mean Reversion": 60,
+              "Trend Following": 15,
+              "Scalping": 100,
+              "Market Making": 100,
+              "Momentum": 15,
+              "Breakout": 30
+            },
+            "overall_score": 59.63471766765699
+          },
+          "scores": {
+            "Distribution": 0,
+            "Memory": 0,
+            "Volatility": 100,
+            "Jumps": 100,
+            "Temporal": 100,
+            "Information": 47.07774134125595,
+            "Structure": 80,
+            "Synthetic": 50
+          }
+        }
+      },
+      {
+        "entry_date": "2026-07-21 08:50:00",
+        "exit_date": "2026-07-21 09:30:00",
+        "direction": "BUY",
+        "entry_price": 118105.55,
+        "exit_price": 118654.13,
+        "volume": 0.01,
+        "pnl": 5.485800000000018,
+        "reason": "TP",
+        "holding_bars": 40.0,
+        "confidence": 70,
+        "signal_reason": "Breakout above upper band, momentum 0.003",
+        "trade_duration_minutes": 40.0,
+        "entry_exit_spread": 548.5800000000017,
+        "pnl_per_unit": 548.5800000000017,
+        "is_winner": true,
+        "profit_pct": 0.4644828291303853,
+        "dna_context": {
+          "symbol": "FX Vol 20_PERIOD_M5_data",
+          "timeframe": "M5",
+          "bars": 100712,
+          "dna": {
+            "chromosome_i": {
+              "mean_return": 0.020506019139164156,
+              "median_return": 0.012655112122672563,
+              "std_return": 6.194036578443151,
+              "coef_variation": 302.05943612981656,
+              "skewness": 0.007140966467218907,
+              "excess_kurtosis": 0.012365630020404694,
+              "tail_index": 13.145790787677884,
+              "var_95": -10.201349705226903,
+              "cvar_95": -12.768545883369118,
+              "min_return": -24.611248665014074,
+              "max_return": 27.353462441670473,
+              "positive_ratio": 50.07993644804131,
+              "negative_ratio": 49.92006355195869
+            },
+            "chromosome_ii": {
+              "autocorrelation": {
+                "lag_1": -0.003688421708236106,
+                "lag_3": -0.0005305378195973902,
+                "lag_5": 0.0019155115755391378,
+                "lag_10": 0.004463590336824271,
+                "lag_20": -0.0026363644319073757
+              },
+              "hurst_exponent": 0.1746368293072916,
+              "dfa_exponent": 0.23970946344583327,
+              "ljung_box_pvalue": 0.7138189443613407,
+              "is_random": true
+            },
+            "chromosome_iii": {
+              "realized_vol": 0.98324353384334,
+              "rolling_vol_20": 1.0298266612439855,
+              "rolling_vol_100": 0.9959043972197051,
+              "ewma_vol": 0.05929723457002285,
+              "atr": 98.32428571428629,
+              "vol_of_vol": 0.1605347868665117,
+              "vol_persistence": 0.9480460850253551
+            },
+            "chromosome_iv": {
+              "jump_stats": {
+                "threshold_3": {
+                  "positive": 144,
+                  "negative": 120,
+                  "total": 264,
+                  "rate": 0.2621362115359792,
+                  "pos_rate": 0.1429833881105341,
+                  "neg_rate": 0.11915282342544507,
+                  "mean_pos": 20.55743255228627,
+                  "mean_neg": -20.251050719921466,
+                  "max_pos": 27.353462441670473,
+                  "max_neg": -24.611248665014074
+                },
+                "threshold_4": {
+                  "positive": 4,
+                  "negative": 0,
+                  "total": 4,
+                  "rate": 0.0039717607808481695,
+                  "pos_rate": 0.0039717607808481695,
+                  "neg_rate": 0.0,
+                  "mean_pos": 25.86507380469172,
+                  "mean_neg": 0,
+                  "max_pos": 27.353462441670473,
+                  "max_neg": 0
+                }
+              },
+              "jump_intensity": 3.971760780848169e-05,
+              "waiting_time_cv": 0.8754676439106441,
+              "jump_asymmetry": 1.0
+            },
+            "chromosome_v": {
+              "hourly_returns": {
+                "0": -1.1957061813973613e-06,
+                "1": -2.5662731058452458e-06,
+                "2": 7.161689431076255e-06,
+                "3": 3.805405954319393e-06,
+                "4": 6.301889528756294e-06,
+                "5": -2.4122453502501576e-06,
+                "6": 4.48647339594328e-06,
+                "7": 6.400766826772335e-06,
+                "8": 1.1048655671888152e-05,
+                "9": 5.376393068613385e-06,
+                "10": 5.431552083746251e-06,
+                "11": 6.916365681455201e-06,
+                "12": 5.301469803930612e-06,
+                "13": -4.136132430107259e-06,
+                "14": 1.1706935104558923e-05,
+                "15": 9.326478522298165e-06,
+                "16": -1.8983101069943773e-05,
+                "17": 1.0896416303987606e-05,
+                "18": -1.5691023020352615e-05,
+                "19": 9.375274130928683e-06,
+                "20": 6.205809624926334e-06,
+                "21": -8.937200059244833e-06,
+                "22": 3.7953072662686016e-06,
+                "23": -1.0346171066360673e-05
+              },
+              "dow_returns": {
+                "0": -6.8977497486857575e-06,
+                "1": -1.9755800800322664e-06,
+                "2": 4.234132656674531e-06,
+                "3": 1.832268162114989e-06,
+                "4": 6.9652058639887064e-06,
+                "5": 5.7049657702670565e-06,
+                "6": 4.504721298017283e-06
+              },
+              "month_returns": {
+                "1": 2.5430041409872468e-06,
+                "2": 2.0133243366057684e-06,
+                "3": -1.3923893708930717e-05,
+                "4": -9.735841091693513e-07,
+                "5": 7.239757191187393e-06,
+                "6": 1.025763844998151e-06,
+                "7": 8.784045425443374e-06,
+                "8": 1.3669856980606e-05,
+                "9": 3.007320271120683e-07,
+                "10": 4.7072450789031055e-06,
+                "11": 7.037200857571175e-06,
+                "12": -2.4829108068614202e-06
+              },
+              "session_returns": {
+                "asian": 2.7426644902220155e-06,
+                "european": 5.00351215746778e-06,
+                "american": 4.79709510457647e-07
+              },
+              "best_hour": 14,
+              "worst_hour": 16,
+              "best_dow": 4,
+              "worst_dow": 0
+            },
+            "chromosome_vi": {
+              "shannon_entropy": 3.3677439891430594,
+              "max_entropy": 4.321928094887363,
+              "normalized_entropy": 0.7792225865874405,
+              "permutation_entropy": 0.9999910888026584,
+              "sample_entropy": null,
+              "lz_complexity": 0.121625,
+              "predictability": 22.07774134125595
+            },
+            "chromosome_vii": {
+              "avg_trend_length": 3.0030200675541425,
+              "max_trend_length": 16,
+              "ou_theta": 6.161196479141586e-05,
+              "ou_half_life": 11250.2041268536,
+              "swing_mean": 53.805453326846106,
+              "swing_std": 40.98429426888204,
+              "mean_reversion_speed": 6.161196479141586e-05
+            },
+            "chromosome_viii": {
+              "signatures": [
+                "Constant tick volume (73.6% at 300)",
+                "100% positive jumps",
+                "Poisson-like jump process (CV=0.88)"
+              ],
+              "confidence": 50,
+              "is_synthetic": false,
+              "confidence_level": "Low",
+              "benford_score": 423.3824630318882,
+              "jump_asymmetry": 1.0
+            },
+            "strategy_affinity": {
+              "Mean Reversion": 60,
+              "Trend Following": 15,
+              "Scalping": 100,
+              "Market Making": 100,
+              "Momentum": 15,
+              "Breakout": 30
+            },
+            "overall_score": 59.63471766765699
+          },
+          "scores": {
+            "Distribution": 0,
+            "Memory": 0,
+            "Volatility": 100,
+            "Jumps": 100,
+            "Temporal": 100,
+            "Information": 47.07774134125595,
+            "Structure": 80,
+            "Synthetic": 50
+          }
+        }
+      },
+      {
+        "entry_date": "2026-07-21 09:35:00",
+        "exit_date": "2026-07-21 10:00:00",
+        "direction": "BUY",
+        "entry_price": 118737.24,
+        "exit_price": 118799.34,
+        "volume": 0.01,
+        "pnl": 0.6209999999999127,
+        "reason": "Trend exhausted",
+        "holding_bars": 25.0,
+        "confidence": 70,
+        "signal_reason": "Breakout above upper band, momentum 0.002",
+        "trade_duration_minutes": 25.0,
+        "entry_exit_spread": 62.09999999999127,
+        "pnl_per_unit": 62.09999999999127,
+        "is_winner": true,
+        "profit_pct": 0.052300356653052806,
+        "dna_context": {
+          "symbol": "FX Vol 20_PERIOD_M5_data",
+          "timeframe": "M5",
+          "bars": 100712,
+          "dna": {
+            "chromosome_i": {
+              "mean_return": 0.020506019139164156,
+              "median_return": 0.012655112122672563,
+              "std_return": 6.194036578443151,
+              "coef_variation": 302.05943612981656,
+              "skewness": 0.007140966467218907,
+              "excess_kurtosis": 0.012365630020404694,
+              "tail_index": 13.145790787677884,
+              "var_95": -10.201349705226903,
+              "cvar_95": -12.768545883369118,
+              "min_return": -24.611248665014074,
+              "max_return": 27.353462441670473,
+              "positive_ratio": 50.07993644804131,
+              "negative_ratio": 49.92006355195869
+            },
+            "chromosome_ii": {
+              "autocorrelation": {
+                "lag_1": -0.003688421708236106,
+                "lag_3": -0.0005305378195973902,
+                "lag_5": 0.0019155115755391378,
+                "lag_10": 0.004463590336824271,
+                "lag_20": -0.0026363644319073757
+              },
+              "hurst_exponent": 0.1746368293072916,
+              "dfa_exponent": 0.23970946344583327,
+              "ljung_box_pvalue": 0.7138189443613407,
+              "is_random": true
+            },
+            "chromosome_iii": {
+              "realized_vol": 0.98324353384334,
+              "rolling_vol_20": 1.0298266612439855,
+              "rolling_vol_100": 0.9959043972197051,
+              "ewma_vol": 0.05929723457002285,
+              "atr": 98.32428571428629,
+              "vol_of_vol": 0.1605347868665117,
+              "vol_persistence": 0.9480460850253551
+            },
+            "chromosome_iv": {
+              "jump_stats": {
+                "threshold_3": {
+                  "positive": 144,
+                  "negative": 120,
+                  "total": 264,
+                  "rate": 0.2621362115359792,
+                  "pos_rate": 0.1429833881105341,
+                  "neg_rate": 0.11915282342544507,
+                  "mean_pos": 20.55743255228627,
+                  "mean_neg": -20.251050719921466,
+                  "max_pos": 27.353462441670473,
+                  "max_neg": -24.611248665014074
+                },
+                "threshold_4": {
+                  "positive": 4,
+                  "negative": 0,
+                  "total": 4,
+                  "rate": 0.0039717607808481695,
+                  "pos_rate": 0.0039717607808481695,
+                  "neg_rate": 0.0,
+                  "mean_pos": 25.86507380469172,
+                  "mean_neg": 0,
+                  "max_pos": 27.353462441670473,
+                  "max_neg": 0
+                }
+              },
+              "jump_intensity": 3.971760780848169e-05,
+              "waiting_time_cv": 0.8754676439106441,
+              "jump_asymmetry": 1.0
+            },
+            "chromosome_v": {
+              "hourly_returns": {
+                "0": -1.1957061813973613e-06,
+                "1": -2.5662731058452458e-06,
+                "2": 7.161689431076255e-06,
+                "3": 3.805405954319393e-06,
+                "4": 6.301889528756294e-06,
+                "5": -2.4122453502501576e-06,
+                "6": 4.48647339594328e-06,
+                "7": 6.400766826772335e-06,
+                "8": 1.1048655671888152e-05,
+                "9": 5.376393068613385e-06,
+                "10": 5.431552083746251e-06,
+                "11": 6.916365681455201e-06,
+                "12": 5.301469803930612e-06,
+                "13": -4.136132430107259e-06,
+                "14": 1.1706935104558923e-05,
+                "15": 9.326478522298165e-06,
+                "16": -1.8983101069943773e-05,
+                "17": 1.0896416303987606e-05,
+                "18": -1.5691023020352615e-05,
+                "19": 9.375274130928683e-06,
+                "20": 6.205809624926334e-06,
+                "21": -8.937200059244833e-06,
+                "22": 3.7953072662686016e-06,
+                "23": -1.0346171066360673e-05
+              },
+              "dow_returns": {
+                "0": -6.8977497486857575e-06,
+                "1": -1.9755800800322664e-06,
+                "2": 4.234132656674531e-06,
+                "3": 1.832268162114989e-06,
+                "4": 6.9652058639887064e-06,
+                "5": 5.7049657702670565e-06,
+                "6": 4.504721298017283e-06
+              },
+              "month_returns": {
+                "1": 2.5430041409872468e-06,
+                "2": 2.0133243366057684e-06,
+                "3": -1.3923893708930717e-05,
+                "4": -9.735841091693513e-07,
+                "5": 7.239757191187393e-06,
+                "6": 1.025763844998151e-06,
+                "7": 8.784045425443374e-06,
+                "8": 1.3669856980606e-05,
+                "9": 3.007320271120683e-07,
+                "10": 4.7072450789031055e-06,
+                "11": 7.037200857571175e-06,
+                "12": -2.4829108068614202e-06
+              },
+              "session_returns": {
+                "asian": 2.7426644902220155e-06,
+                "european": 5.00351215746778e-06,
+                "american": 4.79709510457647e-07
+              },
+              "best_hour": 14,
+              "worst_hour": 16,
+              "best_dow": 4,
+              "worst_dow": 0
+            },
+            "chromosome_vi": {
+              "shannon_entropy": 3.3677439891430594,
+              "max_entropy": 4.321928094887363,
+              "normalized_entropy": 0.7792225865874405,
+              "permutation_entropy": 0.9999910888026584,
+              "sample_entropy": null,
+              "lz_complexity": 0.121625,
+              "predictability": 22.07774134125595
+            },
+            "chromosome_vii": {
+              "avg_trend_length": 3.0030200675541425,
+              "max_trend_length": 16,
+              "ou_theta": 6.161196479141586e-05,
+              "ou_half_life": 11250.2041268536,
+              "swing_mean": 53.805453326846106,
+              "swing_std": 40.98429426888204,
+              "mean_reversion_speed": 6.161196479141586e-05
+            },
+            "chromosome_viii": {
+              "signatures": [
+                "Constant tick volume (73.6% at 300)",
+                "100% positive jumps",
+                "Poisson-like jump process (CV=0.88)"
+              ],
+              "confidence": 50,
+              "is_synthetic": false,
+              "confidence_level": "Low",
+              "benford_score": 423.3824630318882,
+              "jump_asymmetry": 1.0
+            },
+            "strategy_affinity": {
+              "Mean Reversion": 60,
+              "Trend Following": 15,
+              "Scalping": 100,
+              "Market Making": 100,
+              "Momentum": 15,
+              "Breakout": 30
+            },
+            "overall_score": 59.63471766765699
+          },
+          "scores": {
+            "Distribution": 0,
+            "Memory": 0,
+            "Volatility": 100,
+            "Jumps": 100,
+            "Temporal": 100,
+            "Information": 47.07774134125595,
+            "Structure": 80,
+            "Synthetic": 50
+          }
+        }
+      }
+    ],
+    "equity_df": "                   date     equity  drawdown   returns\n0   2025-08-18 18:15:00   9.976800  0.000000       NaN\n1   2025-08-18 18:20:00   9.649800 -0.032776 -0.032776\n2   2025-08-18 18:25:00   9.959700 -0.001714  0.032115\n3   2025-08-18 18:30:00  10.240900  0.000000  0.028234\n4   2025-08-18 18:35:00   9.868300 -0.036384 -0.036384\n..                  ...        ...       ...       ...\n123 2026-07-21 09:40:00  29.160675 -0.008787 -0.008787\n124 2026-07-21 09:45:00  30.690875  0.000000  0.052475\n125 2026-07-21 09:50:00  30.846275  0.000000  0.005063\n126 2026-07-21 09:55:00  30.875475  0.000000  0.000947\n127 2026-07-21 10:00:00  30.040175 -0.027054 -0.027054\n\n[128 rows x 4 columns]"
+  },
+  "timestamp": "2026-08-07T08:51:50.501923"
+}

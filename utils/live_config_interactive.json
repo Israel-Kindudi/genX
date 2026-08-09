@@ -5,10 +5,8 @@
     "BreakX 1800",
     "PainX 600",
     "GainX 800",
-    "FX Vol 20",
-    "FX Vol 40",
-    "FX Vol 60",
     "FX Vol 80",
+    "FX Vol 20",
     "FX Vol 99"
   ],
   "strategies": [
@@ -23,11 +21,11 @@
     "Trend Following ADX (default)"
   ],
   "demo": false,
-  "cycles": 9000,
+  "cycles": 1000,
   "interval": 16,
-  "risk": 1.0,
+  "risk": 1,
   "terminal": null,
-  "max_positions": 7,
+  "max_positions": 4,
   "max_per_strategy": 3,
   "use_optimized": false
 }

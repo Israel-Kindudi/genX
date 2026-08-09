@@ -1,0 +1,86 @@
+{
+  "Scalping RSI+VWMA (tuned)_FX Vol 80": {
+    "strategy": "Scalping RSI+VWMA (tuned)",
+    "symbol": "FX Vol 80",
+    "entry_price": 52921.71,
+    "sl": 52723.45714285714,
+    "tp": 53219.08928571428,
+    "lot": 0.01,
+    "entry_time": "2026-08-06 13:58:04.982205",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 537958154
+  },
+  "Trend Aroon+RSI+SMA (tuned)_FX Vol 80": {
+    "strategy": "Trend Aroon+RSI+SMA (tuned)",
+    "symbol": "FX Vol 80",
+    "entry_price": 52831.05,
+    "sl": 52489.431142857145,
+    "tp": 53239.08142857143,
+    "lot": 0.01,
+    "entry_time": "2026-08-06 14:17:07.828295",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 537990617
+  },
+  "Scalping HMA+Stoch (tuned)_BreakX 1200": {
+    "strategy": "Scalping HMA+Stoch (tuned)",
+    "symbol": "BreakX 1200",
+    "entry_price": 103648.21,
+    "sl": 103604.32428571429,
+    "tp": 103670.88357142858,
+    "lot": 0.1,
+    "entry_time": "2026-08-06 14:21:31.334479",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 537998396
+  },
+  "Scalping DMI+MACD (tuned)_BreakX 1200": {
+    "strategy": "Scalping DMI+MACD (tuned)",
+    "symbol": "BreakX 1200",
+    "entry_price": 103659.45,
+    "sl": 103643.35942857144,
+    "tp": 103682.02585714286,
+    "lot": 0.1,
+    "entry_time": "2026-08-06 14:30:53.245333",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 538013800
+  },
+  "Scalping DMI+MACD (default)_FX Vol 20": {
+    "strategy": "Scalping DMI+MACD (default)",
+    "symbol": "FX Vol 20",
+    "entry_price": 118185.16,
+    "sl": 117992.31964285714,
+    "tp": 118439.98714285715,
+    "lot": 0.01,
+    "entry_time": "2026-08-06 14:33:39.765809",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 538018945
+  },
+  "Trend Following (default)_FX Vol 20": {
+    "strategy": "Trend Following (default)",
+    "symbol": "FX Vol 20",
+    "entry_price": 118185.16,
+    "sl": 117994.03964285714,
+    "tp": 118439.98714285715,
+    "lot": 0.01,
+    "entry_time": "2026-08-06 14:33:40.127523",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 538018952
+  },
+  "Scalping RSI+VWMA (tuned)_FX Vol 40": {
+    "strategy": "Scalping RSI+VWMA (tuned)",
+    "symbol": "FX Vol 40",
+    "entry_price": 201439.72,
+    "sl": 201098.7857142857,
+    "tp": 201951.12142857144,
+    "lot": 0.01,
+    "entry_time": "2026-08-06 14:33:56.920175",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 538019556
+  }
+}

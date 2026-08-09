@@ -1,0 +1,37 @@
+{
+  "strategy": "Trend VWMA+SOTT (tuned)",
+  "matched_key": "Trend VWMA+SOTT (tuned)",
+  "symbol": "FX Vol 20",
+  "generation": 0,
+  "best_fitness": 0,
+  "best_params": {
+    "vwma_fast": 6,
+    "vwma_slow": 31,
+    "sott_k": 97,
+    "sott_k_smooth": 9,
+    "sott_ott_period": 3,
+    "sott_ott_percent": 0.37,
+    "atr_period": 20,
+    "stop_multiplier": 1.62,
+    "take_profit_multiplier": 2.26
+  },
+  "fitness_history": [
+    0
+  ],
+  "best_report": {
+    "total_trades": 0,
+    "win_rate": 0,
+    "profit_factor": 0,
+    "total_pnl": 0,
+    "avg_win": 0,
+    "avg_loss": 0,
+    "win_loss_ratio": 0,
+    "max_drawdown": 0,
+    "sharpe_ratio": 0,
+    "return_pct": 0,
+    "trades_df": "Empty DataFrame\nColumns: [exit_date]\nIndex: []",
+    "trade_dna": [],
+    "equity_df": "Empty DataFrame\nColumns: []\nIndex: []"
+  },
+  "timestamp": "2026-08-07T18:32:41.497412"
+}

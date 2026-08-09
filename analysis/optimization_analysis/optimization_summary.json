@@ -1,0 +1,245 @@
+{
+  "total_combinations": 58,
+  "strategies": {
+    "Scalping (default)": {
+      "count": 4,
+      "avg_sharpe": 1.2530869308586687,
+      "avg_pnl": 132.69856141347012,
+      "total_trades": 9676
+    },
+    "Scalping BB+MACD+TM (default)": {
+      "count": 4,
+      "avg_sharpe": 2.7102702433226358,
+      "avg_pnl": 7.325492402777636,
+      "total_trades": 337
+    },
+    "Scalping BB+MACD+TM (tuned)": {
+      "count": 4,
+      "avg_sharpe": 1.9654706945869878,
+      "avg_pnl": 5.916056368730934,
+      "total_trades": 788
+    },
+    "Scalping DMI+MACD (default)": {
+      "count": 4,
+      "avg_sharpe": 1.0945939977373569,
+      "avg_pnl": 60430.63230891706,
+      "total_trades": 14208
+    },
+    "Scalping DMI+MACD (tuned)": {
+      "count": 4,
+      "avg_sharpe": 1.1395494939871542,
+      "avg_pnl": 41037.35127245288,
+      "total_trades": 14584
+    },
+    "Scalping HMA+Stoch (default)": {
+      "count": 4,
+      "avg_sharpe": 0.42974929763998804,
+      "avg_pnl": 0.112512891667361,
+      "total_trades": 7304
+    },
+    "Scalping HMA+Stoch (tuned)": {
+      "count": 4,
+      "avg_sharpe": 0.43700833588438537,
+      "avg_pnl": 33.24743577738039,
+      "total_trades": 8635
+    },
+    "Scalping RSI+VWMA (default)": {
+      "count": 4,
+      "avg_sharpe": 2.5751968519127084,
+      "avg_pnl": 176117.67119024033,
+      "total_trades": 12328
+    },
+    "Scalping RSI+VWMA (tuned)": {
+      "count": 4,
+      "avg_sharpe": 2.6100051282866406,
+      "avg_pnl": 185575.75052804901,
+      "total_trades": 12448
+    },
+    "Trend Aroon+RSI+SMA (default)": {
+      "count": 4,
+      "avg_sharpe": 1.26507064407719,
+      "avg_pnl": 158.3507060043521,
+      "total_trades": 3880
+    },
+    "Trend Aroon+RSI+SMA (tuned)": {
+      "count": 4,
+      "avg_sharpe": 1.506346947643629,
+      "avg_pnl": 115.32273743695681,
+      "total_trades": 3797
+    },
+    "Trend Following (default)": {
+      "count": 2,
+      "avg_sharpe": 107.41330812609888,
+      "avg_pnl": 10.301980916666508,
+      "total_trades": 18
+    },
+    "Trend Following ADX (default)": {
+      "count": 4,
+      "avg_sharpe": 2.0370104211867304,
+      "avg_pnl": 408.81121568752087,
+      "total_trades": 2819
+    },
+    "Trend PMax+NSM (default)": {
+      "count": 4,
+      "avg_sharpe": 1.437729626767678,
+      "avg_pnl": 4.612450161110754,
+      "total_trades": 1185
+    },
+    "Trend PMax+NSM (tuned)": {
+      "count": 4,
+      "avg_sharpe": 1.3130464594501967,
+      "avg_pnl": -4.566765834874132,
+      "total_trades": 1180
+    }
+  },
+  "symbols": {
+    "BreakX 1200": {
+      "count": 14,
+      "avg_sharpe": 1.8899954752852632,
+      "avg_pnl": 56663.51865513396,
+      "total_trades": 23945
+    },
+    "BreakX 1800": {
+      "count": 14,
+      "avg_sharpe": 1.9138699943997772,
+      "avg_pnl": 69177.67154777843,
+      "total_trades": 21723
+    },
+    "BreakX 600": {
+      "count": 15,
+      "avg_sharpe": 15.498476468451166,
+      "avg_pnl": 6142.598523946491,
+      "total_trades": 20388
+    },
+    "FX Vol 20": {
+      "count": 15,
+      "avg_sharpe": 1.0794595295471656,
+      "avg_pnl": 146.52707131574047,
+      "total_trades": 27131
+    }
+  },
+  "top_sharpe": [
+    {
+      "strategy": "Trend Following (default)",
+      "symbol": "BreakX 600",
+      "sharpe": 211.2509535670299,
+      "pnl": 0.5637870000000111
+    },
+    {
+      "strategy": "Scalping RSI+VWMA (tuned)",
+      "symbol": "BreakX 1800",
+      "sharpe": 4.009817505421001,
+      "pnl": 285346.52825261507
+    },
+    {
+      "strategy": "Scalping RSI+VWMA (default)",
+      "symbol": "BreakX 1800",
+      "sharpe": 3.93225212202035,
+      "pnl": 329718.150767654
+    },
+    {
+      "strategy": "Scalping BB+MACD+TM (default)",
+      "symbol": "BreakX 600",
+      "sharpe": 3.851486198619743,
+      "pnl": 6.164362999999867
+    },
+    {
+      "strategy": "Scalping RSI+VWMA (tuned)",
+      "symbol": "BreakX 1200",
+      "sharpe": 3.6548142892118767,
+      "pnl": 391611.54527648696
+    },
+    {
+      "strategy": "Trend Following (default)",
+      "symbol": "FX Vol 20",
+      "sharpe": 3.57566268516786,
+      "pnl": 20.040174833333005
+    },
+    {
+      "strategy": "Scalping RSI+VWMA (default)",
+      "symbol": "BreakX 1200",
+      "sharpe": 3.550814079446821,
+      "pnl": 347437.3788647104
+    },
+    {
+      "strategy": "Trend Following ADX (default)",
+      "symbol": "BreakX 1200",
+      "sharpe": 3.51590254932832,
+      "pnl": 1093.280892799933
+    },
+    {
+      "strategy": "Scalping (default)",
+      "symbol": "BreakX 1200",
+      "sharpe": 3.0582680500089867,
+      "pnl": 1.2899025454546793
+    },
+    {
+      "strategy": "Trend Following ADX (default)",
+      "symbol": "BreakX 1800",
+      "sharpe": 2.9163098455422776,
+      "pnl": 439.424063600148
+    }
+  ],
+  "top_pnl": [
+    {
+      "strategy": "Scalping RSI+VWMA (tuned)",
+      "symbol": "BreakX 1200",
+      "pnl": 391611.54527648696,
+      "sharpe": 3.6548142892118767
+    },
+    {
+      "strategy": "Scalping RSI+VWMA (default)",
+      "symbol": "BreakX 1200",
+      "pnl": 347437.3788647104,
+      "sharpe": 3.550814079446821
+    },
+    {
+      "strategy": "Scalping RSI+VWMA (default)",
+      "symbol": "BreakX 1800",
+      "pnl": 329718.150767654,
+      "sharpe": 3.93225212202035
+    },
+    {
+      "strategy": "Scalping RSI+VWMA (tuned)",
+      "symbol": "BreakX 1800",
+      "pnl": 285346.52825261507,
+      "sharpe": 4.009817505421001
+    },
+    {
+      "strategy": "Scalping DMI+MACD (default)",
+      "symbol": "BreakX 1800",
+      "pnl": 208101.814956569,
+      "sharpe": 2.061161805351305
+    },
+    {
+      "strategy": "Scalping DMI+MACD (tuned)",
+      "symbol": "BreakX 1800",
+      "pnl": 144259.0266854901,
+      "sharpe": 2.1440955602158653
+    },
+    {
+      "strategy": "Scalping RSI+VWMA (tuned)",
+      "symbol": "BreakX 600",
+      "pnl": 64697.24183666548,
+      "sharpe": 2.181911774782585
+    },
+    {
+      "strategy": "Scalping DMI+MACD (default)",
+      "symbol": "BreakX 1200",
+      "pnl": 33334.94581039926,
+      "sharpe": 1.5566696649821925
+    },
+    {
+      "strategy": "Scalping RSI+VWMA (default)",
+      "symbol": "BreakX 600",
+      "pnl": 26851.188705263616,
+      "sharpe": 2.2207113981440365
+    },
+    {
+      "strategy": "Scalping DMI+MACD (tuned)",
+      "symbol": "BreakX 1200",
+      "pnl": 19461.883798388404,
+      "sharpe": 1.6038434165780049
+    }
+  ]
+}

@@ -16,3 +16,463 @@
 2026-08-05 23:19:02 | INFO     |    Symbol [3/4]: BreakX 1800
 2026-08-05 23:19:02 | INFO     |       ⏭️  Skipping: result already exists.
 2026-08-05 23:19:02 | INFO     |    Symbol [4/4]: FX Vol 20
+2026-08-05 23:19:03 | INFO     |       Data loaded: 100712 rows
+2026-08-05 23:19:03 | INFO     |       🧬 DNA context loaded.
+2026-08-05 23:19:03 | INFO     |       🔄 Starting optimization...
+2026-08-06 00:40:34 | INFO     |       ✅ Optimization complete in 4891.6s. Best fitness: 0.5970
+2026-08-06 00:40:34 | INFO     | 
+📌 Strategy [2/17]: Scalping RSI+VWMA (tuned)
+2026-08-06 00:40:34 | INFO     |    Symbol [1/4]: BreakX 600
+2026-08-06 00:40:34 | INFO     |       ⏭️  Skipping: result already exists.
+2026-08-06 00:40:34 | INFO     |    Symbol [2/4]: BreakX 1200
+2026-08-06 00:40:34 | INFO     |       ⏭️  Skipping: result already exists.
+2026-08-06 00:40:34 | INFO     |    Symbol [3/4]: BreakX 1800
+2026-08-06 00:40:34 | INFO     |       ⏭️  Skipping: result already exists.
+2026-08-06 00:40:34 | INFO     |    Symbol [4/4]: FX Vol 20
+2026-08-06 00:40:34 | INFO     |       Data loaded: 100712 rows
+2026-08-06 00:40:34 | INFO     |       🧬 DNA context loaded.
+2026-08-06 00:40:34 | INFO     |       🔄 Starting optimization...
+2026-08-06 01:20:15 | INFO     |       ✅ Optimization complete in 2381.3s. Best fitness: 0.5935
+2026-08-06 01:20:15 | INFO     | 
+📌 Strategy [3/17]: Scalping (default)
+2026-08-06 01:20:15 | INFO     |    Symbol [1/4]: BreakX 600
+2026-08-06 01:20:16 | INFO     |       Data loaded: 100000 rows
+2026-08-06 01:20:16 | INFO     |       🧬 DNA context loaded.
+2026-08-06 01:20:16 | INFO     |       🔄 Starting optimization...
+2026-08-06 01:58:47 | INFO     |       ✅ Optimization complete in 2312.1s. Best fitness: 1.1844
+2026-08-06 01:58:47 | INFO     |    Symbol [2/4]: BreakX 1200
+2026-08-06 01:58:48 | INFO     |       Data loaded: 100119 rows
+2026-08-06 01:58:48 | INFO     |       🧬 DNA context loaded.
+2026-08-06 01:58:48 | INFO     |       🔄 Starting optimization...
+2026-08-06 02:50:09 | INFO     |       ✅ Optimization complete in 3081.3s. Best fitness: 3.0583
+2026-08-06 02:50:09 | INFO     |    Symbol [3/4]: BreakX 1800
+2026-08-06 02:50:09 | INFO     |       Data loaded: 100119 rows
+2026-08-06 02:50:09 | INFO     |       🧬 DNA context loaded.
+2026-08-06 02:50:09 | INFO     |       🔄 Starting optimization...
+2026-08-06 03:40:23 | INFO     |       ✅ Optimization complete in 3014.3s. Best fitness: 0.3817
+2026-08-06 03:40:23 | INFO     |    Symbol [4/4]: FX Vol 20
+2026-08-06 03:40:23 | INFO     |       Data loaded: 100712 rows
+2026-08-06 03:40:23 | INFO     |       🧬 DNA context loaded.
+2026-08-06 03:40:23 | INFO     |       🔄 Starting optimization...
+2026-08-06 04:24:10 | INFO     |       ✅ Optimization complete in 2626.9s. Best fitness: 0.3880
+2026-08-06 04:24:10 | INFO     | 
+📌 Strategy [4/17]: Scalping DMI+MACD (default)
+2026-08-06 04:24:10 | INFO     |    Symbol [1/4]: BreakX 600
+2026-08-06 04:24:10 | INFO     |       Data loaded: 100000 rows
+2026-08-06 04:24:10 | INFO     |       🧬 DNA context loaded.
+2026-08-06 04:24:10 | INFO     |       🔄 Starting optimization...
+2026-08-06 05:06:54 | INFO     |       ✅ Optimization complete in 2564.4s. Best fitness: 0.4650
+2026-08-06 05:06:54 | INFO     |    Symbol [2/4]: BreakX 1200
+2026-08-06 05:06:55 | INFO     |       Data loaded: 100119 rows
+2026-08-06 05:06:55 | INFO     |       🧬 DNA context loaded.
+2026-08-06 05:06:55 | INFO     |       🔄 Starting optimization...
+2026-08-06 05:49:59 | INFO     |       ✅ Optimization complete in 2584.7s. Best fitness: 1.5567
+2026-08-06 05:49:59 | INFO     |    Symbol [3/4]: BreakX 1800
+2026-08-06 05:49:59 | INFO     |       Data loaded: 100119 rows
+2026-08-06 05:49:59 | INFO     |       🧬 DNA context loaded.
+2026-08-06 05:49:59 | INFO     |       🔄 Starting optimization...
+2026-08-06 06:32:34 | INFO     |       ✅ Optimization complete in 2554.7s. Best fitness: 2.0612
+2026-08-06 06:32:34 | INFO     |    Symbol [4/4]: FX Vol 20
+2026-08-06 06:32:34 | INFO     |       Data loaded: 100712 rows
+2026-08-06 06:32:34 | INFO     |       🧬 DNA context loaded.
+2026-08-06 06:32:34 | INFO     |       🔄 Starting optimization...
+2026-08-06 07:15:15 | INFO     |       ✅ Optimization complete in 2561.5s. Best fitness: 0.2955
+2026-08-06 07:15:15 | INFO     | 
+📌 Strategy [5/17]: Scalping DMI+MACD (tuned)
+2026-08-06 07:15:15 | INFO     |    Symbol [1/4]: BreakX 600
+2026-08-06 07:15:15 | INFO     |       Data loaded: 100000 rows
+2026-08-06 07:15:15 | INFO     |       🧬 DNA context loaded.
+2026-08-06 07:15:15 | INFO     |       🔄 Starting optimization...
+2026-08-06 07:58:43 | INFO     |       ✅ Optimization complete in 2608.0s. Best fitness: 0.5315
+2026-08-06 07:58:43 | INFO     |    Symbol [2/4]: BreakX 1200
+2026-08-06 07:58:43 | INFO     |       Data loaded: 100119 rows
+2026-08-06 07:58:43 | INFO     |       🧬 DNA context loaded.
+2026-08-06 07:58:43 | INFO     |       🔄 Starting optimization...
+2026-08-06 08:41:31 | INFO     |       ✅ Optimization complete in 2567.8s. Best fitness: 1.6038
+2026-08-06 08:41:31 | INFO     |    Symbol [3/4]: BreakX 1800
+2026-08-06 08:41:31 | INFO     |       Data loaded: 100119 rows
+2026-08-06 08:41:31 | INFO     |       🧬 DNA context loaded.
+2026-08-06 08:41:31 | INFO     |       🔄 Starting optimization...
+2026-08-06 10:04:45 | INFO     |       ✅ Optimization complete in 4994.0s. Best fitness: 2.1441
+2026-08-06 10:04:45 | INFO     |    Symbol [4/4]: FX Vol 20
+2026-08-06 10:04:46 | INFO     |       Data loaded: 100712 rows
+2026-08-06 10:04:46 | INFO     |       🧬 DNA context loaded.
+2026-08-06 10:04:46 | INFO     |       🔄 Starting optimization...
+2026-08-06 11:17:43 | INFO     |       ✅ Optimization complete in 4377.7s. Best fitness: 0.2788
+2026-08-06 11:17:43 | INFO     | 
+📌 Strategy [6/17]: Scalping BB+MACD+TM (default)
+2026-08-06 11:17:43 | INFO     |    Symbol [1/4]: BreakX 600
+2026-08-06 11:17:44 | INFO     |       Data loaded: 100000 rows
+2026-08-06 11:17:44 | INFO     |       🧬 DNA context loaded.
+2026-08-06 11:17:44 | INFO     |       🔄 Starting optimization...
+2026-08-06 12:13:43 | INFO     |       ✅ Optimization complete in 3360.4s. Best fitness: 3.8515
+2026-08-06 12:13:43 | INFO     |    Symbol [2/4]: BreakX 1200
+2026-08-06 12:13:44 | INFO     |       Data loaded: 100119 rows
+2026-08-06 12:13:44 | INFO     |       🧬 DNA context loaded.
+2026-08-06 12:13:44 | INFO     |       🔄 Starting optimization...
+2026-08-06 13:11:54 | INFO     |       ✅ Optimization complete in 3491.0s. Best fitness: 2.4355
+2026-08-06 13:11:54 | INFO     |    Symbol [3/4]: BreakX 1800
+2026-08-06 13:11:55 | INFO     |       Data loaded: 100119 rows
+2026-08-06 13:11:55 | INFO     |       🧬 DNA context loaded.
+2026-08-06 13:11:55 | INFO     |       🔄 Starting optimization...
+2026-08-06 14:09:12 | INFO     |       ✅ Optimization complete in 3438.1s. Best fitness: 2.6674
+2026-08-06 14:09:12 | INFO     |    Symbol [4/4]: FX Vol 20
+2026-08-06 14:09:13 | INFO     |       Data loaded: 100712 rows
+2026-08-06 14:09:13 | INFO     |       🧬 DNA context loaded.
+2026-08-06 14:09:13 | INFO     |       🔄 Starting optimization...
+2026-08-06 15:06:09 | INFO     |       ✅ Optimization complete in 3416.8s. Best fitness: 1.8867
+2026-08-06 15:06:09 | INFO     | 
+📌 Strategy [7/17]: Scalping BB+MACD+TM (tuned)
+2026-08-06 15:06:09 | INFO     |    Symbol [1/4]: BreakX 600
+2026-08-06 15:06:10 | INFO     |       Data loaded: 100000 rows
+2026-08-06 15:06:10 | INFO     |       🧬 DNA context loaded.
+2026-08-06 15:06:10 | INFO     |       🔄 Starting optimization...
+2026-08-06 16:02:18 | INFO     |       ✅ Optimization complete in 3369.0s. Best fitness: 2.1805
+2026-08-06 16:02:18 | INFO     |    Symbol [2/4]: BreakX 1200
+2026-08-06 16:02:19 | INFO     |       Data loaded: 100119 rows
+2026-08-06 16:02:19 | INFO     |       🧬 DNA context loaded.
+2026-08-06 16:02:19 | INFO     |       🔄 Starting optimization...
+2026-08-06 16:49:07 | INFO     |       ✅ Optimization complete in 2809.4s. Best fitness: 2.2900
+2026-08-06 16:49:07 | INFO     |    Symbol [3/4]: BreakX 1800
+2026-08-06 16:49:08 | INFO     |       Data loaded: 100119 rows
+2026-08-06 16:49:08 | INFO     |       🧬 DNA context loaded.
+2026-08-06 16:49:08 | INFO     |       🔄 Starting optimization...
+2026-08-06 18:09:40 | INFO     |       ✅ Optimization complete in 4832.2s. Best fitness: 1.8738
+2026-08-06 18:09:40 | INFO     |    Symbol [4/4]: FX Vol 20
+2026-08-06 18:09:40 | INFO     |       Data loaded: 100712 rows
+2026-08-06 18:09:40 | INFO     |       🧬 DNA context loaded.
+2026-08-06 18:09:40 | INFO     |       🔄 Starting optimization...
+2026-08-06 20:08:39 | INFO     |       ✅ Optimization complete in 7139.2s. Best fitness: 1.5176
+2026-08-06 20:08:39 | INFO     | 
+📌 Strategy [8/17]: Scalping HMA+Stoch (default)
+2026-08-06 20:08:39 | INFO     |    Symbol [1/4]: BreakX 600
+2026-08-06 20:08:40 | INFO     |       Data loaded: 100000 rows
+2026-08-06 20:08:40 | INFO     |       🧬 DNA context loaded.
+2026-08-06 20:08:40 | INFO     |       🔄 Starting optimization...
+2026-08-06 23:28:29 | INFO     |       ✅ Optimization complete in 11989.9s. Best fitness: 0.6143
+2026-08-06 23:28:29 | INFO     |    Symbol [2/4]: BreakX 1200
+2026-08-06 23:28:29 | INFO     |       Data loaded: 100119 rows
+2026-08-06 23:28:29 | INFO     |       🧬 DNA context loaded.
+2026-08-06 23:28:29 | INFO     |       🔄 Starting optimization...
+2026-08-07 00:32:42 | INFO     |       ✅ Optimization complete in 3853.5s. Best fitness: 0.3787
+2026-08-07 00:32:42 | INFO     |    Symbol [3/4]: BreakX 1800
+2026-08-07 00:32:43 | INFO     |       Data loaded: 100119 rows
+2026-08-07 00:32:43 | INFO     |       🧬 DNA context loaded.
+2026-08-07 00:32:43 | INFO     |       🔄 Starting optimization...
+2026-08-07 01:35:56 | INFO     |       ✅ Optimization complete in 3793.8s. Best fitness: 0.3805
+2026-08-07 01:35:56 | INFO     |    Symbol [4/4]: FX Vol 20
+2026-08-07 01:35:56 | INFO     |       Data loaded: 100712 rows
+2026-08-07 01:35:56 | INFO     |       🧬 DNA context loaded.
+2026-08-07 01:35:56 | INFO     |       🔄 Starting optimization...
+2026-08-07 02:38:59 | INFO     |       ✅ Optimization complete in 3783.1s. Best fitness: 0.3455
+2026-08-07 02:38:59 | INFO     | 
+📌 Strategy [9/17]: Scalping HMA+Stoch (tuned)
+2026-08-07 02:38:59 | INFO     |    Symbol [1/4]: BreakX 600
+2026-08-07 02:38:59 | INFO     |       Data loaded: 100000 rows
+2026-08-07 02:38:59 | INFO     |       🧬 DNA context loaded.
+2026-08-07 02:38:59 | INFO     |       🔄 Starting optimization...
+2026-08-07 03:41:47 | INFO     |       ✅ Optimization complete in 3767.8s. Best fitness: 0.5203
+2026-08-07 03:41:47 | INFO     |    Symbol [2/4]: BreakX 1200
+2026-08-07 03:41:47 | INFO     |       Data loaded: 100119 rows
+2026-08-07 03:41:47 | INFO     |       🧬 DNA context loaded.
+2026-08-07 03:41:47 | INFO     |       🔄 Starting optimization...
+2026-08-07 04:45:26 | INFO     |       ✅ Optimization complete in 3819.3s. Best fitness: 0.4294
+2026-08-07 04:45:26 | INFO     |    Symbol [3/4]: BreakX 1800
+2026-08-07 04:45:27 | INFO     |       Data loaded: 100119 rows
+2026-08-07 04:45:27 | INFO     |       🧬 DNA context loaded.
+2026-08-07 04:45:27 | INFO     |       🔄 Starting optimization...
+2026-08-07 05:48:54 | INFO     |       ✅ Optimization complete in 3808.0s. Best fitness: 0.3531
+2026-08-07 05:48:54 | INFO     |    Symbol [4/4]: FX Vol 20
+2026-08-07 05:48:55 | INFO     |       Data loaded: 100712 rows
+2026-08-07 05:48:55 | INFO     |       🧬 DNA context loaded.
+2026-08-07 05:48:55 | INFO     |       🔄 Starting optimization...
+2026-08-07 06:51:01 | INFO     |       ✅ Optimization complete in 3726.4s. Best fitness: 0.4453
+2026-08-07 06:51:01 | INFO     | 
+📌 Strategy [10/17]: Trend Following (default)
+2026-08-07 06:51:01 | INFO     |    Symbol [1/4]: BreakX 600
+2026-08-07 06:51:01 | INFO     |       Data loaded: 100000 rows
+2026-08-07 06:51:01 | INFO     |       🧬 DNA context loaded.
+2026-08-07 06:51:01 | INFO     |       🔄 Starting optimization...
+2026-08-07 07:35:24 | INFO     |       ✅ Optimization complete in 2663.2s. Best fitness: 211.2510
+2026-08-07 07:35:24 | INFO     |    Symbol [2/4]: BreakX 1200
+2026-08-07 07:35:24 | INFO     |       Data loaded: 100119 rows
+2026-08-07 07:35:24 | INFO     |       🧬 DNA context loaded.
+2026-08-07 07:35:24 | INFO     |       🔄 Starting optimization...
+2026-08-07 07:53:44 | ERROR    |       ❌ Optimization error: probabilities contain NaN
+Traceback (most recent call last):
+  File "C:\Users\VESP-Ass.PROG01\Documents\genetic_algorithms\optimization\run_batch_optimization.py", line 209, in main
+    result = optimize_strategy(
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VESP-Ass.PROG01\Documents\genetic_algorithms\optimization\strategy_optimizer.py", line 433, in optimize_strategy
+    parents = np.random.choice(len(population), size=2, p=probs, replace=False)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "numpy/random/mtrand.pyx", line 995, in numpy.random.mtrand.RandomState.choice
+ValueError: probabilities contain NaN
+2026-08-07 07:53:44 | INFO     |    Symbol [3/4]: BreakX 1800
+2026-08-07 07:53:45 | INFO     |       Data loaded: 100119 rows
+2026-08-07 07:53:45 | INFO     |       🧬 DNA context loaded.
+2026-08-07 07:53:45 | INFO     |       🔄 Starting optimization...
+2026-08-07 07:58:25 | ERROR    |       ❌ Optimization error: probabilities contain NaN
+Traceback (most recent call last):
+  File "C:\Users\VESP-Ass.PROG01\Documents\genetic_algorithms\optimization\run_batch_optimization.py", line 209, in main
+    result = optimize_strategy(
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VESP-Ass.PROG01\Documents\genetic_algorithms\optimization\strategy_optimizer.py", line 433, in optimize_strategy
+    parents = np.random.choice(len(population), size=2, p=probs, replace=False)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "numpy/random/mtrand.pyx", line 995, in numpy.random.mtrand.RandomState.choice
+ValueError: probabilities contain NaN
+2026-08-07 07:58:25 | INFO     |    Symbol [4/4]: FX Vol 20
+2026-08-07 07:58:25 | INFO     |       Data loaded: 100712 rows
+2026-08-07 07:58:26 | INFO     |       🧬 DNA context loaded.
+2026-08-07 07:58:26 | INFO     |       🔄 Starting optimization...
+2026-08-07 08:51:51 | INFO     |       ✅ Optimization complete in 3205.5s. Best fitness: 3.5757
+2026-08-07 08:51:51 | INFO     | 
+📌 Strategy [11/17]: Trend Following ADX (default)
+2026-08-07 08:51:51 | INFO     |    Symbol [1/4]: BreakX 600
+2026-08-07 08:51:52 | INFO     |       Data loaded: 100000 rows
+2026-08-07 08:51:52 | INFO     |       🧬 DNA context loaded.
+2026-08-07 08:51:52 | INFO     |       🔄 Starting optimization...
+2026-08-07 13:14:43 | INFO     |       ✅ Optimization complete in 15772.0s. Best fitness: 1.0484
+2026-08-07 13:14:43 | INFO     |    Symbol [2/4]: BreakX 1200
+2026-08-07 13:14:43 | INFO     |       Data loaded: 100119 rows
+2026-08-07 13:14:43 | INFO     |       🧬 DNA context loaded.
+2026-08-07 13:14:43 | INFO     |       🔄 Starting optimization...
+2026-08-07 14:30:51 | INFO     |       ✅ Optimization complete in 4568.6s. Best fitness: 3.5159
+2026-08-07 14:30:51 | INFO     |    Symbol [3/4]: BreakX 1800
+2026-08-07 14:30:52 | INFO     |       Data loaded: 100119 rows
+2026-08-07 14:30:52 | INFO     |       🧬 DNA context loaded.
+2026-08-07 14:30:52 | INFO     |       🔄 Starting optimization...
+2026-08-07 15:54:39 | INFO     |       ✅ Optimization complete in 5027.4s. Best fitness: 2.9163
+2026-08-07 15:54:39 | INFO     |    Symbol [4/4]: FX Vol 20
+2026-08-07 15:54:39 | INFO     |       Data loaded: 100712 rows
+2026-08-07 15:54:40 | INFO     |       🧬 DNA context loaded.
+2026-08-07 15:54:40 | INFO     |       🔄 Starting optimization...
+2026-08-07 17:05:31 | INFO     |       ✅ Optimization complete in 4252.0s. Best fitness: 0.6674
+2026-08-07 17:05:31 | INFO     | 
+📌 Strategy [12/17]: Trend VWMA+SOTT (default)
+2026-08-07 17:05:31 | INFO     |    Symbol [1/4]: BreakX 600
+2026-08-07 17:05:31 | INFO     |       Data loaded: 100000 rows
+2026-08-07 17:05:31 | INFO     |       🧬 DNA context loaded.
+2026-08-07 17:05:31 | INFO     |       🔄 Starting optimization...
+2026-08-07 17:17:41 | ERROR    |       ❌ Optimization error: probabilities contain NaN
+Traceback (most recent call last):
+  File "C:\Users\VESP-Ass.PROG01\Documents\genetic_algorithms\optimization\run_batch_optimization.py", line 209, in main
+    result = optimize_strategy(
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VESP-Ass.PROG01\Documents\genetic_algorithms\optimization\strategy_optimizer.py", line 433, in optimize_strategy
+    parents = np.random.choice(len(population), size=2, p=probs, replace=False)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "numpy/random/mtrand.pyx", line 995, in numpy.random.mtrand.RandomState.choice
+ValueError: probabilities contain NaN
+2026-08-07 17:17:41 | INFO     |    Symbol [2/4]: BreakX 1200
+2026-08-07 17:17:42 | INFO     |       Data loaded: 100119 rows
+2026-08-07 17:17:42 | INFO     |       🧬 DNA context loaded.
+2026-08-07 17:17:42 | INFO     |       🔄 Starting optimization...
+2026-08-07 17:29:47 | ERROR    |       ❌ Optimization error: probabilities contain NaN
+Traceback (most recent call last):
+  File "C:\Users\VESP-Ass.PROG01\Documents\genetic_algorithms\optimization\run_batch_optimization.py", line 209, in main
+    result = optimize_strategy(
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VESP-Ass.PROG01\Documents\genetic_algorithms\optimization\strategy_optimizer.py", line 433, in optimize_strategy
+    parents = np.random.choice(len(population), size=2, p=probs, replace=False)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "numpy/random/mtrand.pyx", line 995, in numpy.random.mtrand.RandomState.choice
+ValueError: probabilities contain NaN
+2026-08-07 17:29:47 | INFO     |    Symbol [3/4]: BreakX 1800
+2026-08-07 17:29:48 | INFO     |       Data loaded: 100119 rows
+2026-08-07 17:29:48 | INFO     |       🧬 DNA context loaded.
+2026-08-07 17:29:48 | INFO     |       🔄 Starting optimization...
+2026-08-07 17:41:57 | ERROR    |       ❌ Optimization error: probabilities contain NaN
+Traceback (most recent call last):
+  File "C:\Users\VESP-Ass.PROG01\Documents\genetic_algorithms\optimization\run_batch_optimization.py", line 209, in main
+    result = optimize_strategy(
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VESP-Ass.PROG01\Documents\genetic_algorithms\optimization\strategy_optimizer.py", line 433, in optimize_strategy
+    parents = np.random.choice(len(population), size=2, p=probs, replace=False)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "numpy/random/mtrand.pyx", line 995, in numpy.random.mtrand.RandomState.choice
+ValueError: probabilities contain NaN
+2026-08-07 17:41:57 | INFO     |    Symbol [4/4]: FX Vol 20
+2026-08-07 17:41:57 | INFO     |       Data loaded: 100712 rows
+2026-08-07 17:41:57 | INFO     |       🧬 DNA context loaded.
+2026-08-07 17:41:57 | INFO     |       🔄 Starting optimization...
+2026-08-07 17:52:59 | ERROR    |       ❌ Optimization error: probabilities contain NaN
+Traceback (most recent call last):
+  File "C:\Users\VESP-Ass.PROG01\Documents\genetic_algorithms\optimization\run_batch_optimization.py", line 209, in main
+    result = optimize_strategy(
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VESP-Ass.PROG01\Documents\genetic_algorithms\optimization\strategy_optimizer.py", line 433, in optimize_strategy
+    parents = np.random.choice(len(population), size=2, p=probs, replace=False)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "numpy/random/mtrand.pyx", line 995, in numpy.random.mtrand.RandomState.choice
+ValueError: probabilities contain NaN
+2026-08-07 17:52:59 | INFO     | 
+📌 Strategy [13/17]: Trend VWMA+SOTT (tuned)
+2026-08-07 17:52:59 | INFO     |    Symbol [1/4]: BreakX 600
+2026-08-07 17:53:00 | INFO     |       Data loaded: 100000 rows
+2026-08-07 17:53:00 | INFO     |       🧬 DNA context loaded.
+2026-08-07 17:53:00 | INFO     |       🔄 Starting optimization...
+2026-08-07 18:02:39 | ERROR    |       ❌ Optimization error: probabilities contain NaN
+Traceback (most recent call last):
+  File "C:\Users\VESP-Ass.PROG01\Documents\genetic_algorithms\optimization\run_batch_optimization.py", line 209, in main
+    result = optimize_strategy(
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VESP-Ass.PROG01\Documents\genetic_algorithms\optimization\strategy_optimizer.py", line 433, in optimize_strategy
+    parents = np.random.choice(len(population), size=2, p=probs, replace=False)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "numpy/random/mtrand.pyx", line 995, in numpy.random.mtrand.RandomState.choice
+ValueError: probabilities contain NaN
+2026-08-07 18:02:39 | INFO     |    Symbol [2/4]: BreakX 1200
+2026-08-07 18:02:39 | INFO     |       Data loaded: 100119 rows
+2026-08-07 18:02:39 | INFO     |       🧬 DNA context loaded.
+2026-08-07 18:02:39 | INFO     |       🔄 Starting optimization...
+2026-08-07 18:12:22 | ERROR    |       ❌ Optimization error: probabilities contain NaN
+Traceback (most recent call last):
+  File "C:\Users\VESP-Ass.PROG01\Documents\genetic_algorithms\optimization\run_batch_optimization.py", line 209, in main
+    result = optimize_strategy(
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VESP-Ass.PROG01\Documents\genetic_algorithms\optimization\strategy_optimizer.py", line 433, in optimize_strategy
+    parents = np.random.choice(len(population), size=2, p=probs, replace=False)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "numpy/random/mtrand.pyx", line 995, in numpy.random.mtrand.RandomState.choice
+ValueError: probabilities contain NaN
+2026-08-07 18:12:22 | INFO     |    Symbol [3/4]: BreakX 1800
+2026-08-07 18:12:23 | INFO     |       Data loaded: 100119 rows
+2026-08-07 18:12:23 | INFO     |       🧬 DNA context loaded.
+2026-08-07 18:12:23 | INFO     |       🔄 Starting optimization...
+2026-08-07 18:22:06 | ERROR    |       ❌ Optimization error: probabilities contain NaN
+Traceback (most recent call last):
+  File "C:\Users\VESP-Ass.PROG01\Documents\genetic_algorithms\optimization\run_batch_optimization.py", line 209, in main
+    result = optimize_strategy(
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VESP-Ass.PROG01\Documents\genetic_algorithms\optimization\strategy_optimizer.py", line 433, in optimize_strategy
+    parents = np.random.choice(len(population), size=2, p=probs, replace=False)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "numpy/random/mtrand.pyx", line 995, in numpy.random.mtrand.RandomState.choice
+ValueError: probabilities contain NaN
+2026-08-07 18:22:06 | INFO     |    Symbol [4/4]: FX Vol 20
+2026-08-07 18:22:07 | INFO     |       Data loaded: 100712 rows
+2026-08-07 18:22:07 | INFO     |       🧬 DNA context loaded.
+2026-08-07 18:22:07 | INFO     |       🔄 Starting optimization...
+2026-08-07 18:32:41 | ERROR    |       ❌ Optimization error: probabilities contain NaN
+Traceback (most recent call last):
+  File "C:\Users\VESP-Ass.PROG01\Documents\genetic_algorithms\optimization\run_batch_optimization.py", line 209, in main
+    result = optimize_strategy(
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VESP-Ass.PROG01\Documents\genetic_algorithms\optimization\strategy_optimizer.py", line 433, in optimize_strategy
+    parents = np.random.choice(len(population), size=2, p=probs, replace=False)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "numpy/random/mtrand.pyx", line 995, in numpy.random.mtrand.RandomState.choice
+ValueError: probabilities contain NaN
+2026-08-07 18:32:41 | INFO     | 
+📌 Strategy [14/17]: Trend PMax+NSM (default)
+2026-08-07 18:32:41 | INFO     |    Symbol [1/4]: BreakX 600
+2026-08-07 18:32:42 | INFO     |       Data loaded: 100000 rows
+2026-08-07 18:32:42 | INFO     |       🧬 DNA context loaded.
+2026-08-07 18:32:42 | INFO     |       🔄 Starting optimization...
+2026-08-07 23:23:44 | INFO     |       ✅ Optimization complete in 17463.3s. Best fitness: 2.0383
+2026-08-07 23:23:44 | INFO     |    Symbol [2/4]: BreakX 1200
+2026-08-07 23:23:45 | INFO     |       Data loaded: 100119 rows
+2026-08-07 23:23:45 | INFO     |       🧬 DNA context loaded.
+2026-08-07 23:23:45 | INFO     |       🔄 Starting optimization...
+2026-08-08 00:22:31 | INFO     |       ✅ Optimization complete in 3526.5s. Best fitness: 0.6283
+2026-08-08 00:22:31 | INFO     |    Symbol [3/4]: BreakX 1800
+2026-08-08 00:22:31 | INFO     |       Data loaded: 100119 rows
+2026-08-08 00:22:31 | INFO     |       🧬 DNA context loaded.
+2026-08-08 00:22:31 | INFO     |       🔄 Starting optimization...
+2026-08-08 01:20:24 | INFO     |       ✅ Optimization complete in 3473.1s. Best fitness: 1.2592
+2026-08-08 01:20:24 | INFO     |    Symbol [4/4]: FX Vol 20
+2026-08-08 01:20:24 | INFO     |       Data loaded: 100712 rows
+2026-08-08 01:20:24 | INFO     |       🧬 DNA context loaded.
+2026-08-08 01:20:24 | INFO     |       🔄 Starting optimization...
+2026-08-08 02:18:05 | INFO     |       ✅ Optimization complete in 3461.3s. Best fitness: 1.8252
+2026-08-08 02:18:05 | INFO     | 
+📌 Strategy [15/17]: Trend PMax+NSM (tuned)
+2026-08-08 02:18:05 | INFO     |    Symbol [1/4]: BreakX 600
+2026-08-08 02:18:06 | INFO     |       Data loaded: 100000 rows
+2026-08-08 02:18:06 | INFO     |       🧬 DNA context loaded.
+2026-08-08 02:18:06 | INFO     |       🔄 Starting optimization...
+2026-08-08 03:11:41 | INFO     |       ✅ Optimization complete in 3215.2s. Best fitness: 1.9218
+2026-08-08 03:11:41 | INFO     |    Symbol [2/4]: BreakX 1200
+2026-08-08 03:11:41 | INFO     |       Data loaded: 100119 rows
+2026-08-08 03:11:41 | INFO     |       🧬 DNA context loaded.
+2026-08-08 03:11:41 | INFO     |       🔄 Starting optimization...
+2026-08-08 04:05:43 | INFO     |       ✅ Optimization complete in 3242.4s. Best fitness: 0.5462
+2026-08-08 04:05:43 | INFO     |    Symbol [3/4]: BreakX 1800
+2026-08-08 04:05:43 | INFO     |       Data loaded: 100119 rows
+2026-08-08 04:05:43 | INFO     |       🧬 DNA context loaded.
+2026-08-08 04:05:43 | INFO     |       🔄 Starting optimization...
+2026-08-08 04:58:54 | INFO     |       ✅ Optimization complete in 3191.1s. Best fitness: 1.0204
+2026-08-08 04:58:54 | INFO     |    Symbol [4/4]: FX Vol 20
+2026-08-08 04:58:54 | INFO     |       Data loaded: 100712 rows
+2026-08-08 04:58:54 | INFO     |       🧬 DNA context loaded.
+2026-08-08 04:58:54 | INFO     |       🔄 Starting optimization...
+2026-08-08 05:52:46 | INFO     |       ✅ Optimization complete in 3231.7s. Best fitness: 1.7638
+2026-08-08 05:52:46 | INFO     | 
+📌 Strategy [16/17]: Trend Aroon+RSI+SMA (default)
+2026-08-08 05:52:46 | INFO     |    Symbol [1/4]: BreakX 600
+2026-08-08 05:52:46 | INFO     |       Data loaded: 100000 rows
+2026-08-08 05:52:46 | INFO     |       🧬 DNA context loaded.
+2026-08-08 05:52:46 | INFO     |       🔄 Starting optimization...
+2026-08-08 06:47:45 | INFO     |       ✅ Optimization complete in 3299.5s. Best fitness: 1.1108
+2026-08-08 06:47:45 | INFO     |    Symbol [2/4]: BreakX 1200
+2026-08-08 06:47:46 | INFO     |       Data loaded: 100119 rows
+2026-08-08 06:47:46 | INFO     |       🧬 DNA context loaded.
+2026-08-08 06:47:46 | INFO     |       🔄 Starting optimization...
+2026-08-08 07:44:04 | INFO     |       ✅ Optimization complete in 3378.8s. Best fitness: 1.4872
+2026-08-08 07:44:04 | INFO     |    Symbol [3/4]: BreakX 1800
+2026-08-08 07:44:04 | INFO     |       Data loaded: 100119 rows
+2026-08-08 07:44:04 | INFO     |       🧬 DNA context loaded.
+2026-08-08 07:44:04 | INFO     |       🔄 Starting optimization...
+2026-08-08 08:41:15 | INFO     |       ✅ Optimization complete in 3431.4s. Best fitness: 1.6667
+2026-08-08 08:41:15 | INFO     |    Symbol [4/4]: FX Vol 20
+2026-08-08 08:41:16 | INFO     |       Data loaded: 100712 rows
+2026-08-08 08:41:16 | INFO     |       🧬 DNA context loaded.
+2026-08-08 08:41:16 | INFO     |       🔄 Starting optimization...
+2026-08-08 09:39:38 | INFO     |       ✅ Optimization complete in 3502.7s. Best fitness: 0.7957
+2026-08-08 09:39:38 | INFO     | 
+📌 Strategy [17/17]: Trend Aroon+RSI+SMA (tuned)
+2026-08-08 09:39:38 | INFO     |    Symbol [1/4]: BreakX 600
+2026-08-08 09:39:39 | INFO     |       Data loaded: 100000 rows
+2026-08-08 09:39:39 | INFO     |       🧬 DNA context loaded.
+2026-08-08 09:39:39 | INFO     |       🔄 Starting optimization...
+2026-08-08 10:52:42 | INFO     |       ✅ Optimization complete in 4384.3s. Best fitness: 1.3568
+2026-08-08 10:52:42 | INFO     |    Symbol [2/4]: BreakX 1200
+2026-08-08 10:52:43 | INFO     |       Data loaded: 100119 rows
+2026-08-08 10:52:43 | INFO     |       🧬 DNA context loaded.
+2026-08-08 10:52:43 | INFO     |       🔄 Starting optimization...
+2026-08-08 12:37:23 | INFO     |       ✅ Optimization complete in 6280.4s. Best fitness: 1.3245
+2026-08-08 12:37:23 | INFO     |    Symbol [3/4]: BreakX 1800
+2026-08-08 12:37:24 | INFO     |       Data loaded: 100119 rows
+2026-08-08 12:37:24 | INFO     |       🧬 DNA context loaded.
+2026-08-08 12:37:24 | INFO     |       🔄 Starting optimization...
+2026-08-08 16:01:21 | INFO     |       ✅ Optimization complete in 12238.6s. Best fitness: 2.1278
+2026-08-08 16:01:21 | INFO     |    Symbol [4/4]: FX Vol 20
+2026-08-08 16:01:22 | INFO     |       Data loaded: 100712 rows
+2026-08-08 16:01:22 | INFO     |       🧬 DNA context loaded.
+2026-08-08 16:01:22 | INFO     |       🔄 Starting optimization...
+2026-08-08 16:44:15 | INFO     |       ✅ Optimization complete in 2573.8s. Best fitness: 1.2164
+2026-08-08 16:44:15 | INFO     | 
+============================================================
+2026-08-08 16:44:15 | INFO     | ✅ Batch optimization completed in 235513.1s
+2026-08-08 16:44:15 | INFO     | Summary:
+2026-08-08 16:44:15 | INFO     |   Scalping RSI+VWMA (default): 1/4 optimized
+2026-08-08 16:44:15 | INFO     |   Scalping RSI+VWMA (tuned): 1/4 optimized
+2026-08-08 16:44:15 | INFO     |   Scalping (default): 4/4 optimized
+2026-08-08 16:44:15 | INFO     |   Scalping DMI+MACD (default): 4/4 optimized
+2026-08-08 16:44:15 | INFO     |   Scalping DMI+MACD (tuned): 4/4 optimized
+2026-08-08 16:44:15 | INFO     |   Scalping BB+MACD+TM (default): 4/4 optimized
+2026-08-08 16:44:15 | INFO     |   Scalping BB+MACD+TM (tuned): 4/4 optimized
+2026-08-08 16:44:15 | INFO     |   Scalping HMA+Stoch (default): 4/4 optimized
+2026-08-08 16:44:15 | INFO     |   Scalping HMA+Stoch (tuned): 4/4 optimized
+2026-08-08 16:44:15 | INFO     |   Trend Following (default): 2/4 optimized
+2026-08-08 16:44:15 | INFO     |   Trend Following ADX (default): 4/4 optimized
+2026-08-08 16:44:15 | INFO     |   Trend VWMA+SOTT (default): 0/4 optimized
+2026-08-08 16:44:15 | INFO     |   Trend VWMA+SOTT (tuned): 0/4 optimized
+2026-08-08 16:44:15 | INFO     |   Trend PMax+NSM (default): 4/4 optimized
+2026-08-08 16:44:15 | INFO     |   Trend PMax+NSM (tuned): 4/4 optimized
+2026-08-08 16:44:15 | INFO     |   Trend Aroon+RSI+SMA (default): 4/4 optimized
+2026-08-08 16:44:15 | INFO     |   Trend Aroon+RSI+SMA (tuned): 4/4 optimized
+2026-08-08 16:44:15 | INFO     | 💾 Summary saved to optimized_strategies/batch_summary_20260808_164415.json
+2026-08-08 16:44:15 | INFO     | 📄 Full log saved to optimization/logs\batch_run_20260805_231902.log

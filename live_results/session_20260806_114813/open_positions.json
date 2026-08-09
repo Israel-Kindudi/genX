@@ -1,0 +1,38 @@
+{
+  "Trend Aroon+RSI+SMA (tuned)_GainX 800": {
+    "strategy": "Trend Aroon+RSI+SMA (tuned)",
+    "symbol": "GainX 800",
+    "entry_price": 97648.97,
+    "sl": 97595.46657142857,
+    "tp": 97684.07571428572,
+    "lot": 0.1,
+    "entry_time": "2026-08-06 13:34:50.969951",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 458164700
+  },
+  "Trend Following ADX (default)_BreakX 1800": {
+    "strategy": "Trend Following ADX (default)",
+    "symbol": "BreakX 1800",
+    "entry_price": 99009.04,
+    "sl": 99001.82392857142,
+    "tp": 99021.06678571428,
+    "lot": 0.1,
+    "entry_time": "2026-08-06 13:45:11.980432",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 458176925
+  },
+  "Scalping DMI+MACD (tuned)_PainX 600": {
+    "strategy": "Scalping DMI+MACD (tuned)",
+    "symbol": "PainX 600",
+    "entry_price": 103050.46,
+    "sl": 103016.64942857143,
+    "tp": 103083.25085714286,
+    "lot": 0.1,
+    "entry_time": "2026-08-06 13:49:00.585163",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 458181405
+  }
+}

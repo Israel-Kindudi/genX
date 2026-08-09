@@ -1,0 +1,38 @@
+{
+  "Scalping DMI+MACD (default)_BreakX 1200": {
+    "strategy": "Scalping DMI+MACD (default)",
+    "symbol": "BreakX 1200",
+    "entry_price": 103308.69,
+    "sl": 103294.12464285715,
+    "tp": 103324.85714285714,
+    "lot": 0.1,
+    "entry_time": "2026-08-07 14:52:02.963532",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 539758578
+  },
+  "Scalping DMI+MACD (tuned)_BreakX 600": {
+    "strategy": "Scalping DMI+MACD (tuned)",
+    "symbol": "BreakX 600",
+    "entry_price": 96951.31,
+    "sl": 96915.11514285715,
+    "tp": 97005.30228571428,
+    "lot": 0.1,
+    "entry_time": "2026-08-07 14:55:04.205782",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 539763329
+  },
+  "Scalping HMA+Stoch (tuned)_GainX 800": {
+    "strategy": "Scalping HMA+Stoch (tuned)",
+    "symbol": "GainX 800",
+    "entry_price": 97336.23,
+    "sl": 97294.58314285714,
+    "tp": 97360.22528571427,
+    "lot": 0.1,
+    "entry_time": "2026-08-07 14:56:26.710583",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 539765792
+  }
+}

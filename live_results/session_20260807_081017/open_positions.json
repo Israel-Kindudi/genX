@@ -1,0 +1,14 @@
+{
+  "Scalping RSI+VWMA (tuned)_BreakX 1800": {
+    "strategy": "Scalping RSI+VWMA (tuned)",
+    "symbol": "BreakX 1800",
+    "entry_price": 98920.63,
+    "sl": 98917.10500000001,
+    "tp": 98925.91750000001,
+    "lot": 0.1,
+    "entry_time": "2026-08-07 08:50:08.100782",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 539167805
+  }
+}

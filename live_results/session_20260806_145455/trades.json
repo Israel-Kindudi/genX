@@ -1,0 +1,17 @@
+[
+  {
+    "ticket": 538058729,
+    "strategy": "Scalping RSI+VWMA (tuned)",
+    "symbol": "PainX 600",
+    "action": "BUY",
+    "entry_price": 103180.48,
+    "lot": 0.1,
+    "sl": 103164.885,
+    "tp": 103203.8725,
+    "entry_time": "2026-08-06T14:55:05.605299",
+    "exit_price": null,
+    "exit_time": null,
+    "pnl": null,
+    "status": "open"
+  }
+]

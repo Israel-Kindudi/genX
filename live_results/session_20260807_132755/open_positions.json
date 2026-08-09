@@ -1,0 +1,14 @@
+{
+  "Scalping DMI+MACD (default)_FX Vol 80": {
+    "strategy": "Scalping DMI+MACD (default)",
+    "symbol": "FX Vol 80",
+    "entry_price": 50671.77,
+    "sl": 50370.75,
+    "tp": 51039.44,
+    "lot": 0.01,
+    "entry_time": "2026-08-07 16:01:06",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 539488708
+  }
+}

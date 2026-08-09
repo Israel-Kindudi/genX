@@ -1,0 +1,14 @@
+{
+  "Scalping DMI+MACD (tuned)_BreakX 600": {
+    "strategy": "Scalping DMI+MACD (tuned)",
+    "symbol": "BreakX 600",
+    "entry_price": 96690.92,
+    "sl": 96660.99200000001,
+    "tp": 96727.037,
+    "lot": 0.1,
+    "entry_time": "2026-08-06 16:31:58.550139",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 538203836
+  }
+}

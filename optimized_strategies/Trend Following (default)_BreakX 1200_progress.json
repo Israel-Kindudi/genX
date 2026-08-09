@@ -1,0 +1,38 @@
+{
+  "strategy": "Trend Following (default)",
+  "matched_key": "Trend Following (default)",
+  "symbol": "BreakX 1200",
+  "generation": 3,
+  "best_fitness": 0,
+  "best_params": {
+    "lookback_bars": 64,
+    "entry_threshold": 3.58,
+    "stop_multiplier": 1.72,
+    "take_profit_multiplier": 4.3,
+    "max_trend_bars": 15,
+    "min_trend_bars": 6,
+    "atr_period": 10
+  },
+  "fitness_history": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "best_report": {
+    "total_trades": 0,
+    "win_rate": 0,
+    "profit_factor": 0,
+    "total_pnl": 0,
+    "avg_win": 0,
+    "avg_loss": 0,
+    "win_loss_ratio": 0,
+    "max_drawdown": 0,
+    "sharpe_ratio": 0,
+    "return_pct": 0,
+    "trades_df": "Empty DataFrame\nColumns: [exit_date]\nIndex: []",
+    "trade_dna": [],
+    "equity_df": "Empty DataFrame\nColumns: []\nIndex: []"
+  },
+  "timestamp": "2026-08-07T07:53:44.585189"
+}

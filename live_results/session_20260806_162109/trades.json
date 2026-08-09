@@ -1,0 +1,33 @@
+[
+  {
+    "ticket": 538193374,
+    "strategy": "Scalping DMI+MACD (tuned)",
+    "symbol": "BreakX 600",
+    "action": "BUY",
+    "entry_price": 96709.43,
+    "lot": 0.1,
+    "sl": 96686.03828571428,
+    "tp": 96743.99257142856,
+    "entry_time": "2026-08-06T16:25:08.896007",
+    "exit_price": 96683.92,
+    "exit_time": "2026-08-06T19:29:37",
+    "pnl": -2.69,
+    "status": "closed",
+    "close_reason": "external (SL/TP or manual)"
+  },
+  {
+    "ticket": 538203836,
+    "strategy": "Scalping DMI+MACD (tuned)",
+    "symbol": "BreakX 600",
+    "action": "BUY",
+    "entry_price": 96690.92,
+    "lot": 0.1,
+    "sl": 96660.99200000001,
+    "tp": 96727.037,
+    "entry_time": "2026-08-06T16:31:58.550139",
+    "exit_price": null,
+    "exit_time": null,
+    "pnl": null,
+    "status": "open"
+  }
+]

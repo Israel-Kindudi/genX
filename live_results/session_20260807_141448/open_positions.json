@@ -1,0 +1,26 @@
+{
+  "Scalping DMI+MACD (default)_BreakX 1200": {
+    "strategy": "Scalping DMI+MACD (default)",
+    "symbol": "BreakX 1200",
+    "entry_price": 103296.21,
+    "sl": 103279.86928571429,
+    "tp": 103315.38428571429,
+    "lot": 0.1,
+    "entry_time": "2026-08-07 14:41:38.539791",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 459600300
+  },
+  "Scalping HMA+Stoch (tuned)_PainX 600": {
+    "strategy": "Scalping HMA+Stoch (tuned)",
+    "symbol": "PainX 600",
+    "entry_price": 102935.28,
+    "sl": 102895.04428571428,
+    "tp": 102984.68357142857,
+    "lot": 0.1,
+    "entry_time": "2026-08-07 14:47:26.124767",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 459608457
+  }
+}
