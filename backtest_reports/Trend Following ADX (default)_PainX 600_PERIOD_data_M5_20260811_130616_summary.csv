@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Trend Following ADX (default),PainX 600_PERIOD_data,M5,851,45.94594594594595,1.3914078147759155,72.87184285714275,0.6625336499817339,-0.404736552795033,1.6369503703246064,-20.785999325759796,1.2018008327740446,728.7184285714287,20260811_130616

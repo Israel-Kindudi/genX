@@ -1,0 +1,78 @@
+{
+  "Scalping DMI+MACD (default)_FX Vol 80": {
+    "strategy": "Scalping DMI+MACD (default)",
+    "symbol": "FX Vol 80",
+    "entry_price": 55203.72,
+    "sl": 54799.52,
+    "tp": 55538.04,
+    "lot": 0.03,
+    "entry_time": "2026-08-09 15:28:00",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 462514776
+  },
+  "Scalping DMI+MACD (default)_PainX 600": {
+    "strategy": "Scalping DMI+MACD (default)",
+    "symbol": "PainX 600",
+    "entry_price": 102601.64,
+    "sl": 102549.67,
+    "tp": 102650.82,
+    "lot": 0.25,
+    "entry_time": "2026-08-09 17:29:31",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 462609075
+  },
+  "Scalping HMA+Stoch (tuned)_GainX 800": {
+    "strategy": "Scalping HMA+Stoch (tuned)",
+    "symbol": "GainX 800",
+    "entry_price": 97880.86,
+    "sl": 97840.944,
+    "initial_sl": 97840.944,
+    "tp": 97901.119,
+    "lot": 0.3,
+    "entry_time": "2026-08-09 14:33:44.830369",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 462612013
+  },
+  "Scalping DMI+MACD (tuned)_PainX 600": {
+    "strategy": "Scalping DMI+MACD (tuned)",
+    "symbol": "PainX 600",
+    "entry_price": 102602.07,
+    "sl": 102558.58342857144,
+    "initial_sl": 102558.58342857144,
+    "tp": 102648.77485714287,
+    "lot": 0.28,
+    "entry_time": "2026-08-09 14:39:08.097659",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 462615814
+  },
+  "Trend Following ADX (default)_BreakX 1800": {
+    "strategy": "Trend Following ADX (default)",
+    "symbol": "BreakX 1800",
+    "entry_price": 99305.95,
+    "sl": 99305.95,
+    "initial_sl": 99297.12731,
+    "tp": 99323.94273,
+    "lot": 1.38,
+    "entry_time": "2026-08-09 14:40:21.998862",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 462616693
+  },
+  "Scalping HMA+Stoch (tuned)_PainX 600": {
+    "strategy": "Scalping HMA+Stoch (tuned)",
+    "symbol": "PainX 600",
+    "entry_price": 102590.55,
+    "sl": 102561.79942857142,
+    "initial_sl": 102561.79942857142,
+    "tp": 102629.77585714286,
+    "lot": 0.41,
+    "entry_time": "2026-08-09 14:45:53.418042",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 462622247
+  }
+}

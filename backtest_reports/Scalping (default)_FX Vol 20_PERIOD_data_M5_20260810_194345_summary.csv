@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Scalping (default),FX Vol 20_PERIOD_data,M5,12745,44.68418987838368,1.0101567372826583,59.02961285714058,1.0308862623855517,-0.8244953399671693,1.2503239404926179,-224.41304396340246,0.08940920864432593,590.296128571404,20260810_194345

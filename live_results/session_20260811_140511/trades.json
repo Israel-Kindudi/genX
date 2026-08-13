@@ -1,0 +1,18 @@
+[
+  {
+    "ticket": 544925708,
+    "strategy": "Scalping DMI+MACD (tuned)",
+    "symbol": "BreakX 1200",
+    "action": "BUY",
+    "entry_price": 103181.68,
+    "lot": 0.69,
+    "sl": 103172.62995555555,
+    "tp": 103199.43861111111,
+    "entry_time": "2026-08-11T14:10:08.079561",
+    "exit_price": null,
+    "exit_time": "2026-08-11T14:15:39.702221",
+    "pnl": null,
+    "status": "stale",
+    "close_reason": "stale"
+  }
+]

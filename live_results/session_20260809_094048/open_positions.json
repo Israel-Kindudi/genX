@@ -1,0 +1,62 @@
+{
+  "Scalping DMI+MACD (default)_PainX 600": {
+    "strategy": "Scalping DMI+MACD (default)",
+    "symbol": "PainX 600",
+    "entry_price": 102621.84,
+    "sl": 102581.64892857143,
+    "tp": 102673.96142857142,
+    "lot": 0.1,
+    "entry_time": "2026-08-09 13:45:23.057817",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 462574423
+  },
+  "Trend Following (default)_FX Vol 80": {
+    "strategy": "Trend Following (default)",
+    "symbol": "FX Vol 80",
+    "entry_price": 55368.63,
+    "sl": 55120.227857142854,
+    "tp": 55699.83285714285,
+    "lot": 0.01,
+    "entry_time": "2026-08-09 13:54:18.830409",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 462581222
+  },
+  "Scalping DMI+MACD (tuned)_FX Vol 80": {
+    "strategy": "Scalping DMI+MACD (tuned)",
+    "symbol": "FX Vol 80",
+    "entry_price": 55459.27,
+    "sl": 55105.900285714284,
+    "tp": 55761.29457142857,
+    "lot": 0.01,
+    "entry_time": "2026-08-09 14:02:04.804814",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 462586802
+  },
+  "Scalping DMI+MACD (default)_BreakX 1800": {
+    "strategy": "Scalping DMI+MACD (default)",
+    "symbol": "BreakX 1800",
+    "entry_price": 99289.76,
+    "sl": 99278.70357142857,
+    "tp": 99302.84857142856,
+    "lot": 0.1,
+    "entry_time": "2026-08-09 14:13:17.935886",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 462597000
+  },
+  "Scalping DMI+MACD (default)_FX Vol 99": {
+    "strategy": "Scalping DMI+MACD (default)",
+    "symbol": "FX Vol 99",
+    "entry_price": 41578.91,
+    "sl": 41324.27,
+    "tp": 41861.24,
+    "lot": 0.01,
+    "entry_time": "2026-08-09 17:21:15",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 462603145
+  }
+}

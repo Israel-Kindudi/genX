@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Trend Following (default),GainX 999_PERIOD_data,M5,814,32.186732186732186,0.6406736230897859,-78.58181428571697,0.5347718102508131,-0.39618121118012684,1.3498161829983275,-727.3312143610462,-0.008490242751513001,-785.8181428571687,20260811_130224

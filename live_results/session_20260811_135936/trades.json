@@ -1,0 +1,49 @@
+[
+  {
+    "ticket": 544910430,
+    "strategy": "Scalping DMI+MACD (tuned)",
+    "symbol": "BreakX 1800",
+    "action": "BUY",
+    "entry_price": 99251.35,
+    "lot": 1.36,
+    "sl": 99243.9901,
+    "tp": 99261.17000000001,
+    "entry_time": "2026-08-11T14:00:00.166166",
+    "exit_price": null,
+    "exit_time": null,
+    "pnl": null,
+    "status": "open"
+  },
+  {
+    "ticket": 544910520,
+    "strategy": "Scalping DMI+MACD (tuned)",
+    "symbol": "GainX 800",
+    "action": "BUY",
+    "entry_price": 97327.75,
+    "lot": 0.64,
+    "sl": 97312.22714285714,
+    "tp": 97351.03428571428,
+    "entry_time": "2026-08-11T14:00:03.070453",
+    "exit_price": 97326.61,
+    "exit_time": "2026-08-11T17:00:41",
+    "pnl": -1.13,
+    "status": "closed",
+    "close_reason": "external (SL/TP or manual)"
+  },
+  {
+    "ticket": 544916566,
+    "strategy": "Scalping DMI+MACD (tuned)",
+    "symbol": "GainX 800",
+    "action": "BUY",
+    "entry_price": 97321.39,
+    "lot": 0.63,
+    "sl": 97305.322,
+    "tp": 97345.492,
+    "entry_time": "2026-08-11T14:03:35.771769",
+    "exit_price": null,
+    "exit_time": "2026-08-11T14:04:14.492367",
+    "pnl": null,
+    "status": "stale",
+    "close_reason": "stale"
+  }
+]

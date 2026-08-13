@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Scalping DMI+MACD (default),GainX 999_PERIOD_data,M5,1631,38.258736971183325,0.7123998190933609,-114.89731071428395,0.45609983974359153,-0.3967265250390119,1.1496580413894462,-974.2150353255505,-0.14622503978096887,-1148.9731071428382,20260811_130300

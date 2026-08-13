@@ -1,0 +1,50 @@
+[
+  {
+    "ticket": 465091404,
+    "strategy": "Scalping DMI+MACD (tuned)",
+    "symbol": "BreakX 1800",
+    "action": "BUY",
+    "entry_price": 99232.05,
+    "lot": 3.67,
+    "sl": 99225.2069,
+    "tp": 99243.63,
+    "entry_time": "2026-08-11T13:27:50.196726",
+    "exit_price": 99243.63,
+    "exit_time": "2026-08-11T16:47:07",
+    "pnl": 40.85,
+    "status": "closed",
+    "close_reason": "external (SL/TP or manual)"
+  },
+  {
+    "ticket": 465112003,
+    "strategy": "Scalping DMI+MACD (tuned)",
+    "symbol": "BreakX 1800",
+    "action": "BUY",
+    "entry_price": 99244.47,
+    "lot": 4.0,
+    "sl": 99237.16952,
+    "tp": 99256.134,
+    "entry_time": "2026-08-11T13:48:50.655793",
+    "exit_price": null,
+    "exit_time": "2026-08-11T13:59:03.757379",
+    "pnl": null,
+    "status": "stale",
+    "close_reason": "stale"
+  },
+  {
+    "ticket": 465114989,
+    "strategy": "Trend Aroon+RSI+SMA (tuned)",
+    "symbol": "BreakX 1200",
+    "action": "BUY",
+    "entry_price": 103180.12,
+    "lot": 0.7,
+    "sl": 103137.1412263158,
+    "tp": 103197.70453157894,
+    "entry_time": "2026-08-11T13:52:33.389366",
+    "exit_price": null,
+    "exit_time": "2026-08-11T13:59:03.757379",
+    "pnl": null,
+    "status": "stale",
+    "close_reason": "stale"
+  }
+]

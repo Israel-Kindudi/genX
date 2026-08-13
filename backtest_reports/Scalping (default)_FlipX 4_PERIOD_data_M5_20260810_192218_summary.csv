@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Scalping (default),FlipX 4_PERIOD_data,M5,6430,43.77916018662519,0.9722375439896402,-58.60114285714271,0.7290246130423742,-0.5839019166172686,1.2485395103099644,-204.85271929750832,-0.05832511043329123,-586.0114285714263,20260810_192218

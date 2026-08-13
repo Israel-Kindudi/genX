@@ -1,0 +1,15 @@
+{
+  "Scalping DMI+MACD (tuned)_BreakX 1800": {
+    "strategy": "Scalping DMI+MACD (tuned)",
+    "symbol": "BreakX 1800",
+    "entry_price": 99251.35,
+    "sl": 99251.49250000001,
+    "initial_sl": 99243.9901,
+    "tp": 99261.17000000001,
+    "lot": 1.36,
+    "entry_time": "2026-08-11 14:00:00.166166",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 544910430
+  }
+}

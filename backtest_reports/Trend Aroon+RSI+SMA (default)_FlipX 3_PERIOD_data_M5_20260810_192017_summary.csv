@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Trend Aroon+RSI+SMA (default),FlipX 3_PERIOD_data,M5,498,39.558232931726906,1.0483476798258604,6.9807142857139155,0.7683575054387214,-0.48289536550406104,1.5911469861316359,-93.22298939062321,0.547777478293063,69.80714285713908,20260810_192017

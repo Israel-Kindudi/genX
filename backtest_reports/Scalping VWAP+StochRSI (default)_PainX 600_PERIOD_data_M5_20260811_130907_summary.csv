@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Scalping VWAP+StochRSI (default),PainX 600_PERIOD_data,M5,408,53.431372549019606,1.2274798588988558,17.186714285714984,0.4254100917431161,-0.3976457142857069,1.0698218953705625,-24.80194923007726,0.9117743727575086,171.86714285714984,20260811_130907

@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Scalping VWAP+StochRSI (default),PlusX 1_PERIOD_data,M5,778,45.62982005141388,0.9670025404618479,-8.257142857143478,0.6816297786720307,-0.597221275144903,1.1413353928268006,-151.7579543803595,0.08746817649144877,-82.57142857143485,20260811_131307

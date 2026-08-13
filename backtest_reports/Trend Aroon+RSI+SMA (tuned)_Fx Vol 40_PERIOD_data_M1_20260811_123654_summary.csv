@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Trend Aroon+RSI+SMA (tuned),Fx Vol 40_PERIOD_data,M1,1533,39.726027397260275,1.057809199979964,64.62790000000633,1.941838611306598,-1.2099045609152725,1.604951889624773,-228.70508531509418,0.372107378514715,646.2790000000649,20260811_123654

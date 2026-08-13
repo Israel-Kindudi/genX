@@ -1,0 +1,18 @@
+{"timestamp": "2026-08-11T14:00:00.167483", "type": "trade_open", "data": {"ticket": 544910430, "strategy": "Scalping DMI+MACD (tuned)", "symbol": "BreakX 1800", "action": "BUY", "entry_price": 99251.35, "lot": 1.36, "sl": 99243.9901, "tp": 99261.17000000001}}
+{"timestamp": "2026-08-11T14:00:00.168585", "type": "equity", "data": {"balance": 100.05, "equity": 99.45, "open_positions": 1, "cycle": 1}}
+{"timestamp": "2026-08-11T14:00:03.070453", "type": "trade_open", "data": {"ticket": 544910520, "strategy": "Scalping DMI+MACD (tuned)", "symbol": "GainX 800", "action": "BUY", "entry_price": 97327.75, "lot": 0.64, "sl": 97312.22714285714, "tp": 97351.03428571428}}
+{"timestamp": "2026-08-11T14:00:03.071678", "type": "equity", "data": {"balance": 100.05, "equity": 99.09, "open_positions": 2, "cycle": 1}}
+{"timestamp": "2026-08-11T14:00:03.137403", "type": "equity", "data": {"balance": 100.05, "equity": 99.09, "open_positions": 2, "cycle": 1}}
+{"timestamp": "2026-08-11T14:00:26.371537", "type": "equity", "data": {"balance": 100.05, "equity": 98.97, "open_positions": 2, "cycle": 2}}
+{"timestamp": "2026-08-11T14:00:49.567627", "type": "equity", "data": {"balance": 98.92, "equity": 98.99, "open_positions": 2, "cycle": 3}}
+{"timestamp": "2026-08-11T14:01:13.179938", "type": "equity", "data": {"balance": 98.92, "equity": 99.31, "open_positions": 2, "cycle": 4}}
+{"timestamp": "2026-08-11T14:01:36.696311", "type": "equity", "data": {"balance": 98.92, "equity": 99.64, "open_positions": 2, "cycle": 5}}
+{"timestamp": "2026-08-11T14:02:00.677106", "type": "equity", "data": {"balance": 98.92, "equity": 99.91, "open_positions": 2, "cycle": 6}}
+{"timestamp": "2026-08-11T14:02:23.845601", "type": "equity", "data": {"balance": 98.92, "equity": 100.28, "open_positions": 2, "cycle": 7}}
+{"timestamp": "2026-08-11T14:02:47.926417", "type": "equity", "data": {"balance": 98.92, "equity": 100.61, "open_positions": 2, "cycle": 8}}
+{"timestamp": "2026-08-11T14:03:11.876012", "type": "equity", "data": {"balance": 98.92, "equity": 100.93, "open_positions": 2, "cycle": 9}}
+{"timestamp": "2026-08-11T14:03:26.883793", "type": "equity", "data": {"balance": 98.92, "equity": 101.14, "open_positions": 1, "cycle": 10}}
+{"timestamp": "2026-08-11T14:03:35.771769", "type": "trade_open", "data": {"ticket": 544916566, "strategy": "Scalping DMI+MACD (tuned)", "symbol": "GainX 800", "action": "BUY", "entry_price": 97321.39, "lot": 0.63, "sl": 97305.322, "tp": 97345.492}}
+{"timestamp": "2026-08-11T14:03:35.774746", "type": "equity", "data": {"balance": 98.92, "equity": 100.86, "open_positions": 2, "cycle": 10}}
+{"timestamp": "2026-08-11T14:03:36.244025", "type": "equity", "data": {"balance": 98.92, "equity": 100.86, "open_positions": 2, "cycle": 10}}
+{"timestamp": "2026-08-11T14:04:00.980097", "type": "equity", "data": {"balance": 98.92, "equity": 100.73, "open_positions": 2, "cycle": 11}}

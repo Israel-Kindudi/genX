@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Scalping VWAP+StochRSI (default),FiboX_PERIOD_data,M5,366,48.08743169398907,1.1016156010783864,9.221071428572031,0.5679870129870133,-0.47760338345864384,1.1892441148005306,-101.83608376091833,-0.1614260815343042,92.21071428572031,20260810_190605

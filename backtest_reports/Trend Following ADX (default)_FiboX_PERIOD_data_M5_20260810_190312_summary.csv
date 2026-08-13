@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Trend Following ADX (default),FiboX_PERIOD_data,M5,407,38.82063882063882,1.015154570860579,1.690714285713768,0.7168060578661832,-0.44985743087557734,1.5934071745153393,-74.68090044093698,0.24244216600843105,16.907142857137476,20260810_190312

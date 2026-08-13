@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Scalping RSI+VWMA (tuned),FlipX 4_PERIOD_data,M5,2598,35.95073133179369,0.8460549055771338,-132.59642857143,0.7802210156010995,-0.5198086041900163,1.500977493084915,-1379.8029556650336,0.40094950610446106,-1325.9642857142974,20260810_192116

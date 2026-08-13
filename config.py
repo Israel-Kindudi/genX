@@ -12,7 +12,12 @@ GENETIC_OPT_DIR = "genetic_optimization"
 DASHBOARD_DIR = "dashboard"
 
 # Assets & timeframes
-ASSETS = ['BreakX 600', 'BreakX 1200', 'BreakX 1800', 'FX Vol 20']
+ASSETS = ['BreakX 600', 'BreakX 1200', 'GainX 600',
+          'BreakX 1800', 'FX Vol 20','GainX 999',
+          'FX Vol 40','FX Vol 99','GainX 400',
+          'FX Vol 60', 'FiboX','PainX 600',
+          'FlipX 1','FlipX 2', 'FlipX 3', 'FlipX 4',
+          'PlusX 1', 'TrendX 600', 'TrendX 1200',]
 TIMEFRAMES = ['1m', '5m', '15m', '30m', '1h', '4h']
 
 # Trading parameters

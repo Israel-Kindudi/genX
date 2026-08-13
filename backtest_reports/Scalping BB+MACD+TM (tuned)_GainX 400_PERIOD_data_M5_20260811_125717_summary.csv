@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Scalping BB+MACD+TM (tuned),GainX 400_PERIOD_data,M5,387,29.457364341085274,0.81379760638123,-12.075411428570803,0.4629437593984997,-0.2375494505494497,1.948831110018209,-124.9925070284015,0.18278733755990878,-120.754114285708,20260811_125717

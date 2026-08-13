@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Trend PMax+NSM (tuned),FiboX_PERIOD_data,M5,156,32.69230769230769,0.906707397741366,-2.216285714285332,0.4223529411764792,-0.22842582417582472,1.8489719483353346,-38.00235632936033,-0.1361023192634016,-22.16285714285327,20260810_190743

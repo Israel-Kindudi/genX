@@ -1,0 +1,50 @@
+{
+  "Scalping DMI+MACD (default)_BreakX 1200": {
+    "strategy": "Scalping DMI+MACD (default)",
+    "symbol": "BreakX 1200",
+    "entry_price": 103514.32,
+    "sl": 103497.59,
+    "tp": 103532.02,
+    "lot": 0.1,
+    "entry_time": "2026-08-09 14:13:04",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 462454705
+  },
+  "Trend Following (default)_GainX 800": {
+    "strategy": "Trend Following (default)",
+    "symbol": "GainX 800",
+    "entry_price": 97864.05,
+    "sl": 97826.70107142857,
+    "tp": 97913.84857142858,
+    "lot": 0.1,
+    "entry_time": "2026-08-09 11:27:52.024526",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 462467535
+  },
+  "Scalping RSI+VWMA (tuned)_FX Vol 80": {
+    "strategy": "Scalping RSI+VWMA (tuned)",
+    "symbol": "FX Vol 80",
+    "entry_price": 55063.93,
+    "sl": 54876.29,
+    "tp": 55345.39,
+    "lot": 0.01,
+    "entry_time": "2026-08-09 11:30:10.194548",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 462469614
+  },
+  "Scalping DMI+MACD (default)_GainX 800": {
+    "strategy": "Scalping DMI+MACD (default)",
+    "symbol": "GainX 800",
+    "entry_price": 97865.61,
+    "sl": 97827.63,
+    "tp": 97914.78,
+    "lot": 0.1,
+    "entry_time": "2026-08-09 14:27:20",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 462467263
+  }
+}

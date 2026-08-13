@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Scalping VWAP+StochRSI (tuned),TrendX 1200_PERIOD_data,M5,945,52.06349206349207,1.034012100670621,3.1512171428583677,0.19471768292683017,-0.20452512771996043,0.9520477268369744,-41.40828652683356,0.19408396798007238,31.512171428583873,20260811_131621

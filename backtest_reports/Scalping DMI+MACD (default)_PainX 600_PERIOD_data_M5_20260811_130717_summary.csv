@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Scalping DMI+MACD (default),PainX 600_PERIOD_data,M5,3703,51.68782068593033,1.1078269611046556,180.72133214287052,0.9700900507538478,-0.9368535634432612,1.0354767154734739,-41.00610661080152,0.46488618334501086,1807.2133214287,20260811_130717

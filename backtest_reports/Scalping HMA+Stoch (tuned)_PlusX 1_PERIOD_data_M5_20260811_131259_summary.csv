@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Scalping HMA+Stoch (tuned),PlusX 1_PERIOD_data,M5,1544,35.42746113989637,0.9355830200488998,-23.670571428574192,0.6284972577696477,-0.3707957330258037,1.6949959284615352,-246.2233984897348,-0.020008601043265475,-236.70571428574215,20260811_131259

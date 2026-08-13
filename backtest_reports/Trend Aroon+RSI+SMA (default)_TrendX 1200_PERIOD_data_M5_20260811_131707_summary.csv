@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Trend Aroon+RSI+SMA (default),TrendX 1200_PERIOD_data,M5,390,48.46153846153846,0.9767281642770729,-0.9771892857139761,0.2170001133786907,-0.20995105357143257,1.0335747770127757,-45.97224140089538,0.05647814426346125,-9.771892857139868,20260811_131707

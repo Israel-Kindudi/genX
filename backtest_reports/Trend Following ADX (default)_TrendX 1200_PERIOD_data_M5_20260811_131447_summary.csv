@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Trend Following ADX (default),TrendX 1200_PERIOD_data,M5,467,41.54175588865097,1.1539989901795897,6.780864285713905,0.2619213365242977,-0.1612889194139189,1.6239264140156082,-35.56267889290963,0.4777590330690467,67.80864285713903,20260811_131447

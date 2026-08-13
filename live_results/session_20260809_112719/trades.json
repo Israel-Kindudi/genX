@@ -1,0 +1,32 @@
+[
+  {
+    "ticket": 462467535,
+    "strategy": "Trend Following (default)",
+    "symbol": "GainX 800",
+    "action": "BUY",
+    "entry_price": 97864.05,
+    "lot": 0.1,
+    "sl": 97826.70107142857,
+    "tp": 97913.84857142858,
+    "entry_time": "2026-08-09T11:27:52.024526",
+    "exit_price": null,
+    "exit_time": null,
+    "pnl": null,
+    "status": "open"
+  },
+  {
+    "ticket": 462469614,
+    "strategy": "Scalping RSI+VWMA (tuned)",
+    "symbol": "FX Vol 80",
+    "action": "BUY",
+    "entry_price": 55063.93,
+    "lot": 0.01,
+    "sl": 54876.29,
+    "tp": 55345.39,
+    "entry_time": "2026-08-09T11:30:10.194548",
+    "exit_price": null,
+    "exit_time": null,
+    "pnl": null,
+    "status": "open"
+  }
+]

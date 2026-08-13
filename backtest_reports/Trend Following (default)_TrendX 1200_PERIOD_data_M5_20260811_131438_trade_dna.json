@@ -1,0 +1,20 @@
+[
+  {
+    "entry_date": "2026-07-25 05:10:00",
+    "exit_date": "2026-07-25 06:05:00",
+    "direction": "BUY",
+    "entry_price": 102265.87,
+    "exit_price": 102297.38428571427,
+    "volume": 0.01,
+    "pnl": 0.3151428571427823,
+    "reason": "TP",
+    "holding_bars": 55.0,
+    "confidence": 70,
+    "signal_reason": "Breakout above upper band, momentum 0.001",
+    "trade_duration_minutes": 55.0,
+    "entry_exit_spread": 31.51428571427823,
+    "pnl_per_unit": 31.514285714278227,
+    "is_winner": true,
+    "profit_pct": 0.03081603443482975
+  }
+]

@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Scalping BB+MACD+TM (default),FiboX_PERIOD_data,M5,147,28.57142857142857,0.9838727252914802,-0.4228571428573922,0.614217687074824,-0.25211538461538463,2.436256272150332,-60.23888329255984,0.22062728082636912,-4.228571428573922,20260810_190441

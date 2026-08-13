@@ -5,27 +5,27 @@
     "BreakX 1800",
     "PainX 600",
     "GainX 800",
-    "FX Vol 80",
-    "FX Vol 20",
-    "FX Vol 99"
+    "PainX 600",
+    "FlipX 1",
+    "PainX 400",
+    "GainX 400"
   ],
   "strategies": [
-    "Scalping DMI+MACD (default)",
     "Scalping DMI+MACD (tuned)",
     "Scalping HMA+Stoch (tuned)",
     "Scalping RSI+VWMA (default)",
     "Scalping RSI+VWMA (tuned)",
-    "Trend Aroon+RSI+SMA (default)",
     "Trend Aroon+RSI+SMA (tuned)",
-    "Trend Following (default)",
-    "Trend Following ADX (default)"
+    "Trend Following (default)"
   ],
   "demo": false,
   "cycles": 1000,
-  "interval": 16,
-  "risk": 1,
+  "interval": 15,
+  "risk": 1.0,
   "terminal": null,
-  "max_positions": 4,
-  "max_per_strategy": 3,
-  "use_optimized": false
+  "max_positions": 7000,
+  "max_per_strategy": 4,
+  "use_optimized": true,
+  "breakeven_trigger": 0.05,
+  "profit_lock_fraction": 0.05
 }

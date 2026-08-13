@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Scalping RSI+VWMA (tuned),GainX 999_PERIOD_data,M5,2042,26.983349657198826,0.6101964428285404,-113.55230714285601,0.32260287788436504,-0.19537658810002762,1.6511849296866672,-1132.3365674019922,0.19574339433119664,-1135.5230714285622,20260811_130215

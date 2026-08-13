@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Scalping (default),FiboX_PERIOD_data,M5,6376,44.32245922208281,0.9922976642762957,-7.1895714285710675,0.32775578809018274,-0.26293730382293734,1.246516881875743,-101.52972881488323,-0.21293424086097204,-71.89571428571175,20260810_190340

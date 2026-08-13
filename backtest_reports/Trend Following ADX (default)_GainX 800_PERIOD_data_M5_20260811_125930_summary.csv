@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Trend Following ADX (default),GainX 800_PERIOD_data,M5,439,36.21867881548975,0.918468858205581,-5.949746428571087,0.42154335130279086,-0.26062549744898156,1.6174294358337276,-75.43978228968142,-0.1697350862655113,-59.497464285710834,20260811_125930

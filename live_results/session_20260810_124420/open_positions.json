@@ -1,0 +1,40 @@
+{
+  "Scalping DMI+MACD (tuned)_PainX 600": {
+    "strategy": "Scalping DMI+MACD (tuned)",
+    "symbol": "PainX 600",
+    "entry_price": 103355.71,
+    "sl": 103355.86450000001,
+    "initial_sl": 103325.75628571428,
+    "tp": 103395.46557142858,
+    "lot": 0.75,
+    "entry_time": "2026-08-10 19:42:03.829857",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 464220383
+  },
+  "Scalping DMI+MACD (tuned)_BreakX 600": {
+    "strategy": "Scalping DMI+MACD (tuned)",
+    "symbol": "BreakX 600",
+    "entry_price": 95670.89,
+    "sl": 95671.5775,
+    "initial_sl": 95649.78509473684,
+    "tp": 95706.81599999999,
+    "lot": 1.03,
+    "entry_time": "2026-08-10 19:48:32.666875",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 464228487
+  },
+  "Scalping DMI+MACD (tuned)_BreakX 1200": {
+    "strategy": "Scalping DMI+MACD (tuned)",
+    "symbol": "BreakX 1200",
+    "entry_price": 103484.2,
+    "sl": 103467.22,
+    "tp": 103500.4,
+    "lot": 1.6,
+    "entry_time": "2026-08-10 22:45:08",
+    "action": "BUY",
+    "status": "open",
+    "ticket": 464224583
+  }
+}

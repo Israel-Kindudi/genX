@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Trend Aroon+RSI+SMA (default),Fx Vol 99_PERIOD_data,M1,1060,35.37735849056604,0.8812392683678789,-61.53941428571342,1.2177077428571428,-0.7564668873826891,1.6097303968853254,-421.1806129695868,0.11598874745228428,-615.3941428571342,20260811_125529

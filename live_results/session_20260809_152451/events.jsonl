@@ -1,0 +1,27 @@
+{"timestamp": "2026-08-09T15:25:29.183113", "type": "trade_open", "data": {"ticket": 462670323, "strategy": "Scalping HMA+Stoch (tuned)", "symbol": "FX Vol 99", "action": "BUY", "entry_price": 40852.24, "lot": 0.01, "sl": 40458.22571428571, "tp": 41241.631428571425}}
+{"timestamp": "2026-08-09T15:25:29.195908", "type": "equity", "data": {"balance": 570.23, "equity": 560.1, "open_positions": 3, "cycle": 1}}
+{"timestamp": "2026-08-09T15:25:29.267176", "type": "equity", "data": {"balance": 570.23, "equity": 560.1, "open_positions": 3, "cycle": 1}}
+{"timestamp": "2026-08-09T15:25:46.219950", "type": "trade_open", "data": {"ticket": 462670589, "strategy": "Scalping DMI+MACD (default)", "symbol": "BreakX 600", "action": "BUY", "entry_price": 96101.45, "lot": 0.32, "sl": 96083.6574, "tp": 96135.0726}}
+{"timestamp": "2026-08-09T15:25:46.222489", "type": "equity", "data": {"balance": 570.23, "equity": 561.02, "open_positions": 4, "cycle": 2}}
+{"timestamp": "2026-08-09T15:25:49.822247", "type": "trade_open", "data": {"ticket": 462670635, "strategy": "Scalping DMI+MACD (tuned)", "symbol": "BreakX 600", "action": "BUY", "entry_price": 96101.45, "lot": 0.33, "sl": 96084.37211578948, "tp": 96136.039}}
+{"timestamp": "2026-08-09T15:25:49.825178", "type": "equity", "data": {"balance": 570.23, "equity": 560.81, "open_positions": 5, "cycle": 2}}
+{"timestamp": "2026-08-09T15:26:03.620718", "type": "trade_open", "data": {"ticket": 462670859, "strategy": "Scalping DMI+MACD (tuned)", "symbol": "GainX 800", "action": "BUY", "entry_price": 97861.2, "lot": 0.36, "sl": 97845.60428571427, "tp": 97884.59357142857}}
+{"timestamp": "2026-08-09T15:26:03.625275", "type": "equity", "data": {"balance": 570.23, "equity": 561.21, "open_positions": 6, "cycle": 2}}
+{"timestamp": "2026-08-09T15:26:11.933096", "type": "equity", "data": {"balance": 570.23, "equity": 561.95, "open_positions": 6, "cycle": 2}}
+{"timestamp": "2026-08-09T15:26:53.434061", "type": "equity", "data": {"balance": 570.23, "equity": 565.8, "open_positions": 6, "cycle": 3}}
+{"timestamp": "2026-08-09T15:27:28.110707", "type": "trade_open", "data": {"ticket": 462672605, "strategy": "Scalping RSI+VWMA (tuned)", "symbol": "GainX 800", "action": "BUY", "entry_price": 97899.54, "lot": 0.37, "sl": 97883.76214285713, "tp": 97923.20678571428}}
+{"timestamp": "2026-08-09T15:27:28.113044", "type": "equity", "data": {"balance": 583.92, "equity": 583.46, "open_positions": 7, "cycle": 4}}
+{"timestamp": "2026-08-09T15:27:37.524415", "type": "equity", "data": {"balance": 583.92, "equity": 583.4, "open_positions": 7, "cycle": 4}}
+{"timestamp": "2026-08-09T15:28:20.504161", "type": "equity", "data": {"balance": 583.92, "equity": 586.48, "open_positions": 7, "cycle": 5}}
+{"timestamp": "2026-08-09T15:29:02.657628", "type": "equity", "data": {"balance": 583.92, "equity": 587.61, "open_positions": 7, "cycle": 6}}
+{"timestamp": "2026-08-09T15:29:45.216224", "type": "equity", "data": {"balance": 583.92, "equity": 591.08, "open_positions": 7, "cycle": 7}}
+{"timestamp": "2026-08-09T15:30:26.734272", "type": "equity", "data": {"balance": 583.92, "equity": 593.48, "open_positions": 7, "cycle": 8}}
+{"timestamp": "2026-08-09T15:31:08.375574", "type": "equity", "data": {"balance": 583.92, "equity": 594.92, "open_positions": 7, "cycle": 9}}
+{"timestamp": "2026-08-09T15:31:23.385245", "type": "equity", "data": {"balance": 583.92, "equity": 594.94, "open_positions": 6, "cycle": 10}}
+{"timestamp": "2026-08-09T15:31:50.254604", "type": "equity", "data": {"balance": 583.92, "equity": 596.13, "open_positions": 6, "cycle": 10}}
+{"timestamp": "2026-08-09T15:32:32.687695", "type": "equity", "data": {"balance": 583.92, "equity": 597.81, "open_positions": 6, "cycle": 11}}
+{"timestamp": "2026-08-09T15:33:15.442493", "type": "equity", "data": {"balance": 583.92, "equity": 600.47, "open_positions": 6, "cycle": 12}}
+{"timestamp": "2026-08-09T15:33:58.963434", "type": "equity", "data": {"balance": 583.63, "equity": 587.98, "open_positions": 6, "cycle": 13}}
+{"timestamp": "2026-08-09T15:34:43.100197", "type": "equity", "data": {"balance": 583.63, "equity": 590.25, "open_positions": 6, "cycle": 14}}
+{"timestamp": "2026-08-09T15:35:22.937910", "type": "equity", "data": {"balance": 583.63, "equity": 591.3, "open_positions": 6, "cycle": 15}}
+{"timestamp": "2026-08-09T15:36:11.371982", "type": "equity", "data": {"balance": 583.63, "equity": 594.17, "open_positions": 6, "cycle": 16}}

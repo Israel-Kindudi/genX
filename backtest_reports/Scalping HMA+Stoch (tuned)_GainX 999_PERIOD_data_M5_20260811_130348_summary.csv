@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Scalping HMA+Stoch (tuned),GainX 999_PERIOD_data,M5,2111,39.98105163429654,0.666861139417501,-132.2578142857115,0.31368157413676523,-0.3133425910474675,1.0010818289596846,-1234.3532225256952,-0.20565951871437727,-1322.5781428571122,20260811_130348

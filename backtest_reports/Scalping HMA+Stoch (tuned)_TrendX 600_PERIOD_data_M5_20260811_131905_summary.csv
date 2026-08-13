@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Scalping HMA+Stoch (tuned),TrendX 600_PERIOD_data,M5,1799,42.19010561423013,0.9186776215755575,-27.51020142857174,0.4094539450404649,-0.3252747554945044,1.2587941059796837,-316.1417820025056,0.47496160718791874,-275.10201428571776,20260811_131905

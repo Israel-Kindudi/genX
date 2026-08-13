@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Scalping BB+MACD+TM (default),PlusX 1_PERIOD_data,M5,186,29.03225806451613,0.9686555055682589,-1.2142857142856522,0.6949206349206362,-0.2957251908396947,2.3498865042489245,-51.499870700800265,0.17132988364859866,-12.142857142856531,20260811_131228

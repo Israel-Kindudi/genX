@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Scalping DMI+MACD (tuned),FlipX 1_PERIOD_data,M5,1906,40.92339979013641,1.0033865900601149,1.1731428571414986,0.44561721611721417,-0.3101238009975699,1.4369010526886516,-84.2177077016392,0.17798519846637892,11.731428571415119,20260810_191046

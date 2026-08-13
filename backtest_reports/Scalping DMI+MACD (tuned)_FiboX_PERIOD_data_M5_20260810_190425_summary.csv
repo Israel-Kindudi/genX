@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Scalping DMI+MACD (tuned),FiboX_PERIOD_data,M5,1849,41.59004867495944,1.0459908586307733,18.853571428571158,0.5576011517741026,-0.3813411295681058,1.462210888202967,-60.790981140957946,0.2306057046353271,188.53571428571237,20260810_190425

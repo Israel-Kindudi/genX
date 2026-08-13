@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Scalping BB+MACD+TM (tuned),FlipX 4_PERIOD_data,M5,328,26.21951219512195,0.8755060374496836,-15.244285714286232,1.246578073089695,-0.508091286307054,2.4534529654113224,-225.17619858544117,-0.2241665403782231,-152.44285714286227,20260810_192333

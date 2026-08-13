@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Scalping (default),TrendX 1200_PERIOD_data,M5,9209,24.769247475295906,0.4361664934209258,-284.8923185714528,0.09661773971315751,-0.07293264764104578,1.3247529445068713,-2725.771536380521,-0.03005342485422534,-2848.923185714522,20260811_131503

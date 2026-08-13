@@ -1,0 +1,2 @@
+strategy,symbol,timeframe,total_trades,win_rate,profit_factor,total_pnl,avg_win,avg_loss,win_loss_ratio,max_drawdown,sharpe_ratio,return_pct,timestamp
+Trend PMax+NSM (tuned),TrendX 600_PERIOD_data,M5,188,40.95744680851064,1.076083038145512,2.283002857141982,0.4193471243042671,-0.2703308622908701,1.5512365874565175,-37.20301185895887,0.4705054298804066,22.830028571419874,20260811_132000
