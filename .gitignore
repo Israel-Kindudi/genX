@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Node
+node_modules/
+.next/
+out/
+.turbo/
+*.tsbuildinfo
+npm-debug.log*
+
+# Secrets & data
+.env
+.env.*
+!.env.example
+*.db
+*.sqlite
+*.sqlite3
+genx.db
+*.log
+logs/
+
+# PM2
+.pm2/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Backups
+backups/
+# backend/.gitignore additions (or repo-root .gitignore):
+client_results/
+live_results/
+backend/C:/
+*.pyc
+__pycache__/
